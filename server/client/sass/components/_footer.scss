@@ -1,0 +1,151 @@
+.footer {
+  background-color: $color-grey-dark-3;
+
+  &__logo {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin-top: 6rem;
+  }
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__main-box-container {
+    display: flex;
+    padding: 1rem 5rem;
+
+    &--2 {
+      height: 12rem;
+      border-top: 2px solid $color-white;
+      padding: 1rem 5rem;
+      display: flex;
+    }
+  }
+
+  &__main-box {
+    height: 40vh;
+    width: 80vw;
+    padding: 1rem;
+
+    &--1 {
+    }
+
+    &--2 {
+    }
+
+    &--3 {
+    }
+  }
+
+  &__header {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: "Exo 2", sans-serif;
+    color: $color-grey-dark-2;
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  &__vehicle-range {
+    // border-top: 1px solid $color-grey-dark;
+    padding-top: 1.5rem;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-grey-light-1;
+      text-transform: capitalize;
+      font-size: 1.2rem;
+      background-color: $color-grey-dark-3;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-golden;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__copyright {
+    color: $color-grey-light-1;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    flex: 1;
+
+    & p {
+      margin: 1.5rem 0;
+    }
+  }
+
+  &__socials {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+
+    &-link:link,
+    &-link:visited {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      .svg__container {
+        transition: all .3s ease-in-out;
+       
+
+        &:hover,
+        &:active {
+          background-color: $color-golden;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &-icon {
+      width: 60%;
+      height: 60%;
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      backface-visibility: hidden;
+      overflow: hidden;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.svg__container {
+  height: 5rem;
+  width: 5rem;
+  position: relative;
+  border-radius: 50%;
+  background-color: $color-white;
+}

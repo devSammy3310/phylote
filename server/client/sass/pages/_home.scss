@@ -1,0 +1,202 @@
+.home_section--main {
+  background-color: $color-grey-light-1;
+}
+
+.section__mission-statement {
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  display: flex;
+  position: relative;
+  background-color: #f7f7f7;
+  height: 50rem;
+  font-size: 1.6rem;
+  z-index: 1;
+  color: #777;
+
+  &-col-1 {
+    display: flex;
+    margin-top: 7rem;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: justify;
+    flex: 1;
+
+    a {
+      width: fit-content;
+    }
+
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &-col-2 {
+    flex: 1.5;
+    height: 100%;
+  }
+}
+
+.section__mission_statement-2 {
+  background-image: url("../src/assets/img/clean.png");
+  position: relative;
+  height: 85rem;
+  padding-top: 4vh;
+  margin-top: -11.5vh;
+  display: flex;
+
+  &-item {
+    flex: 1;
+    height: 70vh;
+
+    &--1 {
+      display: flex;
+      padding-top: 2.5rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--2 {
+      color: #777;
+      display: flex;
+      padding: 5rem 5rem;
+      font-family: "Poppins", "sans-serif";
+      font-size: 1.3rem;
+      text-align: justify;
+      background-color: #777;
+      font-size: 1.6rem;
+      padding-top: 7rem;
+      color: #fff;
+
+      p {
+        font-family: "Poppins", "sans-serif";
+      }
+    }
+
+    .phylote-logo {
+      width: 100%;
+    }
+  }
+
+  &-global-reach {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98vw;
+    top: 70%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+
+    h1 {
+      font-size: 6.4rem;
+    }
+
+    span {
+      color: #f7ba57;
+    }
+
+    p {
+      text-align: center;
+      color: #f7ba57;
+      font-family: "Poppins", sans-serif;
+      width: 50%;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.section-vehicle__category {
+  height: 100vh;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba($color-black, 0.6),
+      rgba($color-primary-dark, 0.6)
+    ),
+    url("../src/assets/img/flag-nigeria.jpg");
+  background-size: cover;
+  padding: 17rem 2rem;
+  transform: skewY(-7deg);
+  margin-top: -8rem;
+  z-index: 4000;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  &-flex {
+    height: 100%;
+  }
+}
+
+.section-vehicle__most-used {
+  height: 80rem;
+  background-color: $color-grey-light-1;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.section__service {
+    padding-bottom: 50rem;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  background-color: $color-grey-light-1;
+
+  &-support-box {
+    width: 70%;
+    height: 40rem;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%) skewX(-12deg);
+  }
+  &-support-box:hover &-support {
+    & span {
+      color: $color-black;
+    }
+
+    & h1 {
+      color: $color-golden;
+      transition: color 0.3s;
+    }
+  }
+
+  &-support {
+    text-align: center;
+    font-family: $font-style-secondary;
+    margin: 5rem 5rem;
+    transform: skewX(12deg);
+
+    & p {
+      font-size: 1.8rem;
+      font-family: $font-style-primary;
+      padding: 0 10rem;
+      color: $color-black;
+      display: block;
+    }
+
+    &-header {
+      font-size: 6.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      color: $color-black;
+
+      & span {
+        color: $color-golden;
+        transition: color 0.3s;
+      }
+    }
+
+    &-link {
+      margin-top: 3rem;
+      font-size: 3rem !important;
+    }
+
+    &:hover {
+    }
+  }
+}

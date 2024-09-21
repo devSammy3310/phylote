@@ -1,0 +1,114 @@
+.card {
+  position: relative;
+  perspective: 2500rem;
+  -moz-perspective: 2500rem;
+  height: 40rem;
+  width: 35rem;
+  border-style: none;
+  background-color: $color-grey-light-1;
+
+  &__side {
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    transition: all 0.8s ease;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &--front {
+      background-color: $color-white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      & h1 {
+        color: $color-white;
+        font-family: $font-style-secondary;
+        // transform: translateX(-50%);
+        position: absolute;
+        font-size: 3rem;
+        border: 2px solid$color-grey-dark;
+        left: 33%;
+        bottom: 0;
+      }
+
+      &-1 {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-black, 0.4),
+            rgba($color-white, 0.4)
+          ),
+          url("../public/img/cadillac_escalade.jpg");
+
+        background-size: cover;
+        background-position: center;
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-black, 0.4),
+            rgba($color-white, 0.4)
+          ),
+          url("../public/img/Mercedes-s600-guard.jpg");
+
+        background-size: cover;
+        background-position: center;
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-black, 0.4),
+            rgba($color-white, 0.4)
+          ),
+          url("../public/img/Audi-A8L_Security.jpg");
+
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  &__name {
+    font-family: $font-style-secondary;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    & h3 {
+      border-bottom: 1px solid $color-grey-dark;
+      width: 50%;
+    }
+  }
+
+  &__details {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    font-family: $font-style-primary;
+    text-align: justify;
+  }
+}

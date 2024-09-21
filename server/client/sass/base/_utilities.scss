@@ -1,0 +1,239 @@
+.center-text {
+  text-align: center;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.margin-bottom-med {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+// Helper Classes
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// Spacing Utilities
+.u-margin-none {
+  margin: 0;
+}
+
+.u-padding-none {
+  padding: 0;
+}
+
+.u-margin-small {
+  margin: 0.8rem;
+}
+
+.u-padding-small {
+  padding: 0.8rem;
+}
+
+.u-margin-top-large {
+  margin-top: 8rem;
+}
+
+.u-padding-horizontal-medium {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+// Display Utilities
+.u-display-none {
+  display: none !important;
+}
+
+.u-display-block {
+  display: block;
+}
+
+.u-display-inline {
+  display: inline;
+}
+
+.u-display-inline-block {
+  display: inline-block;
+}
+
+.u-flex {
+  display: flex;
+}
+
+.u-space-btw {
+  justify-content: space-between;
+}
+
+.u-inline-flex {
+  display: inline-flex;
+}
+
+// Text Utilities
+.u-bold {
+  font-weight: bold;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-lowercase {
+  text-transform: lowercase;
+}
+
+.u-text-primary {
+  color: $color-primary;
+}
+
+.u-text-secondary {
+}
+
+// Width and Height Utilities
+.u-width-full {
+  width: 100%;
+}
+
+.u-width-auto {
+  width: auto;
+}
+
+.u-height-full {
+  height: 100%;
+}
+
+.u-height-auto {
+  height: auto;
+}
+
+// Positioning Utilities
+.u-relative {
+  position: relative;
+}
+
+.u-absolute {
+  position: absolute;
+}
+
+.u-fixed {
+  position: fixed;
+}
+
+.u-sticky {
+  position: sticky;
+}
+
+.u-top-0 {
+  top: 0;
+}
+
+.u-bottom-0 {
+  bottom: 0;
+}
+
+.u-left-0 {
+  left: 0;
+}
+
+.u-right-0 {
+  right: 0;
+}
+
+// Z-Index Utilities
+.u-z-0 {
+  z-index: 0;
+}
+
+.u-z-10 {
+  z-index: 10;
+}
+
+.u-z-50 {
+  z-index: 50;
+}
+
+.u-z-auto {
+  z-index: auto;
+}
+
+// Color and Background Utilities
+.u-bg-primary {
+  background-color: $color-primary;
+}
+
+.u-bg-secondary {
+}
+
+.u-bg-transparent {
+  background-color: transparent;
+}
+
+.u-bg-white {
+  background-color: #fff;
+}
+
+.u-text-white {
+  color: #fff;
+}
+
+.u-text-black {
+  color: #000;
+}
+
+// Visibility Utilities
+.u-visible {
+  visibility: visible;
+}
+
+.u-invisible {
+  visibility: hidden;
+}
+
+// Overflow Utilities
+.u-overflow-hidden {
+  overflow: hidden;
+}
+
+.u-overflow-auto {
+  overflow: auto;
+}
+
+.u-overflow-scroll {
+  overflow: scroll;
+}
+
+// Other Common Utilities
+.u-cursor-pointer {
+  cursor: pointer;
+}
+
+.u-opacity-50 {
+  opacity: 0.5;
+}
+
+.u-border-none {
+  border: none;
+}
+
+.u-border-radius-small {
+  border-radius: 0.4rem;
+}

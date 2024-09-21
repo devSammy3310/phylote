@@ -1,0 +1,33 @@
+.feature-box {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-black;
+  
+  height: 100%;
+  background-color: rgba($color-white, 0.8);
+  border-radius: 3px;
+  font-family: $font-style-primary;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.6);
+
+  &--1 {
+  }
+
+  &--2 {
+  }
+
+  &--3 {
+  }
+
+  &--4 {
+  }
+
+  &:hover {
+    transform: translateY(-1.3rem) scale(1.03);
+    box-shadow: 0 3rem 4rem rgba($color-black, 0.6);
+  }
+}

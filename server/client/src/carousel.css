@@ -1,0 +1,16 @@
+/********************************  Carousel  ****************************/
+
+.custom-carousel {
+  max-height: 800px;
+
+  margin: 0 auto;
+}
+
+.custom-carousel .carousel-inner {
+  height: 700px;
+}
+
+.custom-carousel .carousel-item img {
+  width: 100%;
+  height: auto;
+}
