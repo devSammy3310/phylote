@@ -26,7 +26,9 @@ function Card({ ID, image, name, details }) {
       </div>
 
       <div className={`card__side card__side--back card__side--back-${ID}`}>
-        <h1 className="btn btn-close-white">View model</h1>
+        <a href={`#${ID}`}>
+          <h1 className="btn btn-close-white">View model</h1>
+        </a>
       </div>
     </div>
   );

@@ -9,14 +9,15 @@
 
 @import "components/button";
 @import "components/composition";
-@import "components/navbar";
 @import "components/feature-box";
 @import "components/svg";
 @import "components/card";
-@import "components/footer";
+@import "components/popup";
 
 @import "sections/mission-statement";
 
+@import "layout/navbar";
+@import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
 

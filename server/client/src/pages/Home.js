@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Carousel from "../components/carousel";
 import Card from "../components/Card";
+import Popup from "../components/Popup";
 import mostUsedVehicles from "../data/most_used_vehicles";
 
 function Home() {
@@ -11,7 +12,6 @@ function Home() {
     { src: "/img/Cougar5.jpg", alt: "armored vehicle" },
   ];
 
-  const cardDetails = [];
   return (
     <section className="home_section--main">
       <main>
@@ -142,7 +142,10 @@ function Home() {
           </div>
         </section>
 
-        <section className="section-vehicle__most-used u-text-center">
+        <section
+          className="section-vehicle__most-used u-text-center"
+          id="section-vehicle__most-used"
+        >
           <div>
             <h2 className="heading-secondary margin-bottom-med">
               Most Popular Armored Vehicles
@@ -166,6 +169,10 @@ function Home() {
           >
             VIEW ALL PHYLOTE ARMORED VEHICLES &rarr;
           </Link>
+
+          {mostUsedVehicles.map((vehicle) => (
+            <Popup ID={vehicle.ID} close_ref="section-vehicle__most-used" />
+          ))}
         </section>
 
         <section className="section__service">
