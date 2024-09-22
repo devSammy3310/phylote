@@ -17,47 +17,83 @@ function Nav() {
   const navLinkScroll = scroll > 50 ? "navLink navLink-scrolled" : "navLink";
 
   return (
-    <nav className={navScroll}>
-      <div className="name-logo-container">
-        <Link
-          className={
-            scroll > 50 ? "nav-NameLogo navLink-scrolled " : "nav-NameLogo"
-          }
-          to="/"
-        >
-          <img className="navLogo" src="/img/phylote_logo-main.jpg" />
-          <h1>PHYLOTE</h1>
-        </Link>
+    <section>
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation_item">
+              <Link className="navigation__link" to="/weapons">
+                Weapons
+              </Link>
+            </li>
+            <li class="navigation_item">
+              <Link className="navigation__link" to="/weapons">
+                Armored Vehicles
+              </Link>
+            </li>
+            <li class="navigation_item">
+              <Link className="navigation__link" to="/weapons">
+                About Us
+              </Link>
+            </li>
+            <li class="navigation_item">
+              <Link className="navigation__link" to="/weapons">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <div className="nav-link-container">
-        <Link className={` ${navLinkScroll}`} to="/weapons">
-          Weapons
-        </Link>
-
-        <Link className={` ${navLinkScroll}`} to="/vehicles">
-          Armored Vehicles
-        </Link>
-
-        <Link className={`${navLinkScroll}`} to="/about">
-          About Us
-        </Link>
-
-        <Link className={` ${navLinkScroll}`} to="/contact">
-          Contact
-        </Link>
-        <div className={`${navLinkScroll} country`}>
-          <p>
-            NIGERIA
-            <img
-              className="flag"
-              src="/img/nigeria-flag.jpg"
-              alt="nigeria-flag"
-            />
-          </p>
+      <nav className={navScroll}>
+        <div className="name-logo-container">
+          <Link
+            className={
+              scroll > 50 ? "nav-NameLogo navLink-scrolled " : "nav-NameLogo"
+            }
+            to="/"
+          >
+            <img className="navLogo" src="/img/phylote_logo-main.jpg" />
+            <h1>PHYLOTE</h1>
+          </Link>
         </div>
-      </div>
-    </nav>
+
+        <div className="nav-link-container">
+          <Link className={` ${navLinkScroll}`} to="/weapons">
+            Weapons
+          </Link>
+
+          <Link className={` ${navLinkScroll}`} to="/vehicles">
+            Armored Vehicles
+          </Link>
+
+          <Link className={`${navLinkScroll}`} to="/about">
+            About Us
+          </Link>
+
+          <Link className={` ${navLinkScroll}`} to="/contact">
+            Contact
+          </Link>
+          <div className={`${navLinkScroll} country`}>
+            <p>
+              NIGERIA
+              <img
+                className="flag"
+                src="/img/nigeria-flag.jpg"
+                alt="nigeria-flag"
+              />
+            </p>
+          </div>
+        </div>
+      </nav>
+    </section>
   );
 }
 
