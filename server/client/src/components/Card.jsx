@@ -2,7 +2,7 @@ import React from "react";
 
 function Card({ ID, image, name, details }) {
   return (
-    <div className="card">
+    <div className="card" id={ID}>
       <div className={`card__side card__side--front card__side--front-${ID}`}>
         {image && (
           <img
@@ -26,7 +26,7 @@ function Card({ ID, image, name, details }) {
       </div>
 
       <div className={`card__side card__side--back card__side--back-${ID}`}>
-        <a href={`#${ID}`}>
+        <a href={`#popup-${ID}`}>
           <h1 className="btn btn-close-white">View model</h1>
         </a>
       </div>

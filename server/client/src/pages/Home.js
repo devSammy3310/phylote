@@ -29,7 +29,7 @@ function Home() {
         </div>
 
         <div className="center-text">
-          <h2 className="heading-secondary">
+          <h2 className="heading-secondary u-margin-top-large">
             Welcome to Phylote Nigeria Limited
           </h2>
         </div>
@@ -147,7 +147,7 @@ function Home() {
           id="section-vehicle__most-used"
         >
           <div>
-            <h2 className="heading-secondary margin-bottom-med">
+            <h2 className="heading-secondary u-margin-top-large margin-bottom-med">
               Most Popular Armored Vehicles
             </h2>
           </div>
@@ -171,7 +171,15 @@ function Home() {
           </Link>
 
           {mostUsedVehicles.map((vehicle) => (
-            <Popup ID={vehicle.ID} close_ref="section-vehicle__most-used" />
+            <Popup
+              ID={vehicle.ID}
+              image={vehicle.image}
+              name={vehicle.name}
+              details={vehicle.details}
+              features={vehicle.features}
+              specs={vehicle.specifications}
+              close_ref={vehicle.ID}
+            />
           ))}
         </section>
 

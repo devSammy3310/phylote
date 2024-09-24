@@ -110,7 +110,6 @@ body {
 
 .heading-secondary {
   padding-bottom: 1.5rem;
-  margin-top: 10rem;
   font-size: 2.5rem;
   background-image: linear-gradient(to right, #000, #55c57a);
   -webkit-background-clip: text;
@@ -183,7 +182,15 @@ body {
 }
 
 .u-margin-top-large {
-  margin-top: 8rem;
+  margin-top: 10rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 6.6rem;
+}
+
+.u-margin-top-small {
+  margin-top: 3.3rem;
 }
 
 .u-padding-horizontal-medium {
@@ -558,6 +565,7 @@ body {
 .card__details {
   font-size: 1.1rem;
   padding: 0 1rem;
+  color: #777;
   font-family: "Poppins", "sans-serif";
   text-align: justify;
 }
@@ -579,40 +587,67 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: hidden;
-  width: 75%;
+  overflow: auto;
+  padding-left: 1rem;
+  display: flex;
+  width: 90%;
+  height: 50rem;
   background-color: white;
   position: absolute;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  display: table;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0);
   transition: all 1s 0.2s;
+  border-radius: 3px;
+  -webkit-mask-image: linear-gradient(#fff, #fff);
 }
 .popup__left {
-  width: 33.333333%;
-  display: table-cell;
+  padding: 1rem 1.9rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 .popup__right {
-  width: 66.6666667%;
-  display: table-cell;
-  vertical-align: middle;
-  padding: 3rem 5rem;
-}
-.popup__img {
-  display: block;
-  width: 100%;
+  width: 60%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .popup__text {
   font-size: 1.4rem;
+  font-family: "Poppins", "sans-serif";
   margin-bottom: 4rem;
-  column-gap: 4rem;
-  column-count: 2;
-  column-rule: 1px solid #eee;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+  text-align: justify;
+}
+.popup__button {
+  margin: 5rem;
+}
+.popup__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+.popup__list-specs {
+  display: flex;
+  flex-direction: column;
+}
+.popup__item {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Poppins", "sans-serif";
+  color: #777;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.3);
+  margin: 1rem 2rem;
+}
+.popup__specs-container {
+  margin-top: 3rem;
+}
+.popup__features-container {
+  margin-top: 4rem;
 }
 .popup:target {
   opacity: 1;
@@ -635,6 +670,30 @@ body {
 }
 .popup__close:hover {
   color: #55c57a;
+}
+
+.slider {
+  margin-bottom: 20rem;
+}
+.slider img {
+  border-radius: 6px;
+  height: 30rem;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+.slider-nav img {
+  height: 10rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+.specs__list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .mission-statement {

@@ -12,44 +12,79 @@
 
   &__content {
     @include abscenter;
-    overflow: hidden;
-    width: 75%;
+    overflow: auto;
+    padding-left: 1rem;
+    display: flex;
+    width: 90%;
+    height: 50rem;
     background-color: rgba($color-white, 1);
     position: absolute;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
-    border-radius: 3px;
-    display: table;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0);
     transition: all 1s 0.2s;
+    border-radius: 3px;
+    -webkit-mask-image: linear-gradient(#fff, #fff);
   }
 
   &__left {
-    width: 33.333333%;
-    display: table-cell;
+    padding: 1rem 1.9rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
   }
 
   &__right {
-    width: 66.6666667%;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 3rem 5rem;
+    width: 60%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
   }
 
   &__img {
-    display: block;
-    width: 100%;
   }
 
   &__text {
     font-size: 1.4rem;
+    font-family: $font-style-primary;
     margin-bottom: 4rem;
-    column-gap: 4rem;
-    column-count: 2;
-    column-rule: 1px solid $color-grey-light-2;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+    text-align: justify;
+  }
+
+  &__button {
+    margin: 5rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+
+    &-specs{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: $font-style-primary;
+    color: $color-grey-dark;
+    border-bottom: 1px solid rgba($color-grey-dark, 0.3);
+    margin: 1rem 2rem;
+  }
+
+  &__specs-container {
+    margin-top: 3rem;
+  }
+
+  &__features-container{
+    margin-top: 4rem;
   }
 
   &:target {
@@ -80,4 +115,30 @@
       color: $color-primary;
     }
   }
+}
+
+.slider {
+  margin-bottom: 20rem;
+  & img {
+    border-radius: 6px;
+    height: 30rem;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+  }
+
+  &-nav img {
+    height: 10rem;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: $color-black;
+}
+
+
+.specs__list{
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,37 +1,79 @@
 import React from "react";
 
-function Popup({ ID, close_ref }) {
+function Popup({ ID, image, name, details, features, specs, close_ref }) {
   return (
-    <div class="popup" id={ID}>
-      <div class="popup__content">
-        <div class="popup__content--container">
-          <div class="popup__left"></div>
-          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
-          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
-        </div>
-        <div class="popup__right">
-          <a href={`#${close_ref}`} class="popup__close">
+    <div className="popup" id={`popup-${ID}`}>
+      <div className="popup__content">
+        {close_ref && (
+          <a href={`#${close_ref}`} className="popup__close">
             &times;
           </a>
-          <h2 class="heading-secondary u-margin-bottom-small">
-            Start booking now {ID}
-          </h2>
-          <h3 class="heading-tertiary u-margin-bottom-small">
-            Important &ndash; Please read these terms before booking
-          </h3>
-          <p class="popup__text">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
-          </p>
+        )}
 
-          <a href="/contact" class="btn btn-yellow btn--round">
-            get a quote
-          </a>
+        <div className="popup__left">
+          {image && (
+            <div className=" slider">
+              <div className="popup__img">
+                <img src={image} alt="vehicle photo" />
+              </div>
+
+              <div className="popup__img">
+                <img src="/img/Audi-A8L_Security.jpg" alt="vehicle photo" />
+              </div>
+
+              <div className="popup__img">
+                <img src="/img/Mercedes-s600-guard.jpg" alt="vehicle photo" />
+              </div>
+            </div>
+          )}
+
+          {specs && specs.length > 0 && (
+            <div class="popup__specs-container">
+              <h2 className="heading-secondary">specifications</h2>
+
+              <ul className="popup__list-specs">
+                {specs.map((specs, index) => (
+                  <li className="popup__item specs__list" key={index}>
+                    <div class="specs">{specs.spec}</div>
+                    <div class="value">{specs.value}</div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+
+        <div className="popup__right">
+          {details && (
+            <div class="popup__details-container">
+              {name && (
+                <h2 className="heading-secondary u-margin-bottom-small">
+                  {name}
+                </h2>
+              )}
+              <p className="popup__text">{details}</p>
+            </div>
+          )}
+
+          {features && features.length > 0 && (
+            <div class="popup__features-container">
+              <h2 className="heading-secondary">Features</h2>
+              <ul className="popup__list">
+                {features.map((feature, index) => (
+                  <li className="popup__item" key={index}>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="/contact"
+                className="popup__button u-text-center btn btn-yellow btn--round"
+              >
+                Get a Quote
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>
