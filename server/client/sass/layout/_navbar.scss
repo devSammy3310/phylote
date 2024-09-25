@@ -2,6 +2,12 @@
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
+
+  @include respond(phone) {
+    width: 6rem;
+    height: 6rem;
+    margin-top: .5rem;
+  }
 }
 
 nav {
@@ -26,6 +32,11 @@ nav {
   & h1 {
     font-size: 4rem;
     font-weight: 600;
+
+    @include respond(phone) {
+      font-size: 5.5rem;
+      margin-left: 1rem;
+    }
   }
 }
 
@@ -107,6 +118,14 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.6rem;
+
+  @include respond(phone) {
+    visibility: hidden;
+  }
+
+  @include respond(tab-port) {
+    visibility: hidden;
+  }
 }
 
 .navbarr {
@@ -137,8 +156,7 @@ nav {
   border: 0.1rem solid white;
   padding: 0.5rem 0.5rem;
   color: $color-white;
-  transition: all .3s;
-  
+  transition: all 0.3s;
 
   p,
   img {

@@ -19,6 +19,10 @@ body {
   color: $color-white;
   background-size: cover;
 
+   @include respond(phone) {
+   height: 30rem;
+  }
+
   &--main {
     display: inline-block;
     font-family: $font-style-secondary;
@@ -55,6 +59,8 @@ body {
   letter-spacing: 0.2rem;
   transition: all 0.3s;
   display: inline-block;
+
+ 
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);

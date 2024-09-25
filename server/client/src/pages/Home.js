@@ -28,8 +28,8 @@ function Home() {
           <Carousel images={images} />
         </div>
 
-        <div className="center-text">
-          <h2 className="heading-secondary u-margin-top-large">
+        <div className="center-text welcome">
+          <h2 className="heading-secondary u-margin-top-small">
             Welcome to Phylote Nigeria Limited
           </h2>
         </div>
@@ -80,7 +80,7 @@ function Home() {
               alt="phylote logo"
             />
           </div>
-          <div className="section__mission_statement-2-item section__mission_statement-2-item--2">
+          <div className="section__mission_statement-2-item--2">
             <p>
               At Phylote Nigeria Limited, we are driven by the belief that those
               who protect our lives deserve vehicles that are meticulously
