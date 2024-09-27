@@ -22,7 +22,7 @@
 
   @include respond(tab-port) {
     flex-direction: column;
-    padding-bottom: 70rem;
+    padding-bottom: 60rem;
   }
 
   &-col-1 {
@@ -33,18 +33,34 @@
     text-align: justify;
     flex: 1;
 
+    @include respond(phone) {
+      margin-top: 1rem;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 1rem;
+    }
+
     a {
       width: fit-content;
     }
 
     p {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
   }
 
   &-col-2 {
-    flex: 1.5;
+    flex: 1;
     height: 100%;
+
+    @include respond(phone) {
+      margin-top: 5rem;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 5rem;
+    }
   }
 }
 
@@ -58,16 +74,19 @@
 
   @include respond(phone) {
     padding-top: 0;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   @include respond(tab-port) {
-    padding-top: 0;
-    margin-top: 1rem;
+    padding-top: none;
+    margin-top: none;
   }
 
   &-item {
     flex: 1;
+
+    @include respond(phone) {
+    }
 
     @include respond(phone) {
     }
@@ -94,19 +113,16 @@
       text-align: justify;
       background-color: #777;
       font-size: 1.6rem;
-
       color: #fff;
       height: 41.3rem;
 
       @include respond(phone) {
         display: inline-block;
-        font-size: 2rem;
         height: 35rem;
       }
 
       @include respond(tab-port) {
         display: inline-block;
-        font-size: 2rem;
         height: 35rem;
       }
 
@@ -151,6 +167,14 @@
 
     h1 {
       font-size: 6.4rem;
+
+      @include respond(phone) {
+        font-size: 5.4rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 5.4rem;
+      }
     }
 
     span {
@@ -163,6 +187,15 @@
       font-family: "Poppins", sans-serif;
       width: 50%;
       font-size: 1.6rem;
+
+      @include respond(phone) {
+        width: 80%;
+        font-size: 1.6rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 1.6rem;
+      }
     }
   }
 }
@@ -182,6 +215,11 @@
   z-index: 4000;
 
   @include respond(phone) {
+    height: 60%;
+  }
+
+  @include respond(tab-port) {
+    height: 80%;
   }
 
   & > * {
@@ -189,7 +227,30 @@
   }
 
   &-flex {
-    height: 100%;
+    height: 80%;
+
+    @include respond(phone) {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond(tab-port) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    & .feature-box {
+      @include respond(phone) {
+        height: 70%;
+        width: 80%;
+        margin: 3rem;
+      }
+
+      @include respond(tab-port) {
+        margin: 1rem;
+      }
+    }
   }
 }
 

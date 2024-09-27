@@ -28,7 +28,7 @@ function Home() {
           <Carousel images={images} />
         </div>
 
-        <div className="center-text welcome">
+        <div className="center-text">
           <h2 className="heading-secondary u-margin-top-small">
             Welcome to Phylote Nigeria Limited
           </h2>

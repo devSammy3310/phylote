@@ -5,7 +5,14 @@ body {
   line-height: 1.7;
   color: $color-grey-dark;
   padding-top: 7rem;
-  // height: 200rem;
+
+  @include respond(phone) {
+    padding-top: 6.2rem;
+  }
+
+  @include respond(tab-port) {
+    padding-top: 6.2rem;
+  }
 }
 
 .heading-primary {
@@ -19,8 +26,22 @@ body {
   color: $color-white;
   background-size: cover;
 
-   @include respond(phone) {
-   height: 30rem;
+  & h1,
+  h2 {
+    @include respond(phone) {
+      font-size: 2.8rem;
+      width: 70%;
+    }
+  }
+
+  @include respond(phone) {
+    text-align: center;
+    height: 20rem;
+  }
+
+  @include respond(tab-port) {
+    text-align: center;
+    height: 20rem;
   }
 
   &--main {
@@ -60,7 +81,13 @@ body {
   transition: all 0.3s;
   display: inline-block;
 
- 
+  @include respond(phone) {
+    padding-bottom: 0;
+  }
+
+  @include respond(tab-port) {
+    padding-bottom: 0;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);

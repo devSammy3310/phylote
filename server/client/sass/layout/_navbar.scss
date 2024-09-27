@@ -4,9 +4,15 @@
   border-radius: 50%;
 
   @include respond(phone) {
-    width: 6rem;
-    height: 6rem;
-    margin-top: .5rem;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0.2rem;
+  }
+
+  @include respond(tab-port) {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -20,6 +26,15 @@ nav {
   align-items: center;
   padding: 2.5rem 0;
   height: 7rem;
+
+  @include respond(phone) {
+    padding: 0;
+    height: 6rem;
+  }
+
+  @include respond(tab-port) {
+    height: 6rem;
+  }
 }
 
 .nav-NameLogo {
@@ -34,8 +49,18 @@ nav {
     font-weight: 600;
 
     @include respond(phone) {
-      font-size: 5.5rem;
-      margin-left: 1rem;
+      font-size: 4rem;
+      margin-left: 0.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 4.5rem;
+      margin-left: 0.5rem;
+    }
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+      margin-left: 0.5rem;
     }
   }
 }
@@ -45,6 +70,14 @@ nav {
   align-items: center;
   margin-left: 2.5rem;
   justify-content: center;
+
+  @include respond(phone) {
+    margin-left: 1rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
 }
 
 .navLink {
