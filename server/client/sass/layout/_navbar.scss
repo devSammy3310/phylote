@@ -26,6 +26,13 @@ nav {
   align-items: center;
   padding: 2.5rem 0;
   height: 7rem;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba($color-black, 0),
+      rgba($color-primary-dark, 0)
+    ),
+    url("../src/assets/img/flag-nigeria.jpg");
+  background-size: cover;
 
   @include respond(phone) {
     padding: 0;
@@ -70,6 +77,7 @@ nav {
   align-items: center;
   margin-left: 2.5rem;
   justify-content: center;
+  // background-image: ;
 
   @include respond(phone) {
     margin-left: 1rem;
@@ -89,12 +97,7 @@ nav {
     font-weight: bold;
     font-size: 1.5rem;
     text-transform: uppercase;
-    background-image: linear-gradient(
-      120deg,
-      transparent 0,
-      transparent 50%,
-      $color-golden 0%
-    );
+
     background-size: 230%;
     transition: all 0.4s;
   }
@@ -103,8 +106,8 @@ nav {
     &:hover,
     &:active {
       background-position: 100%;
-      color: $color-white;
-      transform: translateX(1rem);
+      // color: $color-primary;
+      transform: scale(1.2);
     }
   }
 }
@@ -195,4 +198,14 @@ nav {
   img {
     margin: 0 0.5rem;
   }
+}
+
+.about,
+.contact {
+  color: $color-primary !important;
+}
+
+.weapons,
+.armored{
+  color: aliceblue !important;
 }

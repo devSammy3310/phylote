@@ -167,6 +167,7 @@
 
     h1 {
       font-size: 6.4rem;
+      color: $color-primary;
 
       @include respond(phone) {
         font-size: 5.4rem;
@@ -178,12 +179,12 @@
     }
 
     span {
-      color: #f7ba57;
+      color: aliceblue;
     }
 
     p {
       text-align: center;
-      color: #f7ba57;
+      color: aliceblue;
       font-family: "Poppins", sans-serif;
       width: 50%;
       font-size: 1.6rem;
@@ -242,7 +243,7 @@
 
     & .feature-box {
       @include respond(phone) {
-        height: 70%;
+        height: 80%;
         width: 80%;
         margin: 3rem;
       }
@@ -263,12 +264,18 @@
 
 .section__service {
   padding-bottom: 50rem;
+  position: relative;
   height: 80vh;
   width: 100%;
   position: relative;
   background-color: $color-grey-light-1;
 
+  &-support {
+    // background-image: url("../public/img/nigeria_flag.jpg");
+  }
+
   &-support-box {
+    background-image: url("../src/assets/img/clean.png");
     width: 70%;
     height: 40rem;
     background-color: $color-white;
@@ -278,13 +285,14 @@
     top: 40%;
     transform: translate(-50%, -50%) skewX(-12deg);
   }
+
   &-support-box:hover &-support {
     & span {
-      color: $color-black;
+      color: $color-white;
     }
 
     & h1 {
-      color: $color-golden;
+      color: $color-primary;
       transition: color 0.3s;
     }
   }
@@ -299,7 +307,7 @@
       font-size: 1.8rem;
       font-family: $font-style-primary;
       padding: 0 10rem;
-      color: $color-black;
+      color: $color-white;
       display: block;
     }
 
@@ -307,10 +315,10 @@
       font-size: 6.4rem;
       text-transform: uppercase;
       letter-spacing: 0.5rem;
-      color: $color-black;
+      color: $color-white;
 
       & span {
-        color: $color-golden;
+        color: $color-primary;
         transition: color 0.3s;
       }
     }
@@ -340,3 +348,17 @@
     margin-top: 1rem;
   }
 }
+
+.heading-primary {
+  color: $color-primary;
+
+  & span {
+    color: aliceblue;
+  }
+}
+
+.heading-primary--sub {
+  color: aliceblue;
+}
+
+

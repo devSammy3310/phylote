@@ -35,6 +35,10 @@
         border: 2px solid$color-grey-dark;
         left: 33%;
         bottom: 0;
+
+        &:hover{
+          color: $color-primary;
+        }
       }
 
       &-mostUsedVehicles-1 {

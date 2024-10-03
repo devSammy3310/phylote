@@ -66,22 +66,23 @@ function Nav() {
         </div>
 
         <div className="nav-link-container">
-          <Link className={` ${navLinkScroll}`} to="/weapons">
-            Weapons
-          </Link>
-
-          <Link className={` ${navLinkScroll}`} to="/vehicles">
+       
+            <Link className={` ${navLinkScroll} weapons`} to="/weapons">
+              Weapons
+            </Link>
+          
+          <Link className={` ${navLinkScroll} armored`} to="/vehicles">
             Armored Vehicles
           </Link>
 
-          <Link className={`${navLinkScroll}`} to="/about">
+          <Link className={`${navLinkScroll} about`} to="/about">
             About Us
           </Link>
 
-          <Link className={` ${navLinkScroll}`} to="/contact">
+          <Link className={` ${navLinkScroll} contact`} to="/contact">
             Contact
           </Link>
-          <div className={`${navLinkScroll} country`}>
+          {/* <div className={`${navLinkScroll} country`}>
             <p>
               NIGERIA
               <img
@@ -90,7 +91,7 @@ function Nav() {
                 alt="nigeria-flag"
               />
             </p>
-          </div>
+          </div> */}
         </div>
       </nav>
     </section>

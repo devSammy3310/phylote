@@ -17,10 +17,10 @@ function Home() {
       <main>
         <div className="heading-primary">
           <h1 className="heading-primary--main moveInRight">
-            Defend with Confidence
+            Defend <span>with</span> Confidence
           </h1>
           <h2 className="heading-primary--sub moveInLeft">
-            Engineered for unmatched protection and performance.
+            protect, loyal and strong.
           </h2>
         </div>
 

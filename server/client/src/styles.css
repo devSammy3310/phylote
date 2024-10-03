@@ -631,6 +631,9 @@ body {
   left: 33%;
   bottom: 0;
 }
+.card__side--back h1:hover {
+  color: #55c57a;
+}
 .card__side--back-mostUsedVehicles-1 {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4)), url("../public/img/cadillac_escalade.jpg");
   background-size: cover;
@@ -958,6 +961,8 @@ nav {
   align-items: center;
   padding: 2.5rem 0;
   height: 7rem;
+  background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0), rgba(40, 167, 69, 0)), url("../src/assets/img/flag-nigeria.jpg");
+  background-size: cover;
 }
 @media (max-width: 600px) {
   nav {
@@ -1025,14 +1030,12 @@ nav {
   font-weight: bold;
   font-size: 1.5rem;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0, transparent 50%, #f7ba57 0%);
   background-size: 230%;
   transition: all 0.4s;
 }
 .navLink:hover:hover, .navLink:hover:active {
   background-position: 100%;
-  color: #fff;
-  transform: translateX(1rem);
+  transform: scale(1.2);
 }
 
 .__link:link, .__link:visited {
@@ -1113,6 +1116,16 @@ nav {
   margin: 0 0.5rem;
 }
 
+.about,
+.contact {
+  color: #55c57a !important;
+}
+
+.weapons,
+.armored {
+  color: aliceblue !important;
+}
+
 .footer {
   background-color: #333;
 }
@@ -1170,9 +1183,9 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 .footer__link:hover, .footer__link:active {
-  color: #f7ba57;
+  color: #55c57a;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-  transform: rotate(5deg) scale(1.3);
+  transform: scale(1.5);
 }
 .footer__icon {
   width: 2rem;
@@ -1202,7 +1215,7 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 .footer__socials-link:link .svg__container:hover, .footer__socials-link:link .svg__container:active, .footer__socials-link:visited .svg__container:hover, .footer__socials-link:visited .svg__container:active {
-  background-color: #f7ba57;
+  background-color: #55c57a;
   transform: scale(1.2);
 }
 .footer__socials-icon {
@@ -1558,6 +1571,7 @@ nav {
 }
 .section__mission_statement-2-global-reach h1 {
   font-size: 6.4rem;
+  color: #55c57a;
 }
 @media (max-width: 600px) {
   .section__mission_statement-2-global-reach h1 {
@@ -1570,11 +1584,11 @@ nav {
   }
 }
 .section__mission_statement-2-global-reach span {
-  color: #f7ba57;
+  color: aliceblue;
 }
 .section__mission_statement-2-global-reach p {
   text-align: center;
-  color: #f7ba57;
+  color: aliceblue;
   font-family: "Poppins", sans-serif;
   width: 50%;
   font-size: 1.6rem;
@@ -1631,7 +1645,7 @@ nav {
 }
 @media (max-width: 600px) {
   .section-vehicle__category-flex .feature-box {
-    height: 70%;
+    height: 80%;
     width: 80%;
     margin: 3rem;
   }
@@ -1651,12 +1665,14 @@ nav {
 
 .section__service {
   padding-bottom: 50rem;
+  position: relative;
   height: 80vh;
   width: 100%;
   position: relative;
   background-color: #f7f7f7;
 }
 .section__service-support-box {
+  background-image: url("../src/assets/img/clean.png");
   width: 70%;
   height: 40rem;
   background-color: #fff;
@@ -1667,10 +1683,10 @@ nav {
   transform: translate(-50%, -50%) skewX(-12deg);
 }
 .section__service-support-box:hover .section__service-support span {
-  color: #000;
+  color: #fff;
 }
 .section__service-support-box:hover .section__service-support h1 {
-  color: #f7ba57;
+  color: #55c57a;
   transition: color 0.3s;
 }
 .section__service-support {
@@ -1683,17 +1699,17 @@ nav {
   font-size: 1.8rem;
   font-family: "Poppins", "sans-serif";
   padding: 0 10rem;
-  color: #000;
+  color: #fff;
   display: block;
 }
 .section__service-support-header {
   font-size: 6.4rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  color: #000;
+  color: #fff;
 }
 .section__service-support-header span {
-  color: #f7ba57;
+  color: #55c57a;
   transition: color 0.3s;
 }
 .section__service-support-link {
@@ -1717,6 +1733,17 @@ nav {
   .welcome {
     margin-top: 1rem;
   }
+}
+
+.heading-primary {
+  color: #55c57a;
+}
+.heading-primary span {
+  color: aliceblue;
+}
+
+.heading-primary--sub {
+  color: aliceblue;
 }
 
 .vehicles__page {
