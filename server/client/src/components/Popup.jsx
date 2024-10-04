@@ -68,7 +68,7 @@ function Popup({ ID, image, name, details, features, specs, close_ref }) {
 
               <a
                 href="/contact"
-                className="popup__button u-text-center btn btn-yellow btn--round"
+                className="popup__button u-text-center btn btn-green btn--round"
               >
                 Get a Quote
               </a>

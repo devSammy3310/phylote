@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import Carousel from "../components/carousel";
 import Card from "../components/Card";
 import Popup from "../components/Popup";
-import mostUsedVehicles from "../data/most_used_vehicles";
+import mostUsedVehicles from "../data/vehicles_data";
+import { homepageCarousel } from "../data/vehicles_data";
 
 function Home() {
   const images = [
@@ -25,7 +26,7 @@ function Home() {
         </div>
 
         <div className="carousel-container">
-          <Carousel images={images} />
+          <Carousel images={homepageCarousel} />
         </div>
 
         <div className="center-text">
@@ -198,7 +199,7 @@ function Home() {
 
               <Link
                 to="/support"
-                className="section__service-support-link btn btn-yellow btn--round"
+                className="section__service-support-link btn btn-green btn--round"
               >
                 service & support
               </Link>

@@ -449,6 +449,7 @@ body {
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  color: red;
 }
 .btn::after {
   content: "";
@@ -467,6 +468,16 @@ body {
 }
 .btn-yellow::after {
   background-color: #f7ba57;
+}
+.btn-green {
+  color: white;
+}
+.btn-green:hover {
+  color: #55c57a;
+}
+.btn-green::after {
+  background-color: #55c57a;
+  color: white;
 }
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);

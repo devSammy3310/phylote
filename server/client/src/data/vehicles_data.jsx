@@ -66,3 +66,12 @@ const mostUsedVehicles = [
 ];
 
 export default mostUsedVehicles;
+
+const homepageCarousel = [
+  { src: "/img/TLC-78-N2.jpg", alt: "armored vehicle" },
+  { src: "/img/TLC-79DC-Nov-2.jpg", alt: "armored vehicle" },
+  { src: "/img/TLC-79SC-Nov3.jpg", alt: "armored vehicle" },
+  { src: "/img/TLC-78-N3.jpg", alt: "armored vehicle" },
+];
+
+export { homepageCarousel };
