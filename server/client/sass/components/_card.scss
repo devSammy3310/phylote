@@ -25,6 +25,7 @@
 
     &--back {
       transform: rotateY(180deg);
+      position: relative;
 
       & h1 {
         color: $color-white;
@@ -40,40 +41,25 @@
         }
       }
 
-      &-mostUsedVehicles-1 {
-        background-image: linear-gradient(
-            to right bottom,
-            rgba($color-black, 0.4),
-            rgba($color-white, 0.4)
-          ),
-          url("../public/img/cadillac_escalade.jpg");
-
-        background-size: cover;
-        background-position: center;
+      & img {
+        display: block;
+        height: 100%;
+        width: 100%;
       }
 
-      &-mostUsedVehicles-2 {
-        background-image: linear-gradient(
-            to right bottom,
-            rgba($color-black, 0.4),
-            rgba($color-white, 0.4)
-          ),
-          url("../public/img/Mercedes-s600-guard.jpg");
-
-        background-size: cover;
-        background-position: center;
-      }
-
-      &-mostUsedVehicles-3 {
-        background-image: linear-gradient(
-            to right bottom,
-            rgba($color-black, 0.4),
-            rgba($color-white, 0.4)
-          ),
-          url("../public/img/Audi-A8L_Security.jpg");
-
-        background-size: cover;
-        background-position: center;
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          to right bottom,
+          rgba($color-black, 0.4),
+          rgba($color-white, 0.4)
+        );
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
       }
     }
   }

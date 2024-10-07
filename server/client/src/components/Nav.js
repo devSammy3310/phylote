@@ -71,7 +71,7 @@ function Nav() {
               Weapons
             </Link>
           
-          <Link className={` ${navLinkScroll} armored`} to="/vehicles">
+          <Link className={` ${navLinkScroll} armored`} to="/armored-vehicles">
             Armored Vehicles
           </Link>
 

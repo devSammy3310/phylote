@@ -507,7 +507,8 @@ body {
   position: relative;
 }
 .composition_photo {
-  width: 40%;
+  height: 15rem;
+  width: 42%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
@@ -632,6 +633,7 @@ body {
 }
 .card__side--back {
   transform: rotateY(180deg);
+  position: relative;
 }
 .card__side--back h1 {
   color: #fff;
@@ -645,20 +647,20 @@ body {
 .card__side--back h1:hover {
   color: #55c57a;
 }
-.card__side--back-mostUsedVehicles-1 {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4)), url("../public/img/cadillac_escalade.jpg");
-  background-size: cover;
-  background-position: center;
+.card__side--back img {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
-.card__side--back-mostUsedVehicles-2 {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4)), url("../public/img/Mercedes-s600-guard.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.card__side--back-mostUsedVehicles-3 {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4)), url("../public/img/Audi-A8L_Security.jpg");
-  background-size: cover;
-  background-position: center;
+.card__side--back::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4));
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
 }
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
@@ -848,6 +850,52 @@ body {
   .autoplay-carousel img {
     height: 30vh;
   }
+}
+
+.page-header {
+  display: flex;
+  padding: 3rem 5rem;
+  height: 17rem;
+  background-image: url("../src/assets/img/clean.png");
+  font-family: "Bebas Neue", sans-serif;
+}
+.page-header__logo-container {
+  width: 10rem;
+}
+.page-header__logo {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+}
+.page-header__current-container {
+  width: 50%;
+}
+.page-header__main {
+  font-size: 4rem;
+  color: #55c57a;
+}
+.page-header__sub {
+  display: flex;
+  font-size: 2rem;
+}
+.page-header__sub--link:link, .page-header__sub--link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.page-header__sub--link {
+  position: relative;
+  padding-right: 1rem;
+}
+.page-header__sub--link:not(:last-child):after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+}
+.page-header__sub--text {
+  padding-left: 0.3rem;
+  color: #55c57a;
 }
 
 .mission-statement {
@@ -1046,7 +1094,7 @@ nav {
 }
 .navLink:hover:hover, .navLink:hover:active {
   background-position: 100%;
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 .__link:link, .__link:visited {

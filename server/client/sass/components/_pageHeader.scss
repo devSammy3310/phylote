@@ -1,0 +1,57 @@
+.page-header {
+  display: flex;
+  padding: 3rem 5rem;
+  height: 17rem;
+  background-image: url("../src/assets/img/clean.png");
+  font-family: $font-style-secondary;
+
+  &__logo-container {
+    width: 10rem;
+  }
+
+  &__logo {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+  }
+
+  &__current-container {
+    width: 50%;
+  }
+
+  &__main {
+    font-size: 4rem;
+    color: $color-primary;
+  }
+
+  &__sub {
+    display: flex;
+    font-size: 2rem;
+
+    &--link {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+
+    &--link {
+      position: relative;
+      padding-right: 1rem;
+    }
+
+    &--link:not(:last-child):after {
+      content: "|";
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: $color-white;
+    }
+
+    &--text {
+      padding-left: 0.3rem;
+      color: $color-primary;
+    }
+  }
+}

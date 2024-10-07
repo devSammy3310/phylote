@@ -55,7 +55,7 @@ function Home() {
           <div className="section__mission-statement-col-2">
             <div className="composition">
               <img
-                src="/img/AGMS-57.jpg"
+                src="/img/range/Jeep-Gladiator-Rubicon-Nov5.jpg"
                 alt="armored vehicle"
                 className="composition_photo composition_photo--1"
               ></img>
@@ -65,7 +65,7 @@ function Home() {
                 className="composition_photo composition_photo--2"
               ></img>
               <img
-                src="/img/cobra4.jpg"
+                src="/img/range/lx600_1.jpg"
                 alt="armored vehicle"
                 className="composition_photo composition_photo--3"
               ></img>

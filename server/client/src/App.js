@@ -5,7 +5,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Vehicles from "./pages/Vehicles";
+import AppLayout from "./pages/AppLayout";
 import VehicleDetail from "./pages/VehicleDetail";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -19,7 +19,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/vehicles" exact element={<Vehicles />} />
+          <Route path="/:id" exact element={<AppLayout />} />
           <Route path="/vehicles/:id" exact element={<VehicleDetail />} />
         </Routes>
         <Footer />
