@@ -113,6 +113,8 @@ function Home() {
               <svg className="icon icon-shield1">
                 <use href="/sprite.svg#icon-shield1"></use>
               </svg>
+
+              
               <h4>Police & Government</h4>
               <p>Vehicles</p>
             </div>

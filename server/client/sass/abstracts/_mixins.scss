@@ -81,25 +81,32 @@ $tab-land: 1200px;
 $desktop: 1800px;
 
 // Mixin for media queries
+//ORDER: Base + typography > general layout + grid/flex > page layout > components
+
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: $phone) {
+  @if $breakpoint == "phone" {
+    @media (max-width: 37.5em) {
+      // 600px
       @content;
     }
-  } @else if $breakpoint == tab-port {
-    @media (min-width: $phone) and (max-width: $tab-port) {
+  } @else if $breakpoint == "tab-port" {
+    @media (max-width: 56.25em) {
+      // 900px
       @content;
     }
-  } @else if $breakpoint == tab-land {
-    @media (min-width: $tab-port) and (max-width: $tab-land) {
+  } @else if $breakpoint == "tab-land" {
+    @media (max-width: 75em) {
+      // 1200px
       @content;
     }
-  } @else if $breakpoint == desktop {
-    @media (min-width: $tab-land) and (max-width: $desktop) {
+  } @else if $breakpoint == "desktop" {
+    @media (max-width: 112.5em) {
+      // 1800px
       @content;
     }
-  } @else if $breakpoint == big-desktop {
-    @media (min-width: $desktop) {
+  } @else if $breakpoint == "big-desktop" {
+    @media (min-width: 112.5em) {
+      // 1800px+
       @content;
     }
   }

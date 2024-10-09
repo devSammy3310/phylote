@@ -3,7 +3,7 @@ import React from "react";
 const Carousel = ({ images }) => {
   return (
     <div>
-      <div class="autoplay-carousel">
+      <div class="autoplay-carousel slick-slider">
         {images.map((image, index) => (
           <div key={index}>
             <img className="" src={image.src} alt={image.alt} />

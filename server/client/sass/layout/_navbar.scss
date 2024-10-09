@@ -97,7 +97,6 @@ nav {
     font-weight: bold;
     font-size: 1.5rem;
     text-transform: uppercase;
-
     background-size: 230%;
     transition: all 0.4s;
   }
@@ -107,7 +106,7 @@ nav {
     &:active {
       background-position: 100%;
       // color: $color-primary;
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
   }
 }
@@ -206,6 +205,6 @@ nav {
 }
 
 .weapons,
-.armored{
+.armored {
   color: aliceblue !important;
 }

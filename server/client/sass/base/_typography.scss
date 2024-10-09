@@ -4,11 +4,6 @@ body {
   box-sizing: border-box;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding-top: 7rem;
-
-  @include respond(phone) {
-    padding-top: 6.2rem;
-  }
 
   @include respond(tab-port) {
     padding-top: 6.2rem;
@@ -30,13 +25,7 @@ body {
   h2 {
     @include respond(phone) {
       font-size: 2.8rem;
-      width: 70%;
     }
-  }
-
-  @include respond(phone) {
-    text-align: center;
-    height: 20rem;
   }
 
   @include respond(tab-port) {

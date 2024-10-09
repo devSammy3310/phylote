@@ -1,8 +1,7 @@
 .home_section--main {
   background-color: $color-grey-light-1;
 
-  @include respond(phone) {
-  }
+
 }
 
 .section__mission-statement {
@@ -336,9 +335,7 @@
 .welcome {
   margin-top: 6rem;
 
-  @include respond(phone) {
-    margin-top: 1rem;
-  }
+ 
 
   @include respond(tab-port) {
     margin-top: 1rem;
