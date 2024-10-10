@@ -1,7 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
 import routesHandler from "./routes/handler.js";
-const cors = require("cors");
 
 import path from "path";
 import { fileURLToPath } from "url";
@@ -15,7 +14,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "/client/build")));
 app.use("/", routesHandler);
