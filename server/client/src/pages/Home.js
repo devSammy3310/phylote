@@ -26,7 +26,7 @@ function Home() {
         </div>
 
         <div className="carousel-container">
-          <Carousel images={homepageCarousel} />
+          <Carousel images={homepageCarousel} type="SimpleSlider" />
         </div>
 
         <div className="center-text">
@@ -111,16 +111,33 @@ function Home() {
           <div className="section-vehicle__category-flex u-flex u-space-btw">
             <div className="feature-box feature-box--1">
               <svg className="icon icon-shield1">
-                <use href="/sprite.svg#icon-shield1"></use>
+                <defs>
+                  <linearGradient
+                    id="gradient1"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop
+                      offset="0%"
+                      style={{ stopColor: "#000", stopOpacity: 1 }}
+                    />
+                    <stop
+                      offset="100%"
+                      style={{ stopColor: "#006400", stopOpacity: 1 }}
+                    />
+                  </linearGradient>
+                </defs>
+                <use href="/sprite.svg#icon-shield1" fill="url(#gradient1)" />
               </svg>
 
-              
               <h4>Police & Government</h4>
               <p>Vehicles</p>
             </div>
 
             <div className="feature-box feature-box--2">
-              <svg className="icon icon-shield3">
+              <svg className="icon icon-shield3" fill="url(#gradient1)">
                 <use href="/sprite.svg#icon-shield3"></use>
               </svg>
               <h4>Fire & Rescue</h4>
@@ -128,7 +145,7 @@ function Home() {
             </div>
 
             <div className="feature-box feature-box--3">
-              <svg className="icon icon-shield2">
+              <svg className="icon icon-shield2" fill="url(#gradient1)">
                 <use href="/sprite.svg#icon-shield2"></use>
               </svg>
               <h4>Military Armored</h4>
@@ -155,11 +172,15 @@ function Home() {
             </h2>
           </div>
 
+          <div class="section-vehicle__most-used-card-carousel">
+            <Carousel type="cardCarousel" cardData={mostUsedVehicles} />
+          </div>
+
           <div className="section-vehicle__most-used-flex u-flex u-space-btw">
             {mostUsedVehicles.map((vehicle) => (
               <Card
                 name={vehicle.name}
-                image={vehicle.image}
+                image={vehicle.image[0].src}
                 details={vehicle.details.substring(0, 280) + "..."}
                 ID={vehicle.ID}
               />

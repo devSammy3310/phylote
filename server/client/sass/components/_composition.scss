@@ -3,7 +3,6 @@
   &_photo {
     height: 15rem;
     width: 42%;
-    
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     position: absolute;
     top: 0;
@@ -11,11 +10,11 @@
     outline-offset: 2rem;
     transition: all 0.2s;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       width: 50%;
     }
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       width: 50%;
     }
 
@@ -23,11 +22,12 @@
       top: 5rem;
       left: 9rem;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
+        top: 2rem;
         left: 5rem;
       }
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         left: 5rem;
       }
     }
@@ -36,26 +36,29 @@
       right: 15%;
       top: 7rem;
 
-      @include respond(phone) {
+       @include respond(tab-port) {
         right: 8%;
-        top: 7rem;
+        top: 5rem;
       }
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         right: 8%;
-        top: 7rem;
+        top: 5rem;
       }
+
+     
     }
 
     &--3 {
       left: 27%;
       top: 18rem;
 
-      @include respond(phone) {
-        top: 18rem;
-      }
       @include respond(tab-port) {
-        top: 20rem;
+        top: 11rem;
+      }
+
+      @include respond(phone) {
+        top: 13rem;
       }
     }
 

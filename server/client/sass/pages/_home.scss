@@ -1,7 +1,8 @@
 .home_section--main {
   background-color: $color-grey-light-1;
 
-
+  @include respond(phone) {
+  }
 }
 
 .section__mission-statement {
@@ -14,14 +15,13 @@
   z-index: 1;
   color: #777;
 
+  @include respond(tab-port) {
+    margin-top: 5rem;
+  }
+
   @include respond(phone) {
     flex-direction: column;
     padding-bottom: 70rem;
-  }
-
-  @include respond(tab-port) {
-    flex-direction: column;
-    padding-bottom: 60rem;
   }
 
   &-col-1 {
@@ -32,12 +32,12 @@
     text-align: justify;
     flex: 1;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       margin-top: 1rem;
     }
 
-    @include respond(tab-port) {
-      margin-top: 1rem;
+    @include respond(phone) {
+      margin: 0rem;
     }
 
     a {
@@ -53,12 +53,12 @@
     flex: 1;
     height: 100%;
 
-    @include respond(phone) {
-      margin-top: 5rem;
+    @include respond(tab-port) {
+      margin-top: 0;
     }
 
-    @include respond(tab-port) {
-      margin-top: 5rem;
+    @include respond(phone) {
+      margin-top: 7rem;
     }
   }
 }
@@ -71,35 +71,34 @@
   margin-top: -11.5vh;
   display: flex;
 
-  @include respond(phone) {
-    padding-top: 0;
-    margin-top: 0rem;
+  @include respond(tab-port) {
+    padding-top: 5vh;
+    margin-top: -40.5vh;
   }
 
-  @include respond(tab-port) {
-    padding-top: none;
-    margin-top: none;
+  @include respond(phone) {
+    padding-top: 4vh;
+    margin-top: -11.5vh;
   }
 
   &-item {
     flex: 1;
 
-    @include respond(phone) {
-    }
-
-    @include respond(phone) {
-    }
-
-    @include respond(phone) {
+    @include respond(tab-port) {
+      flex: 1;
     }
 
     &--1 {
       padding-top: 2.5rem;
+      flex: 1;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
+        flex: 1;
+        margin-top: 4rem;
       }
 
       @include respond(phone) {
+        display: none;
       }
     }
 
@@ -114,27 +113,40 @@
       font-size: 1.6rem;
       color: #fff;
       height: 41.3rem;
-
-      @include respond(phone) {
-        display: inline-block;
-        height: 35rem;
-      }
-
-      @include respond(tab-port) {
-        display: inline-block;
-        height: 35rem;
-      }
-
-      @include respond(desktop) {
-        flex: 1;
-      }
+      flex: 1;
 
       @include respond(big-desktop) {
         flex: 1;
       }
 
+      @include respond(laptop) {
+        flex: 1;
+      }
+
+      @include respond(tab-port) {
+        padding: 9rem 3rem;
+        flex: 1;
+        height: 42.5rem;
+      }
+
+      @include respond(phone) {
+        padding-top: 8rem;
+        height: 40rem;
+      }
+
       p {
         font-family: "Poppins", "sans-serif";
+      }
+    }
+
+    &--3 {
+      @include respond(tab-port) {
+        flex: 0.3;
+        height: 35rem;
+      }
+
+      @include respond(phone) {
+        display: none;
       }
     }
 
@@ -164,16 +176,22 @@
     color: white;
     font-family: "Bebas Neue", sans-serif;
 
+    @include respond(tab-port) {
+    }
+
+    @include respond(phone) {
+    }
+
     h1 {
       font-size: 6.4rem;
       color: $color-primary;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         font-size: 5.4rem;
       }
 
-      @include respond(tab-port) {
-        font-size: 5.4rem;
+      @include respond(phone) {
+        font-size: 4.8rem;
       }
     }
 
@@ -214,12 +232,14 @@
   margin-top: -8rem;
   z-index: 4000;
 
-  @include respond(phone) {
-    height: 60%;
+  @include respond(tab-port) {
+    padding: 8rem 1rem;
+    height: 60rem;
   }
 
-  @include respond(tab-port) {
-    height: 80%;
+  @include respond(phone) {
+    padding: 3rem 2rem;
+    height: 70rem;
   }
 
   & > * {
@@ -227,28 +247,34 @@
   }
 
   &-flex {
-    height: 80%;
-
-    @include respond(phone) {
-      height: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
+    height: 100%;
 
     @include respond(tab-port) {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
 
+    @include respond(phone) {
+      height: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
     & .feature-box {
-      @include respond(phone) {
-        height: 80%;
-        width: 80%;
-        margin: 3rem;
+      @include respond(tab-port) {
+        display: flex;
+        justify-content: center;
+        height: 20rem;
+        width: 70%;
+        margin: 2rem 6rem;
       }
 
-      @include respond(tab-port) {
-        margin: 1rem;
+      @include respond(phone) {
+        display: flex;
+        justify-content: center;
+        height: 25rem;
+        width: 90%;
+        margin: 2rem 1rem;
       }
     }
   }
@@ -259,6 +285,28 @@
   background-color: $color-grey-light-1;
   margin-top: 2rem;
   padding: 0 2rem;
+
+  &-card-carousel {
+    display: none;
+
+
+     @include respond(tab-port) {
+  
+  }
+
+  @include respond(phone) {
+    display: block;
+  }
+  }
+
+  &-flex {
+    @include respond(tab-port) {
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
 }
 
 .section__service {
@@ -335,19 +383,30 @@
 .welcome {
   margin-top: 6rem;
 
- 
+  @include respond(tab-land) {
+    margin-top: 1rem;
+  }
 
   @include respond(tab-port) {
     margin-top: 1rem;
   }
 
-  @include respond(tab-land) {
+  @include respond(phone) {
     margin-top: 1rem;
   }
 }
 
 .heading-primary {
   color: $color-primary;
+
+  & h1 {
+    @include respond(tab-port) {
+    }
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
+  }
 
   & span {
     color: aliceblue;
@@ -357,5 +416,3 @@
 .heading-primary--sub {
   color: aliceblue;
 }
-
-

@@ -63,9 +63,9 @@
     padding: 0;
     text-align: start;
 
-    &-specs{
-        display: flex;
-        flex-direction: column;
+    &-specs {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -83,7 +83,7 @@
     margin-top: 3rem;
   }
 
-  &__features-container{
+  &__features-container {
     margin-top: 4rem;
   }
 
@@ -134,11 +134,10 @@
 
 .slick-prev:before,
 .slick-next:before {
-  color: $color-black;
+  color: $color-primary;
 }
 
-
-.specs__list{
-    display: flex;
-    justify-content: space-between;
+.specs__list {
+  display: flex;
+  justify-content: space-between;
 }

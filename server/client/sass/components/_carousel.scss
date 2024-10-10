@@ -1,16 +1,64 @@
-.autoplay-carousel {
-  @include respond(tab-port) {
+.carousel {
+  &-autoplay {
+    height: 60rem;
+    width: 100%;
+
+    @include respond(tab-port) {
+      height: 30rem;
+    }
+
+    @include respond(tab-land) {
+      height: 45rem;
+    }
+
+    @include respond(phone) {
+      height: 30rem;
+    }
+
+    & img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
   }
 
-  & img {
-    height: 100%;
-    object-fit: cover;
+  &-fade {
+    height: 30rem;
     width: 100%;
+
+    @include respond(tab-port) {
+      height: 30rem;
+    }
+
+    & img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+ 
+
+  &-slide {
+    &-card{
+
+
+       @include respond(phone) {
+      width: 80vw !important;
+    }   
+    }
   }
 }
 
-.slick-slider {
-  display: table !important;
-  table-layout: fixed !important;
-  width: 100% !important;
+
+
+
+
+.slick-next:before {
+width: 10rem;
+}
+
+
+.slick-prev:before{
+
 }

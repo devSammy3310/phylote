@@ -1,5 +1,15 @@
 .icon {
   width: 8rem;
-  
-}
 
+  @include respond(tab-port) {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 3rem;
+  }
+
+  @include respond(phone) {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,4 +1,6 @@
 import React from "react";
+import Carousel from "./carousel";
+import { homepageCarousel } from "../data/vehicles_data";
 
 function Popup({ ID, image, name, details, features, specs, close_ref }) {
   return (
@@ -12,7 +14,9 @@ function Popup({ ID, image, name, details, features, specs, close_ref }) {
 
         <div className="popup__left">
           {image && (
-            <div className=" slider">
+            <Carousel images={image} type="Fade"/>
+
+            /* <div className=" slider">
               <div className="popup__img">
                 <img src={image} alt="vehicle photo" />
               </div>
@@ -24,7 +28,7 @@ function Popup({ ID, image, name, details, features, specs, close_ref }) {
               <div className="popup__img">
                 <img src="/img/Mercedes-s600-guard.jpg" alt="vehicle photo" />
               </div>
-            </div>
+            </div> */
           )}
 
           {specs && specs.length > 0 && (
