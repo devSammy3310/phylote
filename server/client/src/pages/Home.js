@@ -189,7 +189,7 @@ function Home() {
 
           <Link
             to="/all-armored-vehicles"
-            className="btn-text u-margin-top-large"
+            className="btn-text "
           >
             VIEW ALL PHYLOTE ARMORED VEHICLES &rarr;
           </Link>

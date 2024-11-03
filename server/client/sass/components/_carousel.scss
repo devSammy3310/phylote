@@ -3,12 +3,12 @@
     height: 60rem;
     width: 100%;
 
-    @include respond(tab-port) {
-      height: 30rem;
+    @include respond(tab-land) {
+      height: 60rem;
     }
 
-    @include respond(tab-land) {
-      height: 45rem;
+    @include respond(tab-port) {
+      height: 50rem;
     }
 
     @include respond(phone) {
@@ -37,28 +37,26 @@
     }
   }
 
- 
-
   &-slide {
-    &-card{
+    &-card {
+      @include respond(tab-land) {
+        height: 45rem;
+      }
 
+      @include respond(tab-port) {
+        height: 50rem;
+      }
 
-       @include respond(phone) {
-      width: 80vw !important;
-    }   
+      @include respond(phone) {
+        width: 80vw !important;
+      }
     }
   }
 }
 
-
-
-
-
 .slick-next:before {
-width: 10rem;
+  width: 10rem;
 }
 
-
-.slick-prev:before{
-
+.slick-prev:before {
 }
