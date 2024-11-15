@@ -6,6 +6,7 @@
   width: 35rem;
   border-style: none;
   background-color: $color-grey-light-1;
+  margin: 3rem 0;
 
   &__side {
     height: 100%;
@@ -21,6 +22,19 @@
 
     &--front {
       background-color: $color-white;
+
+      & h1 {
+        color: $color-primary;
+        margin-top: 1rem;
+        font-family: $font-style-secondary;
+        font-size: 2rem;
+        border: 2px solid $color-white;
+        visibility: hidden;
+
+        @include respond(tab-land) {
+          visibility: visible;
+        }
+      }
     }
 
     &--back {
@@ -64,13 +78,17 @@
     }
   }
 
-  &:hover &__side--front {
+  @include respond(desktop){
+     &:hover &__side--front {
     transform: rotateY(-180deg);
   }
 
   &:hover &__side--back {
     transform: rotateY(0);
   }
+  }
+
+ 
 
   &__picture {
     background-size: cover;

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"; // ES6 js
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
+import mostUsedVehicles from "../data/vehicles_data";
+import Card from "../components/Card";
 
 function AppLayout() {
   const [vehicles, setVehicles] = useState([]);
@@ -26,14 +28,17 @@ function AppLayout() {
     return (
       <section className="vehicles__page">
         <PageHeader logo="/img/phylote_logo-main.jpg" />
-        <h1>Our Armored Vehicles</h1>
-        {vehicles.map((vehicle) => (
-          <ul>
-            <li key={vehicle.id}>
-              <Link to={`/vehicles/${vehicle.id}`}>{vehicle.name}</Link>
-            </li>
-          </ul>
-        ))}
+        
+        <div className="vehicles__page--all-armored-vehicles">
+          {mostUsedVehicles.map((vehicle) => (
+            <Card
+              name={vehicle.name}
+              image={vehicle.image[0].src}
+              ID={vehicle.ID}
+              details={vehicle.details.trim().substring(0, 280) + "..."}
+            />
+          ))}
+        </div>
       </section>
     );
   } else if (id == "about") {

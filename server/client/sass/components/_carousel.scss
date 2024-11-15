@@ -39,6 +39,8 @@
 
   &-slide {
     &-card {
+      position: relative;
+
       @include respond(tab-land) {
         height: 45rem;
       }

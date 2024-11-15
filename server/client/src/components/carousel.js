@@ -65,6 +65,8 @@ export default function Carousel({ images, type, cardData }) {
               details={card.details.substring(0, 280) + "..."}
               ID={card.ID}
             />
+
+            
           </div>
         ))}
       </Slider>

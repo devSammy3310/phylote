@@ -181,16 +181,13 @@ function Home() {
               <Card
                 name={vehicle.name}
                 image={vehicle.image[0].src}
-                details={vehicle.details.substring(0, 280) + "..."}
+                details={vehicle.details.trim().substring(0, 280) + "..."}
                 ID={vehicle.ID}
               />
             ))}
           </div>
 
-          <Link
-            to="/all-armored-vehicles"
-            className="btn-text "
-          >
+          <Link to="/all-armored-vehicles" className="btn-text">
             VIEW ALL PHYLOTE ARMORED VEHICLES &rarr;
           </Link>
 

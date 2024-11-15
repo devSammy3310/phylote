@@ -12,17 +12,22 @@ html {
   margin: 0;
   
 
+  @include respond(big-desktop) {
+    font-size: 70%;
+  }
+
+@include respond(tab-land) {
+    font-size: 55%;
+  }
+
   @include respond(tab-port) {
     font-size: 50%;
   }
 
-  @include respond(tab-land) {
-    font-size: 55%;
-  }
-
-  @include respond(big-desktop) {
+@include respond(mini-phone) {
     font-size: 70%;
   }
+  
 }
 
 body {
@@ -35,6 +40,8 @@ body {
     padding: 0;
     margin: 0;
   }
+
+
 }
 
 .wrapper{

@@ -23,6 +23,10 @@ function Card({ ID, image, name, details }) {
             <p>{details}</p>
           </div>
         )}
+
+        <a href={`#popup-${ID}`}>
+          <h1 className="btn">View model</h1>
+        </a>
       </div>
 
       <div className={`card__side card__side--back card__side--back-${ID}`}>
