@@ -3,11 +3,9 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28a745;
 
-
 $color-grey-dark: #777;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
-
 
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
@@ -17,12 +15,26 @@ $color-black: #000;
 $color-deep-grey: #191919;
 $color-golden: #f7ba57;
 
+// Include an accessibility variable for contrast testing
+$color-accessible: #0056b3; // Example: for text on lighter backgrounds
+
 // FONT
 $default-font-size: 1.6rem;
 $font-style-primary: "Poppins", "sans-serif";
-$font-style-secondary: "Bebas Neue", sans-serif;
+$font-style-secondary: "Bebas Neue", "sans-serif";
 
-// flex
-$grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-horizontal: 6rem;
+// Default fallbacks for older systems
+$font-fallback: "Arial", "Helvetica", sans-serif;
+
+// Ensure fonts are accessible in all browsers
+$font-style-primary-safe: "Poppins", "Arial", "sans-serif";
+$font-style-secondary-safe: "Bebas Neue", "Arial", "sans-serif";
+
+// FLEX & GRID SYSTEM
+$grid-width: 114rem; // Default grid container width
+$gutter-vertical: 8rem; // Vertical spacing between sections
+$gutter-horizontal: 6rem; // Horizontal spacing for columns
+
+// Add responsive adjustments for grids
+$grid-width-small: 90rem; // Adjusted grid for smaller screens
+$grid-width-large: 120rem; // Grid for larger screens
