@@ -25,10 +25,6 @@ html {
   @include respond(tab-port) {
     font-size: 50%; // Tablet portrait
   }
-
-  @include respond(mini-phone) {
-    font-size: 70%; // Smaller screens
-  }
 }
 
 // Body styling for the document

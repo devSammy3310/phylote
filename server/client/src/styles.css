@@ -143,11 +143,6 @@ html {
     font-size: 50%;
   }
 }
-@media (max-width: 20em) {
-  html {
-    font-size: 70%;
-  }
-}
 
 body {
   box-sizing: border-box;
