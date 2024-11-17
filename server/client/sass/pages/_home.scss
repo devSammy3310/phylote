@@ -39,7 +39,6 @@
     a {
       width: fit-content;
     }
-
   }
 
   &-col-2 {
@@ -291,7 +290,7 @@
 
   @include respond(phone) {
     padding-bottom: 0;
-    height: 30vh;
+    height: 35rem;
   }
 
   &-support {
@@ -310,9 +309,9 @@
     transform: translate(-50%, -50%) skewX(-12deg);
 
     @include respond(phone) {
-      height: 22rem;
-      width: 80%;
-      top: 40%;
+      width: 100%;
+      padding-top: 3rem;
+      transform: translate(-50%, -50%) skewX(0deg);
     }
   }
 
@@ -334,19 +333,23 @@
     transform: skewX(12deg);
 
     @include respond(phone) {
-      margin: 2.5rem;
+      margin: 5rem 0;
+      width: 100%;
+      transform: skewX(0deg);
     }
 
     & p {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-family: $font-style-primary;
       padding: 0 10rem;
       color: $color-white;
       display: block;
 
       @include respond(phone) {
-        font-size: 1rem;
-        padding: 0 2rem;
+        text-align: center;
+       
+        font-size: clamp(1rem, 1rem + 1.5vw, 2rem);
+        padding: 0;
       }
     }
 
@@ -357,7 +360,10 @@
       color: $color-white;
 
       @include respond(phone) {
-        font-size: 3rem;
+        font-size: 4.8rem;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0;
       }
 
       & span {

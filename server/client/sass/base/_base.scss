@@ -18,12 +18,10 @@ html {
     font-size: 70%; // Larger screens
   }
 
-  @include respond(tab-land) {
-    font-size: 55%; // Tablet landscape
-  }
+ 
 
   @include respond(tab-port) {
-    font-size: 50%; // Tablet portrait
+    font-size: 62.5%; // Tablet portrait
   }
 }
 
