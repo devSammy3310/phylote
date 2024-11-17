@@ -6,8 +6,7 @@
     height: 15rem;
     border-radius: 50%;
     margin-top: 6rem;
-
-     
+    object-fit: cover;
   }
 
   &__logo-box {
@@ -19,8 +18,13 @@
     display: flex;
     padding: 1rem 5rem;
 
+    @include respond(tab-land) {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
     &--2 {
-      height: 12rem;
+   
       border-top: 2px solid $color-white;
       padding: 1rem 5rem;
       display: flex;
@@ -28,7 +32,7 @@
   }
 
   &__main-box {
-    height: 40vh;
+   
     width: 80vw;
     padding: 1rem;
 
@@ -149,4 +153,7 @@
   position: relative;
   border-radius: 50%;
   background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

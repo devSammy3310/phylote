@@ -715,19 +715,21 @@ body {
 
 .icon {
   width: 8rem;
+  height: 8rem;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 52.125em) {
   .icon {
     width: 8rem;
     height: 8rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 30em) {
   .icon {
     width: 10rem;
     height: 10rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -1449,6 +1451,7 @@ nav {
   height: 15rem;
   border-radius: 50%;
   margin-top: 6rem;
+  object-fit: cover;
 }
 .footer__logo-box {
   text-align: center;
@@ -1458,14 +1461,18 @@ nav {
   display: flex;
   padding: 1rem 5rem;
 }
+@media (max-width: 64em) {
+  .footer__main-box-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 .footer__main-box-container--2 {
-  height: 12rem;
   border-top: 2px solid #fff;
   padding: 1rem 5rem;
   display: flex;
 }
 .footer__main-box {
-  height: 40vh;
   width: 80vw;
   padding: 1rem;
 }
@@ -1550,6 +1557,9 @@ nav {
   position: relative;
   border-radius: 50%;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation__checkbox {

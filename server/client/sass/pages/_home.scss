@@ -40,9 +40,6 @@
       width: fit-content;
     }
 
-    p {
-      
-    }
   }
 
   &-col-2 {
@@ -53,8 +50,6 @@
     @include respond(tab-port) {
       margin-top: 15rem;
     }
-
-   
   }
 }
 
