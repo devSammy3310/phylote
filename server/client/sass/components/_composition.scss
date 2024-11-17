@@ -1,5 +1,6 @@
 .composition {
   position: relative;
+
   &_photo {
     height: 15rem;
     width: 42%;
@@ -8,7 +9,8 @@
     top: 0;
     z-index: 10;
     outline-offset: 2rem;
-    transition: all 0.2s;
+    transition: all 0.2s ease-in-out; // Smooth transition
+    -webkit-transition: all 0.2s ease-in-out; // Safari support
 
     @include respond(tab-port) {
       width: 50%;
@@ -36,7 +38,7 @@
       right: 15%;
       top: 7rem;
 
-       @include respond(tab-port) {
+      @include respond(tab-port) {
         right: 8%;
         top: 5rem;
       }
@@ -45,8 +47,6 @@
         right: 8%;
         top: 5rem;
       }
-
-     
     }
 
     &--3 {
@@ -70,12 +70,13 @@
     }
 
     &:active {
-      transform: scale(2);
+      transform: scale(1.2) translateY(0.5rem); // Slight scale on active state
       left: 10rem;
+      z-index: 30; // Ensures it stays on top
     }
   }
 
   &:hover &_photo:not(:hover) {
-    transform: scale(0.95);
+    transform: scale(0.95); // Decreases size of non-hovered photos
   }
 }

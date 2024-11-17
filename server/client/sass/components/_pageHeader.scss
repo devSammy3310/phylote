@@ -3,30 +3,69 @@
   padding: 3rem 5rem;
   height: 17rem;
   background-image: url("../src/assets/img/clean.png");
+  background-size: cover; /* Ensure the image scales properly */
+  background-position: center; /* Keeps the image centered */
   font-family: $font-style-secondary;
+  -webkit-background-size: cover; /* Safari support */
+  -moz-background-size: cover; /* Firefox support */
+
+  @include respond(tab-port) {
+    flex-direction: column; /* Stack elements on smaller screens */
+    padding: 2rem 3rem;
+    height: 28rem;
+    align-items: center;
+
+    & * {
+      margin-bottom: 1rem;
+    }
+  }
 
   &__logo-container {
     width: 10rem;
+
+    @include respond(tab-port) {
+      width: 8rem; /* Adjust logo size on small screens */
+    }
   }
 
   &__logo {
     width: 9rem;
     height: 9rem;
     border-radius: 50%;
+    object-fit: cover; /* Prevents image stretching */
+
+    @include respond(tab-port) {
+      width: 11rem;
+      height: 11rem;
+    }
   }
 
   &__current-container {
     width: 50%;
+    @include respond(tab-port) {
+      width: 100%; /* Stacks on smaller screens */
+      text-align: center;
+    }
   }
 
   &__main {
     font-size: 4rem;
     color: $color-primary;
+
+    @include respond(tab-port) {
+      font-size: 6rem; /* Smaller font on mobile */
+    }
   }
 
   &__sub {
     display: flex;
     font-size: 2rem;
+    flex-wrap: wrap; /* Allow wrapping of sub-content on smaller screens */
+
+    @include respond(tab-port) {
+      font-size: 1.6rem; /* Smaller font size for sub links on mobile */
+      justify-content: center;
+    }
 
     &--link {
       &:link,
@@ -34,9 +73,6 @@
         text-decoration: none;
         color: $color-white;
       }
-    }
-
-    &--link {
       position: relative;
       padding-right: 1rem;
     }

@@ -29,6 +29,8 @@ function Home() {
           <Carousel images={homepageCarousel} type="SimpleSlider" />
         </div>
 
+
+
         <div className="center-text">
           <h2 className="heading-secondary u-margin-top-small">
             Welcome to Phylote Nigeria Limited
@@ -48,7 +50,7 @@ function Home() {
               technology and precision engineering.
             </p>
 
-            <a href="###" class="btn-text">
+            <a href="/about" class="btn-text">
               Learn More About Us &rarr;
             </a>
           </div>

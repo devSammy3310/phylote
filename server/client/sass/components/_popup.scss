@@ -134,7 +134,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-  color: $color-primary;
+  color: $color-primary !important;
 }
 
 .specs__list {

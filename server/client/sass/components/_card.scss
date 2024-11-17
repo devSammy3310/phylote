@@ -1,22 +1,23 @@
 .card {
   position: relative;
   perspective: 2500rem;
-  -moz-perspective: 2500rem;
+  -webkit-perspective: 2500rem; // Safari compatibility
+  -moz-perspective: 2500rem; // Firefox compatibility
   height: 40rem;
   width: 35rem;
-  border-style: none;
+  border: none;
   background-color: $color-grey-light-1;
   margin: 3rem 0;
 
   &__side {
     height: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; // Webkit support
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-
-    transition: all 0.8s ease;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
@@ -46,7 +47,7 @@
         font-family: $font-style-secondary;
         position: absolute;
         font-size: 3rem;
-        border: 2px solid$color-grey-dark;
+        border: 2px solid $color-grey-dark;
         left: 33%;
         bottom: 0;
 
@@ -86,10 +87,11 @@
     &:hover &__side--back {
       transform: rotateY(0);
     }
-  } 
+  }
 
   &__picture {
     background-size: cover;
+    background-position: center; // Ensures the image is well-positioned
     height: 25rem;
     width: 100%;
     object-fit: cover;

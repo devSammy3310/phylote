@@ -19,6 +19,8 @@
       height: 100%;
       object-fit: cover;
       width: 100%;
+      -webkit-object-fit: cover; // Safari support
+      object-position: center; // Ensure image is centered
     }
   }
 
@@ -34,6 +36,8 @@
       height: 100%;
       object-fit: cover;
       width: 100%;
+      -webkit-object-fit: cover; // Safari support
+      object-position: center; // Ensure image is centered
     }
   }
 
@@ -56,9 +60,40 @@
   }
 }
 
+// Slick carousel arrows (next/previous)
+.slick-next,
+.slick-prev {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+  border-radius: 50%;
+  color: white;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 2rem;
+  color: white;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8); // Darken background on hover
+}
+
 .slick-next:before {
-  width: 10rem;
+  content: "→"; // Right arrow icon
+  width: 100%;
+  text-align: center;
 }
 
 .slick-prev:before {
+  content: "←"; // Left arrow icon
+  width: 100%;
+  text-align: center;
 }
