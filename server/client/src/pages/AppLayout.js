@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react"; // ES6 js
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
-import mostUsedVehicles from "../data/vehicles_data";
+import { all_armored_vehicles } from "../data/vehicles_data";
 import Card from "../components/Card";
+import Popup from "../components/Popup";
+
 
 function AppLayout() {
   const [vehicles, setVehicles] = useState([]);
@@ -28,14 +30,26 @@ function AppLayout() {
     return (
       <section className="vehicles__page">
         <PageHeader logo="/img/phylote_logo-main.jpg" />
-        
+
         <div className="vehicles__page--all-armored-vehicles">
-          {mostUsedVehicles.map((vehicle) => (
+          {all_armored_vehicles.map((vehicle) => (
             <Card
               name={vehicle.name}
               image={vehicle.image[0].src}
               ID={vehicle.ID}
               details={vehicle.details.trim().substring(0, 280) + "..."}
+            />
+          ))}
+
+          {all_armored_vehicles.map((vehicle) => (
+            <Popup
+              ID={vehicle.ID}
+              image={vehicle.image}
+              name={vehicle.name}
+              details={vehicle.details}
+              features={vehicle.features}
+              specs={vehicle.specifications}
+              close_ref={vehicle.ID}
             />
           ))}
         </div>

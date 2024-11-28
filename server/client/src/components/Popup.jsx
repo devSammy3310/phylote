@@ -5,31 +5,17 @@ import { homepageCarousel } from "../data/vehicles_data";
 function Popup({ ID, image, name, details, features, specs, close_ref }) {
   return (
     <div className="popup" id={`popup-${ID}`}>
-      <div className="popup__content">
+      <div class="popup__close_container">
         {close_ref && (
           <a href={`#${close_ref}`} className="popup__close">
             &times;
           </a>
         )}
+      </div>
 
+      <div className="popup__content">
         <div className="popup__left">
-          {image && (
-            <Carousel images={image} type="Fade"/>
-
-            /* <div className=" slider">
-              <div className="popup__img">
-                <img src={image} alt="vehicle photo" />
-              </div>
-
-              <div className="popup__img">
-                <img src="/img/Audi-A8L_Security.jpg" alt="vehicle photo" />
-              </div>
-
-              <div className="popup__img">
-                <img src="/img/Mercedes-s600-guard.jpg" alt="vehicle photo" />
-              </div>
-            </div> */
-          )}
+          {image && <Carousel images={image} type="Fade" />}
 
           {specs && specs.length > 0 && (
             <div class="popup__specs-container">

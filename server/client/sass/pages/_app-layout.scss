@@ -1,7 +1,9 @@
-.vehicles__page{
-    &--all-armored-vehicles{
+.vehicles__page {
+  &--all-armored-vehicles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: $color-grey-light-1;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     // height: 100vh;
     margin: 5rem 5rem;
-}}
+  }
+}
