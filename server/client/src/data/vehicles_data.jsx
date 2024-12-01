@@ -284,4 +284,480 @@ export const all_armored_vehicles = [
       { spec: "Top Speed", value: "315 km/h" },
     ],
   },
+
+  {
+    ID: "BMW-X5M",
+    image: [
+      {
+        src: "/img/BMW/BMW-X5M1.jpg",
+        alt: "BMW X5M front view",
+      },
+      {
+        src: "/img/BMW/BMW-X5M2.jpg",
+        alt: "BMW-X5M",
+      },
+
+      {
+        src: "/img/BMW/BMW-X5M3.jpg",
+        alt: "BMW-X5M",
+      },
+
+      {
+        src: "/img/BMW/BMW-X5M4.jpg",
+        alt: "BMW-X5M",
+      },
+
+      {
+        src: "/img/BMW/BMW-X5M5.jpg",
+        alt: "BMW-X5M",
+      },
+
+      {
+        src: "/img/BMW/BMW-X5M6.jpg",
+        alt: "BMW-X5M",
+      },
+
+      {
+        src: "/img/BMW/BMW-X5M7.jpg",
+        alt: "BMW-X5M",
+      },
+    ],
+    name: "Armored BMW X5M",
+    details:
+      "The BMW X5M is a luxury performance SUV that combines extraordinary power, cutting-edge technology, and refined craftsmanship. With its advanced drivetrain, adaptive suspension, and luxurious interior, it is designed for drivers who demand versatility and uncompromising performance. Whether conquering winding roads or cruising through urban landscapes, the X5M delivers unparalleled driving dynamics and style.",
+    features: [
+      "4.4L TwinPower Turbo V8 engine delivering 617 horsepower",
+      "Adaptive M suspension with dynamic damper control",
+      "Luxurious Merino leather interior with sport seats",
+      "14.9-inch curved infotainment display with iDrive 8.0",
+      "Bowers & Wilkins Diamond Surround Sound system",
+      "Advanced driver assistance systems for enhanced safety",
+      "Panoramic Sky Lounge with illuminated glass roof",
+    ],
+    specifications: [
+      { spec: "Engine", value: "4.4L TwinPower Turbo V8" },
+      { spec: "Horsepower", value: "617 HP" },
+      { spec: "Torque", value: "750 Nm" },
+      { spec: "Transmission", value: "8-speed automatic" },
+      { spec: "Top Speed", value: "290 km/h" },
+      { spec: "Acceleration (0-100 km/h)", value: "3.7 seconds" },
+      { spec: "Drivetrain", value: "All-Wheel Drive (xDrive)" },
+      { spec: "Fuel Economy", value: "12.3 L/100 km (combined)" },
+    ],
+  },
+
+  {
+    ID: "GMC-Denali",
+    image: [
+      {
+        src: "/img/GMC/GMC_Denali4.jpg",
+        alt: "GMC Denali front view",
+      },
+      {
+        src: "/img/GMC/GMC_Denali2.jpg",
+        alt: "GMC Denali side view",
+      },
+
+      {
+        src: "/img/GMC/GMC_Denali3.jpg",
+        alt: "GMC Denali side view",
+      },
+
+      {
+        src: "/img/GMC/GMC_Denali1.jpg",
+        alt: "GMC Denali side view",
+      },
+
+      {
+        src: "/img/GMC/GMC_Denali5.jpg",
+        alt: "GMC Denali side view",
+      },
+    ],
+    name: "Armored GMC Denali",
+    details:
+      "The GMC Denali is a premium full-size SUV renowned for its bold design, luxurious interior, and robust performance capabilities. Perfect for both urban commutes and adventurous terrains, the Denali offers an unmatched blend of comfort, technology, and power. With advanced safety features, high-end materials, and innovative technology, it redefines luxury in the SUV market.",
+    features: [
+      "6.2L V8 engine with exceptional towing capacity",
+      "Advanced Adaptive Ride Control for superior comfort",
+      "Premium leather-appointed seats and real wood accents",
+      "13.4-inch infotainment system with wireless Apple CarPlay and Android Auto",
+      "Bose 14-speaker audio system for immersive sound",
+      "Hands-free power liftgate with programmable height adjustment",
+      "Comprehensive suite of advanced driver assistance systems",
+    ],
+    specifications: [
+      { spec: "Engine", value: "6.2L V8" },
+      { spec: "Horsepower", value: "420 HP" },
+      { spec: "Torque", value: "624 Nm" },
+      { spec: "Transmission", value: "10-speed automatic" },
+      { spec: "Towing Capacity", value: "8,000 lbs (3,628 kg)" },
+      { spec: "Fuel Economy", value: "15 L/100 km (combined)" },
+      { spec: "Drivetrain", value: "All-Wheel Drive" },
+      {
+        spec: "Cargo Space",
+        value: "722 L (expandable to 3,480 L with rear seats folded)",
+      },
+    ],
+  },
+
+  {
+    ID: "Range-Rover",
+    image: [
+      {
+        src: "/img/range_rover/range_rover1.jpg",
+        alt: "Range Rover front view",
+      },
+      {
+        src: "/img/range_rover/range_rover2.jpg",
+        alt: "Range Rover side profile",
+      },
+      {
+        src: "/img/range_rover/range_rover3.jpg",
+        alt: "Range Rover rear view",
+      },
+      {
+        src: "/img/range_rover/range_rover4.jpg",
+        alt: "Range Rover interior dashboard",
+      },
+      {
+        src: "/img/range_rover/range_rover5.jpg",
+        alt: "Range Rover interior seats",
+      },
+      {
+        src: "/img/range_rover/range_rover6.jpg",
+        alt: "Range Rover panoramic roof",
+      },
+      {
+        src: "/img/range_rover/range_rover7.jpg",
+        alt: "Range Rover on rugged terrain",
+      },
+      {
+        src: "/img/range_rover/range_rover8.jpg",
+        alt: "Range Rover LED headlights",
+      },
+      {
+        src: "/img/range_rover/range_rover9.jpg",
+        alt: "Range Rover luxury interior",
+      },
+      {
+        src: "/img/range_rover/range_rover10.jpg",
+        alt: "Range Rover on city streets",
+      },
+    ],
+    name: "Armored Range Rover",
+    details:
+      "The Range Rover is the ultimate luxury SUV, offering unparalleled refinement, advanced technology, and extraordinary off-road capabilities. With its distinctive design and premium materials, the Range Rover provides an exceptional driving experience for those who seek elegance, power, and versatility.",
+    features: [
+      "5.0L Supercharged V8 engine for superior performance",
+      "Electronic Air Suspension for unmatched ride comfort",
+      "Luxurious Windsor leather interior with customizable options",
+      "13.1-inch touchscreen infotainment with Pivi Pro system",
+      "Meridian Signature Sound System with 35 speakers",
+      "Advanced Terrain Response system for all driving conditions",
+      "Panoramic sunroof with adjustable tint levels",
+      "Comprehensive driver assistance technologies",
+      "Configurable ambient lighting with 30 color options",
+      "Seating for up to seven passengers with ample legroom",
+    ],
+    specifications: [
+      { spec: "Engine", value: "5.0L Supercharged V8" },
+      { spec: "Horsepower", value: "518 HP" },
+      { spec: "Torque", value: "625 Nm" },
+      { spec: "Transmission", value: "8-speed automatic" },
+      { spec: "Top Speed", value: "240 km/h" },
+      { spec: "Acceleration (0-100 km/h)", value: "5.4 seconds" },
+      { spec: "Drivetrain", value: "All-Wheel Drive" },
+      { spec: "Fuel Economy", value: "13.5 L/100 km (combined)" },
+      {
+        spec: "Cargo Space",
+        value: "900 L (expandable to 1,946 L with rear seats folded)",
+      },
+      { spec: "Towing Capacity", value: "7,716 lbs (3,500 kg)" },
+    ],
+  },
+
+  {
+    ID: "Ford-Expedition",
+    image: [
+      {
+        src: "/img/ford_expedition/ford_expedition1.jpg",
+        alt: "Ford Expedition",
+      },
+      {
+        src: "/img/ford_expedition/ford_expedition2.jpg",
+        alt: "Ford Expedition",
+      },
+      {
+        src: "/img/ford_expedition/ford_expedition3.jpg",
+        alt: "Ford Expedition",
+      },
+      {
+        src: "/img/ford_expedition/ford_expedition4.jpg",
+        alt: "Ford Expedition",
+      },
+      {
+        src: "/img/ford_expedition/ford_expedition5.jpg",
+        alt: "Ford Expedition",
+      },
+      {
+        src: "/img/ford_expedition/ford_expedition6.jpg",
+        alt: "Ford Expedition",
+      },
+      {
+        src: "/img/ford_expedition/ford_expedition7.jpg",
+        alt: "Ford Expedition",
+      },
+      {
+        src: "/img/ford_expedition/ford_expedition8.jpg",
+        alt: "Ford Expedition",
+      },
+      {
+        src: "/img/ford_expedition/ford_expedition9.jpg",
+        alt: "Ford Expedition",
+      },
+    ],
+    name: "Armored Ford Expedition",
+    details:
+      "The Ford Expedition is a full-size SUV designed to handle family adventures and daily commutes with ease. Combining robust power, advanced technology, and a spacious interior, the Expedition offers a perfect balance of comfort and capability. With its commanding presence and off-road prowess, it’s ready for any journey.",
+    features: [
+      "3.5L EcoBoost V6 engine with impressive towing capacity",
+      "Available 4x4 system with Terrain Management",
+      "Spacious interior with seating for up to eight passengers",
+      "12-inch SYNC 4 touchscreen with wireless Apple CarPlay and Android Auto",
+      "Premium Bang & Olufsen sound system with 12 speakers",
+      "Panoramic Vista Roof for an open-air feel",
+      "Hands-free power liftgate for convenient loading",
+      "Ford Co-Pilot360 suite of driver assistance technologies",
+      "Customizable ambient lighting for enhanced ambiance",
+    ],
+    specifications: [
+      { spec: "Engine", value: "3.5L EcoBoost V6" },
+      { spec: "Horsepower", value: "400 HP" },
+      { spec: "Torque", value: "650 Nm" },
+      { spec: "Transmission", value: "10-speed automatic" },
+      { spec: "Towing Capacity", value: "9,300 lbs (4,218 kg)" },
+      { spec: "Fuel Economy", value: "12.4 L/100 km (combined)" },
+      { spec: "Drivetrain", value: "Rear-Wheel Drive (4x4 available)" },
+      {
+        spec: "Cargo Space",
+        value: "593 L (expandable to 2,961 L with rear seats folded)",
+      },
+      { spec: "Seating Capacity", value: "Up to 8 passengers" },
+    ],
+  },
+
+  {
+    ID: "Armored-Lexus-LX600",
+    image: [
+      { src: "/img/lexus_lx600/lexus_lx6001.jpg", alt: "Armored Lexus LX600" },
+      { src: "/img/lexus_lx600/lexus_lx6002.jpg", alt: "Armored Lexus LX600" },
+      { src: "/img/lexus_lx600/lexus_lx6003.jpg", alt: "Armored Lexus LX600" },
+      { src: "/img/lexus_lx600/lexus_lx6004.jpg", alt: "Armored Lexus LX600" },
+      { src: "/img/lexus_lx600/lexus_lx6005.jpg", alt: "Armored Lexus LX600" },
+      { src: "/img/lexus_lx600/lexus_lx6006.jpg", alt: "Armored Lexus LX600" },
+      { src: "/img/lexus_lx600/lexus_lx6007.jpg", alt: "Armored Lexus LX600" },
+      { src: "/img/lexus_lx600/lexus_lx6008.jpg", alt: "Armored Lexus LX600" },
+      { src: "/img/lexus_lx600/lexus_lx6009.jpg", alt: "Armored Lexus LX600" },
+    ],
+    name: "Armored Lexus LX600",
+    details:
+      "The Armored Lexus LX600 combines luxury and advanced security, offering a premium driving experience with uncompromised protection. Designed to withstand ballistic threats and ensure passenger safety, this vehicle features reinforced armor, bulletproof glass, and high-tech defensive systems. Its luxurious interior and powerful performance make it the perfect choice for those requiring elegance and security.",
+    features: [
+      "Reinforced body with advanced ballistic protection",
+      "Bulletproof glass for enhanced security",
+      "5.7L V8 engine with exceptional performance",
+      "Spacious and luxurious leather-appointed interior",
+      "12.3-inch infotainment system with navigation",
+      "Panoramic moonroof for added luxury",
+      "Advanced climate control system",
+      "High-performance brakes and suspension for extra weight",
+      "Comprehensive safety and defensive systems",
+    ],
+    specifications: [
+      { spec: "Engine", value: "3.5L Twin-Turbo V6" },
+      { spec: "Horsepower", value: "409 HP" },
+      { spec: "Torque", value: "650 Nm" },
+      { spec: "Transmission", value: "10-speed automatic" },
+      { spec: "Drivetrain", value: "All-Wheel Drive" },
+      { spec: "Fuel Economy", value: "12.1 L/100 km (combined)" },
+      { spec: "Ballistic Protection Level", value: "CEN B6/B7" },
+      { spec: "Seating Capacity", value: "7 passengers" },
+      {
+        spec: "Cargo Space",
+        value: "647 L (expandable to 1,480 L with rear seats folded)",
+      },
+    ],
+  },
+
+  {
+    ID: "Lincoln-Navigator",
+    image: [
+      {
+        src: "/img/lincoln_navigator/lincoln_navigator1.jpg",
+        alt: "Lincoln Navigator",
+      },
+      {
+        src: "/img/lincoln_navigator/lincoln_navigator2.jpg",
+        alt: "Lincoln Navigator",
+      },
+      {
+        src: "/img/lincoln_navigator/lincoln_navigator3.jpg",
+        alt: "Lincoln Navigator",
+      },
+      {
+        src: "/img/lincoln_navigator/lincoln_navigator4.jpg",
+        alt: "Lincoln Navigator",
+      },
+      {
+        src: "/img/lincoln_navigator/lincoln_navigator5.jpg",
+        alt: "Lincoln Navigator",
+      },
+    ],
+    name: "Armored Lincoln Navigator",
+    details:
+      "The Lincoln Navigator is a full-size luxury SUV that delivers a perfect blend of opulence, performance, and advanced technology. With its commanding presence and meticulously crafted interior, the Navigator offers a premium driving experience. Designed for those who seek luxury and capability, it is equally suited for urban commutes and long road trips.",
+    features: [
+      "3.5L Twin-Turbo V6 engine with impressive towing capacity",
+      "Adaptive suspension for a smooth and refined ride",
+      "Lavish interior with leather seating and wood accents",
+      "13.2-inch infotainment system with SYNC 4 technology",
+      "Revel Ultima 20-speaker audio system for immersive sound",
+      "Panoramic Vista Roof for a brighter and more open cabin",
+      "Heated, ventilated, and massaging front seats",
+      "Lincoln Co-Pilot360 suite of advanced driver assistance features",
+    ],
+    specifications: [
+      { spec: "Engine", value: "3.5L Twin-Turbo V6" },
+      { spec: "Horsepower", value: "440 HP" },
+      { spec: "Torque", value: "691 Nm" },
+      { spec: "Transmission", value: "10-speed automatic" },
+      { spec: "Towing Capacity", value: "8,700 lbs (3,946 kg)" },
+      { spec: "Drivetrain", value: "Rear-Wheel Drive (AWD available)" },
+      { spec: "Fuel Economy", value: "11.8 L/100 km (combined)" },
+      {
+        spec: "Cargo Space",
+        value: "538 L (expandable to 2,946 L with rear seats folded)",
+      },
+      { spec: "Seating Capacity", value: "Up to 7 passengers" },
+    ],
+  },
+
+  {
+    ID: "2024_Volvo_XC_90",
+    image: [
+      { src: "/img/2024_Volvo_XC_90/2024_Volvo_XC_901.jpg", alt: "Volvo XC90" },
+      { src: "/img/2024_Volvo_XC_90/2024_Volvo_XC_902.jpg", alt: "Volvo XC90" },
+      { src: "/img/2024_Volvo_XC_90/2024_Volvo_XC_903.jpg", alt: "Volvo XC90" },
+      { src: "/img/2024_Volvo_XC_90/2024_Volvo_XC_904.jpg", alt: "Volvo XC90" },
+      { src: "/img/2024_Volvo_XC_90/2024_Volvo_XC_905.jpg", alt: "Volvo XC90" },
+      { src: "/img/2024_Volvo_XC_90/2024_Volvo_XC_906.jpg", alt: "Volvo XC90" },
+    ],
+    name: "armored Volvo XC90",
+    details:
+      "The Volvo XC90 is a luxury SUV that seamlessly combines Scandinavian elegance with cutting-edge technology and eco-friendly performance. Offering spacious seating, advanced safety features, and a commitment to sustainability, the XC90 is perfect for families and individuals seeking premium comfort and efficiency in their travels.",
+    features: [
+      "2.0L Turbocharged and Supercharged 4-cylinder engine with hybrid options",
+      "Elegant Scandinavian design with premium materials",
+      "Advanced Pilot Assist for semi-autonomous driving",
+      "12.3-inch digital driver display and 9-inch infotainment system",
+      "Bowers & Wilkins sound system for immersive audio",
+      "Panoramic sunroof for an open and airy cabin",
+      "Advanced safety suite including City Safety Collision Avoidance",
+      "Customizable ambient lighting",
+    ],
+    specifications: [
+      {
+        spec: "Engine",
+        value: "2.0L Turbocharged/Supercharged I4 (Hybrid Option Available)",
+      },
+      { spec: "Horsepower", value: "316 HP (400 HP with Hybrid)" },
+      { spec: "Torque", value: "400 Nm" },
+      { spec: "Transmission", value: "8-speed automatic" },
+      { spec: "Drivetrain", value: "All-Wheel Drive" },
+      { spec: "Fuel Economy", value: "9.4 L/100 km (combined)" },
+      { spec: "Seating Capacity", value: "Up to 7 passengers" },
+      {
+        spec: "Cargo Space",
+        value: "447 L (expandable to 2,426 L with rear seats folded)",
+      },
+    ],
+  },
+
+  {
+    ID: "Hummer_B7",
+    image: [
+      { src: "/img/Hummer_B7/Hummer_B701.jpg", alt: "Hummer B7" },
+      { src: "/img/Hummer_B7/Hummer_B702.jpg", alt: "Hummer B7" },
+      { src: "/img/Hummer_B7/Hummer_B703.jpg", alt: "Hummer B7" },
+      { src: "/img/Hummer_B7/Hummer_B704.jpg", alt: "Hummer B7" },
+    ],
+    name: "armored Hummer B7",
+    details:
+      "The Hummer B7 is a rugged, military-inspired vehicle known for its powerful performance and ability to tackle the most demanding terrains. Combining iconic Hummer styling with modern technology and robust capabilities, it’s designed for extreme off-roading, with enhanced durability, high performance, and a commanding presence on any landscape.",
+    features: [
+      "4.0L V8 engine for unmatched power",
+      "Advanced off-road suspension system",
+      "Bulletproof reinforced body and armor",
+      "Heavy-duty tires and rugged wheels",
+      "State-of-the-art navigation and infotainment system",
+      "Multi-terrain driving modes for maximum flexibility",
+      "Heated and ventilated leather seats",
+      "Customizable interior with military-grade materials",
+    ],
+    specifications: [
+      { spec: "Engine", value: "4.0L V8" },
+      { spec: "Horsepower", value: "500 HP" },
+      { spec: "Torque", value: "650 lb-ft" },
+      { spec: "Transmission", value: "8-speed automatic" },
+      { spec: "Top Speed", value: "190 km/h" },
+      { spec: "Fuel Economy", value: "15 L/100 km (combined)" },
+      { spec: "Seating Capacity", value: "Up to 4 passengers" },
+      { spec: "Towing Capacity", value: "10,000 lbs (4,536 kg)" },
+    ],
+  },
+
+  {
+    ID: "Armored_Porsche_Cayenne",
+    image: [
+      {
+        src: "/img/Porsche_Cayenne/Porsche_Cayenne1.jpg",
+        alt: "Armored Porsche Cayenne",
+      },
+      {
+        src: "/img/Porsche_Cayenne/Porsche_Cayenne2.jpg",
+        alt: "Armored Porsche Cayenne",
+      },
+      {
+        src: "/img/Porsche_Cayenne/Porsche_Cayenne3.jpg",
+        alt: "Armored Porsche Cayenne",
+      },
+      {
+        src: "/img/Porsche_Cayenne/Porsche_Cayenne4.jpg",
+        alt: "Armored Porsche Cayenne",
+      },
+    ],
+    name: "Armored Porsche Cayenne",
+    details:
+      "The Armored Porsche Cayenne combines the luxury, performance, and agility of the iconic Porsche brand with top-tier security features. With an armored body, reinforced windows, and advanced safety systems, this vehicle ensures maximum protection while delivering high-performance driving experiences on any terrain. Whether on city streets or rugged landscapes, the Cayenne excels in both security and style.",
+    features: [
+      "4.0L Twin-Turbocharged V8 engine",
+      "Bulletproof glass and reinforced body",
+      "Sporty yet luxurious interior with premium materials",
+      "Advanced navigation and infotainment system",
+      "Adaptive air suspension for a smooth ride",
+      "Advanced driver assistance systems",
+      "Customizable security options for enhanced protection",
+      "Heated and ventilated leather seats",
+    ],
+    specifications: [
+      { spec: "Engine", value: "4.0L Twin-Turbocharged V8" },
+      { spec: "Horsepower", value: "541 hp" },
+      { spec: "Torque", value: "770 Nm" },
+      { spec: "Transmission", value: "8-speed automatic" },
+      { spec: "Top Speed", value: "280 km/h" },
+      { spec: "0-100 km/h", value: "4.1 seconds" },
+      { spec: "Fuel Economy", value: "11.5 L/100 km (combined)" },
+      { spec: "Seating Capacity", value: "Up to 5 passengers" },
+    ],
+  },
 ];

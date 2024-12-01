@@ -818,7 +818,6 @@ body {
 }
 .card__name h3 {
   border-bottom: 1px solid #777;
-  width: 50%;
 }
 .card__details {
   font-size: 1.1rem;
