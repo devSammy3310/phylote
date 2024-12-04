@@ -7,3 +7,12 @@
     margin: 5rem 5rem;
   }
 }
+
+.contact__page {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+
+  &-details {
+    margin: 2rem 5rem;
+  }
+}

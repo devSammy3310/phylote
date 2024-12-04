@@ -29,8 +29,6 @@ function Home() {
           <Carousel images={homepageCarousel} type="SimpleSlider" />
         </div>
 
-
-
         <div className="center-text">
           <h2 className="heading-secondary u-margin-top-small">
             Welcome to Phylote Nigeria Limited
@@ -189,7 +187,7 @@ function Home() {
             ))}
           </div>
 
-          <Link to="/all-armored-vehicles" className="btn-text">
+          <Link to="/armored-vehicles" className="btn-text">
             VIEW ALL PHYLOTE ARMORED VEHICLES &rarr;
           </Link>
 

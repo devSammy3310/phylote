@@ -6,7 +6,6 @@ import { all_armored_vehicles } from "../data/vehicles_data";
 import Card from "../components/Card";
 import Popup from "../components/Popup";
 
-
 function AppLayout() {
   const [vehicles, setVehicles] = useState([]);
 
@@ -66,7 +65,12 @@ function AppLayout() {
     return (
       <>
         <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />{" "}
-        <h1>Contact</h1>
+        <div class="contact__page">
+          <div class="contact__page-details">
+            <h1 class="contact__page-details--header heading-secondary">Contact Us</h1>
+          </div>
+          <div class="contact__page-form"></div>
+        </div>
       </>
     );
   } else {

@@ -760,4 +760,38 @@ export const all_armored_vehicles = [
       { spec: "Seating Capacity", value: "Up to 5 passengers" },
     ],
   },
+
+  {
+    ID: "Armored_CIT_Hilux",
+    image: [
+      { src: "/img/CIT_Hilux/C.I1.jpg", alt: "Armored C.I.T Hilux" },
+      { src: "/img/CIT_Hilux/C.I2.jpg", alt: "Armored C.I.T Hilux" },
+      { src: "/img/CIT_Hilux/C.I3.jpg", alt: "Armored C.I.T Hilux" },
+      { src: "/img/CIT_Hilux/C.I4.jpg", alt: "Armored C.I.T Hilux" },
+      { src: "/img/CIT_Hilux/C.I5.jpg", alt: "Armored C.I.T Hilux" },
+    ],
+    name: "Armored C.I.T Hilux",
+    details:
+      "The Armored C.I.T Hilux is a fortified pickup truck designed for secure transport in high-risk environments. Equipped with ballistic protection, reinforced tires, and armored body panels, it ensures safe passage even in the most dangerous situations. Built to withstand both physical threats and extreme terrains, this vehicle is perfect for cash-in-transit operations and other security-sensitive applications.",
+    features: [
+      "Bulletproof glass and reinforced body armor",
+      "Heavy-duty suspension for challenging terrains",
+      "Upgraded drivetrain for off-road capabilities",
+      "Customizable interior with secure compartments",
+      "Advanced GPS and communication systems",
+      "Run-flat tires for maximum mobility in emergencies",
+      "High-performance off-road tires and rugged wheels",
+      "Enhanced safety and surveillance features",
+    ],
+    specifications: [
+      { spec: "Engine", value: "2.8L Turbocharged 4-cylinder" },
+      { spec: "Horsepower", value: "201 hp" },
+      { spec: "Torque", value: "500 Nm" },
+      { spec: "Transmission", value: "6-speed manual" },
+      { spec: "Top Speed", value: "180 km/h" },
+      { spec: "Fuel Economy", value: "8.0 L/100 km (combined)" },
+      { spec: "Seating Capacity", value: "Up to 5 passengers" },
+      { spec: "Towing Capacity", value: "3,500 kg" },
+    ],
+  },
 ];
