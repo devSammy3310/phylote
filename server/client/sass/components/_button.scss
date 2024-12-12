@@ -10,7 +10,7 @@
     position: relative;
     font-size: 1.6rem;
     cursor: pointer;
-    font-family: inherit; // Ensures consistent typography across browsers
+    font-family: inherit;
   }
 
   &--round {
@@ -53,6 +53,8 @@
 
   &-green {
     color: white;
+    background-color: $color-primary;
+    display: block;
 
     &:hover {
       color: $color-primary;

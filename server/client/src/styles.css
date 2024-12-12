@@ -544,6 +544,8 @@ body {
 }
 .btn-green {
   color: white;
+  background-color: #55c57a;
+  display: block;
 }
 .btn-green:hover {
   color: #55c57a;
@@ -1152,6 +1154,67 @@ body {
 .page-header__sub--text {
   padding-left: 0.3rem;
   color: #55c57a;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(85, 197, 122, 0.2);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.5s;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #55c57a;
+}
+.form__input:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+.form__input::-webkit-input-placeholder {
+  color: #999;
+}
+.form__button {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #55c57a;
+  color: white;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border: none;
+  transition: all 0.2s ease;
+  position: relative;
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+.form__button:hover {
+  transform: translateY(-0.3rem);
+  color: #55c57a;
+  background-color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
 }
 
 .mission-statement {
@@ -2114,9 +2177,35 @@ nav {
 .contact__page {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
+  margin-top: 5rem;
 }
 .contact__page-details {
   margin: 2rem 5rem;
+  font-size: 1.8rem;
+  color: black;
+  font-family: "Poppins", "sans-serif";
+}
+.contact__page-details .sub-heading {
+  font-weight: bold;
+}
+.contact__page-details--header {
+  font-size: 4rem;
+}
+.contact__page-link:link, .contact__page-link:visited {
+  text-decoration: none;
+  color: #55c57a !important;
+}
+.contact__page-link:hover {
+  color: rgb(58.7631578947, 172.2368421053, 96.25);
+}
+.contact__page-link:active {
+  color: rgb(123.0263157895, 209.9736842105, 151.75);
+}
+.contact__page-form {
+  margin: 2rem 5rem;
+  font-size: 1.8rem;
+  color: black;
+  font-family: "Poppins", "sans-serif";
 }
 
 /*# sourceMappingURL=styles.css.map */

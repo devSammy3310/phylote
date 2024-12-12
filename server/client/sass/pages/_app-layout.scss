@@ -11,8 +11,41 @@
 .contact__page {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
+  margin-top: 5rem;
 
   &-details {
     margin: 2rem 5rem;
+    font-size: 1.8rem;
+    color: black;
+    font-family: $font-style-primary;
+
+    .sub-heading {
+      font-weight: bold;
+    }
+
+    &--header {
+      font-size: 4rem;
+    }
+  }
+
+  &-link:link,
+  &-link:visited {
+    text-decoration: none;
+    color: $color-primary !important;
+  }
+
+  &-link:hover {
+    color: darken($color-primary, 10%);
+  }
+
+  &-link:active {
+    color: lighten($color-primary, 10%);
+  }
+
+  &-form {
+    margin: 2rem 5rem;
+    font-size: 1.8rem;
+    color: black;
+    font-family: $font-style-primary;
   }
 }

@@ -89,7 +89,7 @@ function Footer() {
       <div class="footer__main-box-container--2">
         <div class="footer__copyright">
           <div className="nav-NameLogo ">
-            <img className="navLogo" src="/img/phylote_logo-main.jpg" />{" "}
+            <img className="navLogo" src="/img/phylote_logo-main.jpg" />
             <h1>PHYLOTE</h1>
           </div>
 
