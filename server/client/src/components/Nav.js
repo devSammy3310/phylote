@@ -66,17 +66,20 @@ function Nav() {
         </div>
 
         <div className="nav-link-container">
-       
-            <Link className={` ${navLinkScroll} weapons`} to="/weapons">
-              Weapons
-            </Link>
-          
+          <Link className={` ${navLinkScroll} weapons`} to="/weapons">
+            Weapons
+          </Link>
+
           <Link className={` ${navLinkScroll} armored`} to="/armored-vehicles">
             Armored Vehicles
           </Link>
 
           <Link className={`${navLinkScroll} about`} to="/about">
             About Us
+          </Link>
+
+          <Link className={`${navLinkScroll} service`} to="/service">
+            Service
           </Link>
 
           <Link className={` ${navLinkScroll} contact`} to="/contact">

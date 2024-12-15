@@ -149,7 +149,7 @@ nav {
 
 .nav-link-container {
   display: flex;
-  width: 70vw;
+  width: 75vw;
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.6rem;
@@ -199,11 +199,13 @@ nav {
   }
 }
 
-.about,
-.contact {
+
+.contact,
+.service {
   color: $color-primary !important;
 }
 
+.about,
 .weapons,
 .armored {
   color: aliceblue !important;

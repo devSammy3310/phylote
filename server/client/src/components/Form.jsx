@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export const Form = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
+  const formRef = useRef(null);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -33,13 +34,17 @@ export const Form = () => {
   };
 
   useEffect(() => {
-    if (isSubmitted) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    if (isSubmitted && formRef.current) {
+      const navbarHeight = 80;
+      window.scrollTo({
+        top: formRef.current.offsetTop - navbarHeight,
+        behavior: "smooth",
+      });
     }
-  });
+  }, [isSubmitted]);
 
   return (
-    <div className="form__container">
+    <div className="form__container" ref={formRef}>
       {isSubmitted ? (
         <div className="success-message">
           <h2>Success!</h2>

@@ -111,25 +111,7 @@ function Home() {
           <div className="section-vehicle__category-flex u-flex u-space-btw">
             <div className="feature-box feature-box--1">
               <svg className="icon icon-shield1">
-                <defs>
-                  <linearGradient
-                    id="gradient1"
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="0%"
-                  >
-                    <stop
-                      offset="0%"
-                      style={{ stopColor: "#000", stopOpacity: 1 }}
-                    />
-                    <stop
-                      offset="100%"
-                      style={{ stopColor: "#006400", stopOpacity: 1 }}
-                    />
-                  </linearGradient>
-                </defs>
-                <use href="/sprite.svg#icon-shield1" fill="url(#gradient1)" />
+                <use href="/sprite.svg#icon-shield1" />
               </svg>
 
               <h4>Police & Government</h4>
@@ -137,7 +119,7 @@ function Home() {
             </div>
 
             <div className="feature-box feature-box--2">
-              <svg className="icon icon-shield3" fill="url(#gradient1)">
+              <svg className="icon icon-shield3">
                 <use href="/sprite.svg#icon-shield3"></use>
               </svg>
               <h4>Fire & Rescue</h4>
@@ -145,7 +127,7 @@ function Home() {
             </div>
 
             <div className="feature-box feature-box--3">
-              <svg className="icon icon-shield2" fill="url(#gradient1)">
+              <svg className="icon icon-shield2">
                 <use href="/sprite.svg#icon-shield2"></use>
               </svg>
               <h4>Military Armored</h4>
@@ -218,7 +200,7 @@ function Home() {
               </p>
 
               <Link
-                to="/support"
+                to="/service"
                 className="section__service-support-link btn btn-green btn--round"
               >
                 service & support

@@ -6,8 +6,6 @@ import Card from "../components/Card";
 import Popup from "../components/Popup";
 import { Form } from "../components/Form";
 
-
-
 function AppLayout() {
   const [vehicles, setVehicles] = useState([]);
   const { id } = useParams();
@@ -69,7 +67,108 @@ function AppLayout() {
       return (
         <>
           <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
-          <h1>About</h1>
+          <section className="about__page">
+            <div className="about__page-heading">
+              <h1 className="heading-primary">
+                Empowering Defense, Elevating Security
+              </h1>
+            </div>
+
+            {/* Overview Section */}
+            <div className="overview__grid">
+              <div className="about__page-overview container">
+                <h2 className="heading-secondary">Who We Are</h2>
+                <p>
+                  Phylote Nigeria Limited, established in 1995, is a proudly
+                  indigenous company specializing in armoring, restoring, and
+                  upgrading vehicles. With decades of experience, we are
+                  committed to delivering world-class defense and automotive
+                  solutions that enhance operational efficiency and national
+                  security.
+                </p>
+
+                <p className="about__text">
+                  In partnership with{" "}
+                  <strong>International Armoring Corporation (IAC) USA</strong>,
+                  we produce the finest, most technologically advanced armored
+                  vehicles in the world. IAC's global expertise enables us to
+                  armor, restore, and upgrade vehicles using advanced
+                  technologies at relatively reduced costs.
+                </p>
+
+                <p className="about__text">
+                  Guided by our core values of <strong>reliability</strong>,{" "}
+                  <strong>integrity</strong>, and <strong>innovation</strong>,
+                  Phylote Nigeria Limited is proud to play a vital role in
+                  building a secure and self-reliant Nigeria.
+                </p>
+              </div>
+
+              <div className="about__page-certifications container">
+                <h2 className="heading-secondary">
+                  Our Certifications
+                </h2>
+                <p className="about__text">
+                  Phylote Nigeria Limited is registered with the{" "}
+                  <strong>
+                    United States Department of State, Directorate of Defense
+                    Trade Control
+                  </strong>{" "}
+                  as a Broker Member of the International Traffic in Arms
+                  Regulations (ITAR) with Code No: <strong>K4628</strong>. Under
+                  this US regulatory mandate, we are authorized to source,
+                  access, and broker US Military hardware and sophisticated
+                  civil technologies.
+                </p>
+                <p className="about__text">
+                  We are in strategic partnership with the{" "}
+                  <strong>
+                    Defence Industries Corporation of Nigeria (DICON)
+                  </strong>
+                  , leveraging advanced technology and industry expertise to
+                  deliver superior products and services. Additionally, as proud
+                  members of the
+                  <strong>
+                    Defence Industry Association of Nigeria (DIAN)
+                  </strong>
+                  , we remain dedicated to advancing and supporting Nigeria's
+                  local defense sector.
+                </p>
+              </div>
+            </div>
+
+            {/* Partners Section */}
+            <div className="about__partners container">
+              <h2 className="heading-secondary">Our Partners</h2>
+              <div className="partners__grid">
+                <img
+                  src={"/img/dicon_logo.png"}
+                  alt="DICON Logo"
+                  className="about__partners partner-logo"
+                />
+                <img
+                  src={"/img/phylote_logo-main.jpg"}
+                  alt="Partner Logo"
+                  className="about__partners partner-logo"
+                />
+              </div>
+            </div>
+
+            {/* Image Section */}
+            <div className="about__image">
+              <img src={"/img/phylote_logo-main.jpg"} alt="Armored Vehicle" />
+            </div>
+
+            {/* Call-to-Action Section */}
+            <div className="about__cta">
+              <h2>Contact Us</h2>
+              <p>
+                Ready to partner with us? Reach out today for consultations and
+                inquiries.
+              </p>
+              <button className="btn">Get in Touch</button>
+            </div>
+          </section>
         </>
       );
 
@@ -114,11 +213,58 @@ function AppLayout() {
               </p>
             </div>
             <div className="contact__page-form">
-
               <Form />
             </div>
           </div>
         </>
+      );
+
+    case "service":
+      return (
+        <div>
+          <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
+
+          {/* Core Expertise Section */}
+          <div className="service__expertise container">
+            <h2 className="heading-secondary">Our Expertise</h2>
+            <div className="service__expertise-grid">
+              <div className="service__expertise-grid--item">
+                <svg className="icon icon-truck1">
+                  <use href="/about.svg#icon-truck1"></use>
+                </svg>
+                <h3>Vehicle Armoring</h3>
+                <p>Custom armoring solutions to ensure maximum protection.</p>
+              </div>
+              <div className="service__expertise-grid--item">
+                <svg className="icon icon-spinner5">
+                  <use href="/about.svg#icon-spinner5"></use>
+                </svg>
+                <h3>Run-Flat Tires</h3>
+                <p>Durable tires and ballistic glass for enhanced safety.</p>
+              </div>
+              <div className="service__expertise-grid--item">
+                <svg className="icon icon-tools">
+                  <use href="/about.svg#icon-tools"></use>
+                </svg>
+                <h3>Vehicle Repairs</h3>
+                <p>
+                  Comprehensive repair and upgrade solutions for armored
+                  vehicles.
+                </p>
+              </div>
+              <div className="service__expertise-grid--item">
+                <svg className="icon icon-truck1">
+                  <use href="/about.svg#icon-emoji_people"></use>
+                </svg>
+                <h3>Technical Training</h3>
+                <p>
+                  Expert training and consultations to improve defense
+                  readiness.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       );
 
     default:
