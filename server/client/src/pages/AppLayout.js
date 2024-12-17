@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 import { all_armored_vehicles } from "../data/vehicles_data";
 import Card from "../components/Card";
@@ -106,7 +106,7 @@ function AppLayout() {
 
               <div className="about__page-certifications container">
                 <h2 className="heading-secondary">
-                  Our Certifications
+                  Our Certifications & Partnerships
                 </h2>
                 <p className="about__text">
                   Phylote Nigeria Limited is registered with the{" "}
@@ -127,7 +127,7 @@ function AppLayout() {
                   </strong>
                   , leveraging advanced technology and industry expertise to
                   deliver superior products and services. Additionally, as proud
-                  members of the
+                  members of the{" "}
                   <strong>
                     Defence Industry Association of Nigeria (DIAN)
                   </strong>
@@ -147,26 +147,64 @@ function AppLayout() {
                   className="about__partners partner-logo"
                 />
                 <img
-                  src={"/img/phylote_logo-main.jpg"}
+                  src={"/img/Armormax_Logo.svg"}
                   alt="Partner Logo"
-                  className="about__partners partner-logo"
+                  className="about__partners Armormax_logo"
                 />
               </div>
             </div>
 
-            {/* Image Section */}
-            <div className="about__image">
-              <img src={"/img/phylote_logo-main.jpg"} alt="Armored Vehicle" />
+            <div class="about__page-why_we_exist">
+              <div>
+                <h2>Why We’re Here</h2>
+                <p>
+                  Our mission is to provide exceptional armoring solutions
+                  through advanced technology, expert craftsmanship, and
+                  rigorous quality control. We address our clients' unique
+                  security needs with tailored solutions while investing in
+                  innovation, fostering partnerships, and contributing to
+                  national development through local industry support and skill
+                  creation. Committed to timely delivery and outstanding
+                  customer service, we ensure unmatched safety, reliability, and
+                  satisfaction. Through these principles, Phylote Nigeria
+                  Limited is committed to safeguarding assets and lives by
+                  delivering unparalleled protection with cutting-edge armoring
+                  technology and exceptional service.
+                </p>
+              </div>
+
+              <div class="about__page-our_values">
+                <div class="values">
+                  <h3>Quality</h3>
+                  <p>
+                    We focus on delivering exceptional products and services
+                    with excellence and attention to detail.
+                  </p>
+                </div>
+                <div class="values">
+                  <h3>Customer Commitment</h3>
+                  <p>
+                    We prioritize building impactful relationships and ensuring
+                    customer satisfaction.
+                  </p>
+                </div>
+                <div class="values">
+                  <h3>Teamwork</h3>
+                  <p>
+                    We foster collaboration and mutual respect to meet customer
+                    needs and achieve shared success.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Call-to-Action Section */}
-            <div className="about__cta">
-              <h2>Contact Us</h2>
+            <div className="about__page-contact_us">
               <p>
-                Ready to partner with us? Reach out today for consultations and
-                inquiries.
+                <span>Ready to partner with us?</span> Reach out today for
+                consultations and inquiries.
               </p>
-              <button className="btn">Get in Touch</button>
+              <Link to="/contact" className="btn btn-green link">Get in touch</Link>
             </div>
           </section>
         </>

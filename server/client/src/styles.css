@@ -2222,21 +2222,92 @@ nav {
 .about__page-overview p {
   font-size: clamp(1rem, 0.714rem + 1.429vw, 1.4rem);
   font-weight: 400;
+  font-family: "Poppins", "sans-serif";
+  text-align: justify;
+}
+.about__page-overview h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
 }
 .about__page-certifications p {
   font-size: clamp(1rem, 0.714rem + 1.429vw, 1.4rem);
   font-weight: 400;
+  font-family: "Poppins", "sans-serif";
+  text-align: justify;
+}
+.about__page-certifications h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.about__page-why_we_exist {
+  color: white;
+  background-color: #333;
+  padding: 5rem 10rem;
+  font-family: "Poppins", "sans-serif";
+}
+.about__page-why_we_exist h2 {
+  text-align: center;
+  font-size: clamp(0.6rem, 0.714rem + 1.429vw, 3rem);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.about__page-why_we_exist p {
+  text-align: justify;
+  font-size: clamp(0.6rem, 0.714rem + 1.429vw, 1.5rem);
+}
+.about__page-our_values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25rem, 1fr));
+  margin-top: 5rem;
+  font-family: "Poppins", "sans-serif";
+}
+.about__page-our_values h3 {
+  font-weight: bold;
+  font-size: clamp(0.6rem, 0.714rem + 1.429vw, 2.4rem);
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+.about__page-our_values p {
+  text-align: center;
+  padding: 0 1rem;
+  font-size: clamp(0.6rem, 0.714rem + 1.429vw, 1.5rem);
+}
+.about__page-contact_us {
+  background-color: black;
+  font-family: "Poppins", "sans-serif";
+  font-size: clamp(0.6rem, 0.714rem + 1.429vw, 2rem);
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__page-contact_us p {
+  text-align: center;
+  color: white;
+}
+.about__page-contact_us span {
+  color: #55c57a;
+}
+.about__page-contact_us link {
+  text-align: center;
+}
+.about__partners h2 {
+  font-weight: 900;
+  font-size: clamp(0.6rem, 0.714rem + 1.429vw, 2.5rem);
 }
 .about__partners .partner-logo {
-  height: 80px;
-  width: 80px;
+  height: 12rem;
+  width: 12rem;
+}
+.about__partners .Armormax_logo {
+  height: 17rem;
+  width: 17rem;
 }
 
 .container {
   width: 90%;
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 4rem 2rem;
 }
 
 .service__expertise-grid {
@@ -2264,26 +2335,13 @@ nav {
 .overview__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
-  gap: 20px;
 }
 
 .partners__grid {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-}
-
-.about__image img {
-  width: 100%;
-  height: auto;
-}
-
-.about__cta {
-  text-align: center;
-  background: #0073e6;
-  color: white;
-  padding: 40px 20px;
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -68,29 +68,114 @@
       & p {
         font-size: clamp(1rem, 0.714rem + 1.429vw, 1.4rem);
         font-weight: 400;
+        font-family: $font-style-primary;
+        text-align: justify;
+      }
+
+      & h2 {
+        font-weight: 900;
+        font-size: 2.5rem;
       }
     }
 
     &-certifications {
+      & p {
+        font-size: clamp(1rem, 0.714rem + 1.429vw, 1.4rem);
+        font-weight: 400;
+        font-family: $font-style-primary;
+        text-align: justify;
+      }
 
-      & p{
-         font-size: clamp(1rem, 0.714rem + 1.429vw, 1.4rem);
-         font-weight: 400;
+      & h2 {
+        font-weight: 900;
+        font-size: 2.5rem;
+      }
+    }
+    &-why_we_exist {
+      color: white;
+      background-color: $color-grey-dark-3;
+      padding: 5rem 10rem;
+      font-family: $font-style-primary;
+
+      & h2 {
+        text-align: center;
+        font-size: clamp(0.6rem, 0.714rem + 1.429vw, 3rem);
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+
+      & p {
+        text-align: justify;
+        font-size: clamp(0.6rem, 0.714rem + 1.429vw, 1.5rem);
+      }
+    }
+
+    &-our_values {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(25rem, 1fr));
+      margin-top: 5rem;
+      font-family: $font-style-primary;
+
+      & h3 {
+        font-weight: bold;
+        font-size: clamp(0.6rem, 0.714rem + 1.429vw, 2.4rem);
+        text-align: center;
+        margin-bottom: 1.3rem;
+      }
+
+      & p {
+        text-align: center;
+        padding: 0 1rem;
+        font-size: clamp(0.6rem, 0.714rem + 1.429vw, 1.5rem);
+      }
+    }
+
+    &-contact_us {
+      background-color: black;
+       font-family: $font-style-primary;
+       font-size: clamp(0.6rem, 0.714rem + 1.429vw, 2rem);
+       padding: 5rem 0;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+
+      & p {
+        text-align: center;
+        color: white;
+      }
+
+      & span {
+        color: $color-primary;
+      }
+
+      & link{
+        text-align: center;
       }
     }
   }
 
-  &__partners .partner-logo {
-    height: 80px;
-    width: 80px;
+  &__partners {
+    & h2 {
+      font-weight: 900;
+      font-size: clamp(0.6rem, 0.714rem + 1.429vw, 2.5rem);
+    }
+
+    & .partner-logo {
+      height: 12rem;
+      width: 12rem;
+    }
+
+    & .Armormax_logo {
+      height: 17rem;
+      width: 17rem;
+    }
   }
 }
 
 .container {
   width: 90%;
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 4rem 2rem;
 }
 
 .service__expertise {
@@ -123,24 +208,13 @@
 .overview__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
-  gap: 20px;
 }
 
 .partners__grid {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
-.about__image img {
-  width: 100%;
-  height: auto;
-}
 
-.about__cta {
-  text-align: center;
-  background: #0073e6;
-  color: white;
-  padding: 40px 20px;
-}
