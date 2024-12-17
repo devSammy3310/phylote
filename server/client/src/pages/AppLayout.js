@@ -24,9 +24,46 @@ function AppLayout() {
   switch (id) {
     case "weapons":
       return (
-        <div>
-          <PageHeader logo="/img/phylote_logo-main.jpg" />
-          <h1>Our Weapons</h1>
+        <div
+          style={{
+            textAlign: "center",
+            padding: "50px",
+            fontFamily: "Arial, sans-serif",
+          }}
+        >
+          <div style={{ fontSize: "4rem", margin: "20px 0" }}>🚧 🛠️ ⏳</div>
+          <h1 style={{ fontSize: "3rem", color: "#ff9800" }}>
+            Oops! Work in Progress
+          </h1>
+          <p style={{ fontSize: "1.2rem", color: "#333" }}>
+            This page is still under construction, but we promise it&#39;ll be
+            worth the wait!
+          </p>
+          <p>Here’s what’s happening right now:</p>
+          <ul style={{ listStyle: "none", padding: 0 }}>
+            <li>🔧 The team is hammering out some details</li>
+            <li>🎨 The digital paint is still drying</li>
+            <li>☕ The coffee machine is working overtime</li>
+          </ul>
+          <p style={{ fontStyle: "italic", color: "#777", marginTop: "20px" }}>
+            🤔 <strong>Why don’t skeletons fight each other?</strong>
+            <br /> They don’t have the guts! 😂
+          </p>
+          <Link
+            to="/"
+            style={{
+              display: "inline-block",
+              marginTop: "30px",
+              padding: "10px 20px",
+              backgroundColor: "#007BFF",
+              color: "#fff",
+              textDecoration: "none",
+              borderRadius: "5px",
+              fontSize: "1rem",
+            }}
+          >
+            Return to Home
+          </Link>
         </div>
       );
 
