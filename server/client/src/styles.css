@@ -2213,7 +2213,7 @@ nav {
 }
 .contact__page-details {
   margin: 2rem 5rem;
-  font-size: 1.8rem;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 1.8rem);
   color: black;
   font-family: "Poppins", "sans-serif";
 }
@@ -2221,7 +2221,7 @@ nav {
   font-weight: bold;
 }
 .contact__page-details--header {
-  font-size: 4rem;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 4rem);
 }
 .contact__page-link:link, .contact__page-link:visited {
   text-decoration: none;
@@ -2235,7 +2235,7 @@ nav {
 }
 .contact__page-form {
   margin: 2rem 5rem;
-  font-size: 1.8rem;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 1.8rem);
   color: black;
   font-family: "Poppins", "sans-serif";
 }
@@ -2248,7 +2248,7 @@ nav {
   text-align: center;
 }
 .about__page-heading h1 {
-  font-size: 5rem;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 5rem);
 }
 .about__page-overview p {
   font-size: clamp(1rem, 0.714rem + 1.429vw, 1.4rem);
@@ -2258,7 +2258,7 @@ nav {
 }
 .about__page-overview h2 {
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 2.5rem);
 }
 .about__page-certifications p {
   font-size: clamp(1rem, 0.714rem + 1.429vw, 1.4rem);
@@ -2268,7 +2268,7 @@ nav {
 }
 .about__page-certifications h2 {
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 2.5rem);
 }
 .about__page-why_we_exist {
   color: white;
@@ -2341,6 +2341,38 @@ nav {
   padding: 4rem 2rem;
 }
 
+.service__intro {
+  padding: 10rem 30rem;
+  text-align: center;
+}
+.service__intro h2 {
+  font-size: clamp(1rem, 0.714rem + 2.429vw, 3.5rem);
+}
+.service__intro p {
+  color: black;
+  font-family: "Poppins", "sans-serif";
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
+}
+.service__core-service--container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
+  height: 45rem;
+}
+.service__core-service .info {
+  padding: 5rem;
+}
+.service__core-service .info h2 {
+  font-family: "Bebas Neue", "sans-serif";
+  margin-bottom: 2rem;
+  color: black;
+  font-size: clamp(1rem, 0.714rem + 3.429vw, 5.5rem);
+  font-weight: bold;
+}
+.service__core-service .info p {
+  color: black;
+  font-family: "Poppins", "sans-serif";
+  font-size: clamp(1rem, 0.714rem + 3.429vw, 1.6rem);
+}
 .service__expertise-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
@@ -2355,11 +2387,11 @@ nav {
 }
 .service__expertise-grid--item h3 {
   color: black;
-  font-size: 2.5rem;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 2.5rem);
   font-weight: bold;
 }
 .service__expertise-grid--item p {
-  font-size: 1.7rem;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 1.7rem);
   font-family: "Poppins", "sans-serif";
 }
 

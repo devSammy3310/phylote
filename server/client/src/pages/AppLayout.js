@@ -359,44 +359,83 @@ function AppLayout() {
       return (
         <div>
           <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
+          <div class="service__intro">
+            <h2 className="heading-secondary">Experience Superior Service</h2>
+            <p>
+              Explore our dedicated services portal for easy access to a full
+              range of solutions, whether for your existing vehicle or one
+              you're interested in purchasing.
+            </p>
+          </div>
+          {/* Core services Section */}
+          <div class="service__core-service">
+            <div class="service__core-service--container">
+              <div class="info">
+                <div>
+                  <h2>Armored Vehicle Production</h2>
+                  <p>
+                    We design and manufacture a wide range of armored vehicles,
+                    including armored commercial trucks, Cash-In-Transit
+                    vehicles, armored personnel carrier and VIP transport
+                    vehicles. Our producon process ensures each vehicle meets
+                    the highest standards of safety and performance.
+                  </p>
+                </div>
+              </div>
+              <div class="image">
+                <img src="" alt="" />
+              </div>
+            </div>
 
-          {/* Core Expertise Section */}
-          <div className="service__expertise container">
-            <h2 className="heading-secondary">Our Expertise</h2>
-            <div className="service__expertise-grid">
-              <div className="service__expertise-grid--item">
-                <svg className="icon icon-truck1">
-                  <use href="/about.svg#icon-truck1"></use>
-                </svg>
-                <h3>Vehicle Armoring</h3>
-                <p>Custom armoring solutions to ensure maximum protection.</p>
+            <div class="service__core-service--container">
+              <div class="image"></div>
+              <div class="info">
+                <div>
+                  <h2>Security Enhancements</h2>
+                  <p>
+                    We implement advanced security technologies, S such as
+                    upgraded locking systems, bullet-resistant glass, and new
+                    360- degree surveillance systems. These enhancements provide
+                    superior protecon for our clients, that is we integrate
+                    sophiscated security technologies, including enhanced
+                    locking systems, bullet-resistant glass, and innovave
+                    360-degree surveillance systems. These upgrades ensure our
+                    clients receive the highest level of protection.
+                  </p>
+                </div>
               </div>
-              <div className="service__expertise-grid--item">
-                <svg className="icon icon-spinner5">
-                  <use href="/about.svg#icon-spinner5"></use>
-                </svg>
-                <h3>Run-Flat Tires</h3>
-                <p>Durable tires and ballistic glass for enhanced safety.</p>
+            </div>
+
+            <div class="service__core-service--container">
+              <div class="info">
+                <div>
+                  <h2>Restoration Services</h2>
+                  <p>
+                    Our restoration services bring armored vehicles back to
+                    their original or enhanced condion. We address structural
+                    integrity, system funconality, and overall vehicle
+                    aesthetics to ensure they are as good as new.
+                  </p>
+                </div>
               </div>
-              <div className="service__expertise-grid--item">
-                <svg className="icon icon-tools">
-                  <use href="/about.svg#icon-tools"></use>
-                </svg>
-                <h3>Vehicle Repairs</h3>
-                <p>
-                  Comprehensive repair and upgrade solutions for armored
-                  vehicles.
-                </p>
-              </div>
-              <div className="service__expertise-grid--item">
-                <svg className="icon icon-truck1">
-                  <use href="/about.svg#icon-emoji_people"></use>
-                </svg>
-                <h3>Technical Training</h3>
-                <p>
-                  Expert training and consultations to improve defense
-                  readiness.
-                </p>
+              <div class="image"></div>
+            </div>
+
+            <div class="service__core-service--container">
+              <div class="image"></div>
+              <div class="info">
+                <div>
+                  <h2>Comprehensive Maintenance and upgrade services</h2>
+                  <p>
+                    We offer a complete range of maintenance and upgrade
+                    services for all armored vehicles. Our comprehensive
+                    maintenance ensures longevity and operational efficiency
+                    through regular inspections, repairs, and component
+                    replacements. Simultaneously, our upgrade services enhance
+                    existing vehicles with the latest armoring technologies and
+                    materials, improving protection and performance.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
