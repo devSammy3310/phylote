@@ -68,6 +68,65 @@ function AppLayout() {
       );
 
     case "armored-vehicles":
+      switch (id) {
+        case "armored-vehicles":
+          return (
+            <section className="vehicles__page-section-vehicle__category ">
+              <div className="categories">
+                <Link className="link" to="/all-armored-vehicles">
+                  {" "}
+                  <div className="feature-box feature-box--1">
+                    <svg className="icon icon-shield1">
+                      <use href="/sprite.svg#icon-shield1" />
+                    </svg>
+
+                    <h4>All armored</h4>
+                    <p>Vehicles</p>
+                  </div>
+                </Link>
+
+                <div className="feature-box feature-box--1">
+                  <svg className="icon icon-shield1">
+                    <use href="/sprite.svg#icon-shield1" />
+                  </svg>
+
+                  <h4>Police & Government</h4>
+                  <p>Vehicles</p>
+                </div>
+
+                <div className="feature-box feature-box--2">
+                  <svg className="icon icon-shield3">
+                    <use href="/sprite.svg#icon-shield3"></use>
+                  </svg>
+                  <h4>Fire & Rescue</h4>
+                  <p>Vehicles</p>
+                </div>
+
+                <div className="feature-box feature-box--3">
+                  <svg className="icon icon-shield2">
+                    <use href="/sprite.svg#icon-shield2"></use>
+                  </svg>
+                  <h4>Military Armored</h4>
+                  <p>Vehicles</p>
+                </div>
+
+                <div className="feature-box feature-box--4">
+                  <svg className="icon icon-sphere">
+                    <use href="/sprite.svg#icon-sphere"></use>
+                  </svg>
+                  <h4>International</h4>
+                  <p>Vehicles</p>
+                </div>
+              </div>
+            </section>
+          );
+          break;
+
+        default:
+          break;
+      }
+
+    case "all-armored-vehicles":
       return (
         <section className="vehicles__page">
           <PageHeader logo="/img/phylote_logo-main.jpg" />
@@ -241,7 +300,9 @@ function AppLayout() {
                 <span>Ready to partner with us?</span> Reach out today for
                 consultations and inquiries.
               </p>
-              <Link to="/contact" className="btn btn-green link">Get in touch</Link>
+              <Link to="/contact" className="btn btn-green link">
+                Get in touch
+              </Link>
             </div>
           </section>
         </>

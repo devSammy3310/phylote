@@ -169,7 +169,7 @@ function Home() {
             ))}
           </div>
 
-          <Link to="/armored-vehicles" className="btn-text">
+          <Link to="/all-armored-vehicles" className="btn-text">
             VIEW ALL PHYLOTE ARMORED VEHICLES &rarr;
           </Link>
 

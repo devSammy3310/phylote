@@ -2174,6 +2174,37 @@ nav {
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   margin: 5rem 5rem;
 }
+.vehicles__page-section-vehicle__category {
+  margin: 5rem;
+}
+.vehicles__page-section-vehicle__category .categories {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+@media (min-width: 760px) {
+  .vehicles__page-section-vehicle__category .categories {
+    grid-template-columns: repeat(4, minmax(10rem, 1fr));
+  }
+}
+.vehicles__page-section-vehicle__category .feature-box {
+  height: 20rem;
+  width: 100%;
+  margin: 2rem 1rem;
+  padding: 2rem 1rem;
+}
+@media (min-width: 760px) {
+  .vehicles__page-section-vehicle__category .feature-box {
+    justify-content: center;
+    display: flex;
+  }
+}
+.vehicles__page-section-vehicle__category .link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
 
 .contact__page {
   display: grid;
