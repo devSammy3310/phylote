@@ -231,10 +231,11 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
       height: 45rem;
+      margin-bottom: 5rem;
     }
 
     & .info {
-      padding: 5rem;
+      padding: 6rem;
       & h2 {
         font-family: $font-style-secondary;
         margin-bottom: 2rem;

@@ -360,7 +360,7 @@ function AppLayout() {
         <div>
           <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
           <div class="service__intro">
-            <h2 className="heading-secondary">Experience Superior Service</h2>
+            <h2 className="heading-secondary-2">Experience Superior Service</h2>
             <p>
               Explore our dedicated services portal for easy access to a full
               range of solutions, whether for your existing vehicle or one
@@ -437,6 +437,26 @@ function AppLayout() {
                   </p>
                 </div>
               </div>
+            </div>
+
+            <div class="service__core-service--container">
+              <div class="info">
+                <div>
+                  <h2>CNG Conversion and Solutions</h2>
+                  <p>
+                    At Phylote Nigeria Limited, we are committed to driving
+                    sustainable energy solutions through our Compressed Natural
+                    Gas (CNG) services. With the increasing demand for cleaner
+                    and more cost-effective energy alternatives, Phylote
+                    provides comprehensive CNG conversion and infrastructure
+                    solutions to meet diverse client needs, including vehicle
+                    conversion, CNG-powered generators, and natural gas (NG)
+                    dispensing stations.
+                  </p>
+                  
+                </div>
+              </div>
+              <div class="image"></div>
             </div>
           </div>
         </div>
