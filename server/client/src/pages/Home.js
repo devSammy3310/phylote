@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import Carousel from "../components/carousel";
 import Card from "../components/Card";
 import Popup from "../components/Popup";
-import {mostUsedVehicles} from "../data/vehicles_data.js";
+import { mostUsedVehicles } from "../data/vehicles_data.js";
 import { homepageCarousel } from "../data/vehicles_data";
+import PhyloteIntro from "../components/phylote_intro.js";
 
 function Home() {
   const images = [
@@ -25,9 +26,13 @@ function Home() {
           </h2>
         </div>
 
-        <div className="carousel-container">
+        
+          <PhyloteIntro />
+        
+
+        {/* <div className="carousel-container">
           <Carousel images={homepageCarousel} type="SimpleSlider" />
-        </div>
+        </div> */}
 
         <div className="center-text">
           <h2 className="heading-secondary u-margin-top-small">
