@@ -706,6 +706,64 @@ const all_armored_vehicles = [
       { spec: "Towing Capacity", value: "3,500 kg" },
     ],
   },
+
+  {
+    ID: "TLC-79-LRTV",
+    category: "Military Armored",
+    image: [
+      { src: "/img/tlc-79/lrtv1.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/lrtv2.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/lrtv3.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/lrtv4.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/lrtv23.jpg", alt: "armored vehicle" },
+    ],
+    name: "TLC 79 LRTV",
+    details:
+      "The TLC 79 LRTV (Light Reconnaissance Tactical Vehicle) is a rugged and reliable military-grade vehicle designed for reconnaissance and tactical missions. Equipped with advanced armor and state-of-the-art safety features, it offers superior protection against ballistic threats and IEDs. Powered by a durable engine, the TLC 79 LRTV can navigate the toughest terrains while maintaining excellent performance and reliability. Its modular design allows for customization, making it an ideal choice for military operations in any environment.",
+    features: [
+      "Light Reconnaissance Tactical Vehicle",
+      "Ballistic and IED protection",
+      "Customizable modular design",
+      "Superior off-road performance",
+      "Advanced safety and tactical systems",
+    ],
+    specifications: [
+      { spec: "Engine", value: "4.5 L V8 Turbo Diesel" },
+      { spec: "Horsepower", value: "202 hp" },
+      { spec: "Torque", value: "430 lb-ft" },
+      { spec: "Transmission", value: "5-speed manual" },
+      { spec: "Top Speed", value: "170 km/h" },
+    ],
+  },
+
+  {
+    ID: "TLC79-RC",
+    category: "Military Armored",
+    image: [
+      { src: "/img/tlc-79/TLC79-RC1.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/TLC79-RC2.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/TLC79-RC3.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/TLC79-RC4.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/TLC79-RC5.jpg", alt: "armored vehicle" },
+    ],
+    name: "TLC79-RC1",
+    details:
+      "The TLC79-RC1 is a robust and versatile military armored vehicle built for reconnaissance and combat operations. Featuring exceptional ballistic protection and advanced systems, it ensures maximum safety for personnel in hostile environments. Its high-performance engine, paired with rugged off-road capabilities, allows it to excel in diverse terrains. Designed with adaptability in mind, the TLC79-RC1 meets the rigorous demands of modern military missions.",
+    features: [
+      "Military-grade reconnaissance vehicle",
+      "Ballistic and explosive protection",
+      "Advanced tactical and safety systems",
+      "High off-road capability",
+      "Adaptable for various mission needs",
+    ],
+    specifications: [
+      { spec: "Engine", value: "4.5 L V8 Turbo Diesel" },
+      { spec: "Horsepower", value: "202 hp" },
+      { spec: "Torque", value: "430 lb-ft" },
+      { spec: "Transmission", value: "5-speed manual" },
+      { spec: "Top Speed", value: "170 km/h" },
+    ],
+  },
 ];
 
 export { all_armored_vehicles };
