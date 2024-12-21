@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Carousel from "../components/carousel";
 import Card from "../components/Card";
 import Popup from "../components/Popup";
-import mostUsedVehicles from "../data/vehicles_data";
+import {mostUsedVehicles} from "../data/vehicles_data.js";
 import { homepageCarousel } from "../data/vehicles_data";
 
 function Home() {

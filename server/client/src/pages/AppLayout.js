@@ -1,24 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
-import { all_armored_vehicles } from "../data/vehicles_data";
+import VehicleCategory from "./vehicleCategory";
+
 import Card from "../components/Card";
-import Popup from "../components/Popup";
+
 import { Form } from "../components/Form";
 
 function AppLayout() {
-  const [vehicles, setVehicles] = useState([]);
+
   const { id } = useParams();
 
-  // Fetch vehicles on mount
-  useEffect(() => {
-    fetch("/vehicles")
-      .then((res) => res.json())
-      .then((vehicles) => setVehicles(vehicles))
-      .catch((error) => console.error("Error fetching vehicles:", error));
-  }, []);
 
-  console.log(vehicles);
 
   // Render based on the route parameter (id)
   switch (id) {
@@ -68,96 +61,15 @@ function AppLayout() {
       );
 
     case "armored-vehicles":
-      switch (id) {
-        case "armored-vehicles":
-          return (
-            <section className="vehicles__page-section-vehicle__category ">
-              <div className="categories">
-                <Link className="link" to="/all-armored-vehicles">
-                  {" "}
-                  <div className="feature-box feature-box--1">
-                    <svg className="icon icon-shield1">
-                      <use href="/sprite.svg#icon-shield1" />
-                    </svg>
-
-                    <h4>All armored</h4>
-                    <p>Vehicles</p>
-                  </div>
-                </Link>
-
-                <div className="feature-box feature-box--1">
-                  <svg className="icon icon-shield1">
-                    <use href="/sprite.svg#icon-shield1" />
-                  </svg>
-
-                  <h4>Police & Government</h4>
-                  <p>Vehicles</p>
-                </div>
-
-                <div className="feature-box feature-box--2">
-                  <svg className="icon icon-shield3">
-                    <use href="/sprite.svg#icon-shield3"></use>
-                  </svg>
-                  <h4>Fire & Rescue</h4>
-                  <p>Vehicles</p>
-                </div>
-
-                <div className="feature-box feature-box--3">
-                  <svg className="icon icon-shield2">
-                    <use href="/sprite.svg#icon-shield2"></use>
-                  </svg>
-                  <h4>Military Armored</h4>
-                  <p>Vehicles</p>
-                </div>
-
-                <div className="feature-box feature-box--4">
-                  <svg className="icon icon-sphere">
-                    <use href="/sprite.svg#icon-sphere"></use>
-                  </svg>
-                  <h4>International</h4>
-                  <p>Vehicles</p>
-                </div>
-              </div>
-            </section>
-          );
-          break;
-
-        default:
-          break;
-      }
-
-    case "all-armored-vehicles":
+      
       return (
-        <section className="vehicles__page">
-          <PageHeader logo="/img/phylote_logo-main.jpg" />
-          <div className="vehicles__page--all-armored-vehicles">
-            {/* Map armored vehicles */}
-            {all_armored_vehicles.map((vehicle) => (
-              <Card
-                key={vehicle.ID}
-                name={vehicle.name}
-                image={vehicle.image[0].src}
-                ID={vehicle.ID}
-                details={vehicle.details.trim().substring(0, 280) + "..."}
-              />
-            ))}
-
-            {/* Popups */}
-            {all_armored_vehicles.map((vehicle) => (
-              <Popup
-                key={vehicle.ID}
-                ID={vehicle.ID}
-                image={vehicle.image}
-                name={vehicle.name}
-                details={vehicle.details}
-                features={vehicle.features}
-                specs={vehicle.specifications}
-                close_ref={vehicle.ID}
-              />
-            ))}
-          </div>
-        </section>
+        <div>
+          <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
+          <VehicleCategory />
+        </div>
       );
+
+    
 
     case "about":
       return (
@@ -453,7 +365,6 @@ function AppLayout() {
                     conversion, CNG-powered generators, and natural gas (NG)
                     dispensing stations.
                   </p>
-                  
                 </div>
               </div>
               <div class="image"></div>

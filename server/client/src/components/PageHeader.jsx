@@ -17,6 +17,12 @@ const PageHeader = ({ logo, ID }) => {
             ? "contact phylote"
             : ID === "about"
             ? "about phylote"
+            : ID === "armored-vehicles"
+            ? "armored vehicles categories"
+            : ID === "police-government"
+            ? "police & government"
+            : ID === "fire-rescue"
+            ? "fire & rescue"
             : pathnames[pathnames.length - 1].replace(/-/, " ")}
         </h1>
 
