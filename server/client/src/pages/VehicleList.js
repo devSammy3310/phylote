@@ -33,7 +33,7 @@ function VehicleList() {
       return (
         <section className="vehicles__page">
           <PageHeader logo="/img/phylote_logo-main.jpg" />
-          <VehicleCategory />;
+          <VehicleCategory ID={id} />;
           <div className="vehicles__page--all-armored-vehicles">
             {/* Map armored vehicles */}
             {allVehicles.map((vehicle) => (
@@ -67,7 +67,7 @@ function VehicleList() {
       return (
         <section className="vehicles__page">
           <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
-          <VehicleCategory />;
+          <VehicleCategory ID={id} />;
           <div className="vehicles__page--all-armored-vehicles">
             {/* Map armored vehicles */}
             {policeGovernment.map((vehicle) => (
@@ -101,7 +101,7 @@ function VehicleList() {
       return (
         <section className="vehicles__page">
           <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
-          <VehicleCategory />;
+          <VehicleCategory ID={id} />;
           <div className="vehicles__page--all-armored-vehicles">
             {/* Map armored vehicles */}
             {fireRescue.map((vehicle) => (
@@ -135,7 +135,7 @@ function VehicleList() {
       return (
         <section className="vehicles__page">
           <PageHeader logo="/img/phylote_logo-main.jpg" />
-          <VehicleCategory />;
+          <VehicleCategory ID={id} />;
           <div className="vehicles__page--all-armored-vehicles">
             {/* Map armored vehicles */}
             {militaryArmored.map((vehicle) => (

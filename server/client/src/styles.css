@@ -750,6 +750,9 @@ body {
   background-color: #f7f7f7;
   margin: 3rem 0;
 }
+.card-shadow {
+  box-shadow: 0 1.5rem 4rem #55c57a !important;
+}
 .card__side {
   height: 100%;
   backface-visibility: hidden;

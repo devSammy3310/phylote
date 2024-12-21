@@ -9,6 +9,10 @@
   background-color: $color-grey-light-1;
   margin: 3rem 0;
 
+  &-shadow {
+    box-shadow: 0 1.5rem 4rem rgba($color-primary, 1) !important;
+  }
+
   &__side {
     height: 100%;
     backface-visibility: hidden;
@@ -107,7 +111,6 @@
 
     & h3 {
       border-bottom: 1px solid $color-grey-dark;
-      
     }
   }
 
