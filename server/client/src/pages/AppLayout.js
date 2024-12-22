@@ -112,6 +112,14 @@ function AppLayout() {
                 </p>
               </div>
 
+              <div className="about__page-certifications container"></div>
+            </div>
+
+            <div className="overview__grid">
+              <div className="about__page-overview container">
+                <img className="certification__logo" src="/img/certification.jpeg" />
+              </div>
+
               <div className="about__page-certifications container">
                 <h2 className="heading-secondary">
                   Our Certifications & Partnerships

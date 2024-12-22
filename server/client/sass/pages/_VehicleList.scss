@@ -1,0 +1,71 @@
+.vehicles__page {
+  &-intro {
+    padding: 0 1rem;
+    padding-right: 50rem;
+    margin-left: 5rem;
+    color: black;
+    text-align: justify;
+    & h1 {
+      font-size: 3.5rem;
+      font-family: $font-style-secondary;
+      font-weight: bold;
+    }
+
+   
+
+    & p {
+      color: black;
+      font-size: 1.5rem;
+      font-family: $font-style-primary;
+    }
+  }
+
+   & h2 {
+        font-family: $font-style-secondary;
+        text-align: center;
+        font-weight: bold;
+        margin: 5rem;
+        color: black;
+    }
+
+  &--all-armored-vehicles {
+    display: grid;
+    background-color: $color-grey-light-1;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    // height: 100vh;
+    margin: 5rem 5rem;
+  }
+
+  &-section-vehicle__category {
+    margin: 2rem 5rem;
+
+    & .categories {
+      display: grid;
+      gap: 5rem;
+      grid-template-columns: 1fr 1fr;
+      height: 100%;
+
+      @media (min-width: 760px) {
+        grid-template-columns: repeat(4, minmax(10rem, 1fr));
+      }
+    }
+
+    & .feature-box {
+      height: 20rem;
+      width: 100%;
+      margin: 2rem 1rem;
+      padding: 2rem 1rem;
+
+      @media (min-width: 760px) {
+        justify-content: center;
+        display: flex;
+      }
+    }
+
+    & .link {
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

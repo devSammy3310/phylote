@@ -6,6 +6,7 @@ import Popup from "../components/Popup";
 import { mostUsedVehicles } from "../data/vehicles_data.js";
 import { homepageCarousel } from "../data/vehicles_data";
 import PhyloteIntro from "../components/phylote_intro.js";
+import VehicleCategory from "./vehicleCategory.js";
 
 function Home() {
   const images = [
@@ -26,9 +27,7 @@ function Home() {
           </h2>
         </div>
 
-        
-          <PhyloteIntro />
-        
+        <PhyloteIntro />
 
         {/* <div className="carousel-container">
           <Carousel images={homepageCarousel} type="SimpleSlider" />
@@ -113,40 +112,7 @@ function Home() {
         </section>
 
         <section className="section-vehicle__category ">
-          <div className="section-vehicle__category-flex u-flex u-space-btw">
-            <div className="feature-box feature-box--1">
-              <svg className="icon icon-shield1">
-                <use href="/sprite.svg#icon-shield1" />
-              </svg>
-
-              <h4>Police & Government</h4>
-              <p>Vehicles</p>
-            </div>
-
-            <div className="feature-box feature-box--2">
-              <svg className="icon icon-shield3">
-                <use href="/sprite.svg#icon-shield3"></use>
-              </svg>
-              <h4>Fire & Rescue</h4>
-              <p>Vehicles</p>
-            </div>
-
-            <div className="feature-box feature-box--3">
-              <svg className="icon icon-shield2">
-                <use href="/sprite.svg#icon-shield2"></use>
-              </svg>
-              <h4>Military Armored</h4>
-              <p>Vehicles</p>
-            </div>
-
-            <div className="feature-box feature-box--4">
-              <svg className="icon icon-sphere">
-                <use href="/sprite.svg#icon-sphere"></use>
-              </svg>
-              <h4>International</h4>
-              <p>Vehicles</p>
-            </div>
-          </div>
+          <VehicleCategory />
         </section>
 
         <section

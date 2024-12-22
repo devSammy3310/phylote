@@ -746,9 +746,9 @@ const all_armored_vehicles = [
       { src: "/img/tlc-79/TLC79-RC4.jpg", alt: "armored vehicle" },
       { src: "/img/tlc-79/TLC79-RC5.jpg", alt: "armored vehicle" },
     ],
-    name: "TLC79-RC1",
+    name: "TLC79-RC",
     details:
-      "The TLC79-RC1 is a robust and versatile military armored vehicle built for reconnaissance and combat operations. Featuring exceptional ballistic protection and advanced systems, it ensures maximum safety for personnel in hostile environments. Its high-performance engine, paired with rugged off-road capabilities, allows it to excel in diverse terrains. Designed with adaptability in mind, the TLC79-RC1 meets the rigorous demands of modern military missions.",
+      "The TLC79-RC is a robust and versatile military armored vehicle built for reconnaissance and combat operations. Featuring exceptional ballistic protection and advanced systems, it ensures maximum safety for personnel in hostile environments. Its high-performance engine, paired with rugged off-road capabilities, allows it to excel in diverse terrains. Designed with adaptability in mind, the TLC79-RC1 meets the rigorous demands of modern military missions.",
     features: [
       "Military-grade reconnaissance vehicle",
       "Ballistic and explosive protection",

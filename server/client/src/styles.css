@@ -2193,44 +2193,6 @@ nav {
   color: aliceblue;
 }
 
-.vehicles__page--all-armored-vehicles {
-  display: grid;
-  background-color: #f7f7f7;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  margin: 5rem 5rem;
-}
-.vehicles__page-section-vehicle__category {
-  margin: 5rem;
-}
-.vehicles__page-section-vehicle__category .categories {
-  display: grid;
-  gap: 5rem;
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
-}
-@media (min-width: 760px) {
-  .vehicles__page-section-vehicle__category .categories {
-    grid-template-columns: repeat(4, minmax(10rem, 1fr));
-  }
-}
-.vehicles__page-section-vehicle__category .feature-box {
-  height: 20rem;
-  width: 100%;
-  margin: 2rem 1rem;
-  padding: 2rem 1rem;
-}
-@media (min-width: 760px) {
-  .vehicles__page-section-vehicle__category .feature-box {
-    justify-content: center;
-    display: flex;
-  }
-}
-.vehicles__page-section-vehicle__category .link {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-
 .contact__page {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -2273,7 +2235,7 @@ nav {
   text-align: center;
 }
 .about__page-heading h1 {
-  font-size: clamp(1rem, 0.714rem + 1.429vw, 5rem);
+  font-size: clamp(1rem, 0.714rem + 2.429vw, 5rem);
 }
 .about__page-overview p {
   font-size: clamp(1rem, 0.714rem + 1.429vw, 1.4rem);
@@ -2431,6 +2393,72 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+.certification__logo {
+  width: 100%;
+}
+
+.vehicles__page-intro {
+  padding: 0 1rem;
+  padding-right: 50rem;
+  margin-left: 5rem;
+  color: black;
+  text-align: justify;
+}
+.vehicles__page-intro h1 {
+  font-size: 3.5rem;
+  font-family: "Bebas Neue", "sans-serif";
+  font-weight: bold;
+}
+.vehicles__page-intro p {
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Poppins", "sans-serif";
+}
+.vehicles__page h2 {
+  font-family: "Bebas Neue", "sans-serif";
+  text-align: center;
+  font-weight: bold;
+  margin: 5rem;
+  color: black;
+}
+.vehicles__page--all-armored-vehicles {
+  display: grid;
+  background-color: #f7f7f7;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  margin: 5rem 5rem;
+}
+.vehicles__page-section-vehicle__category {
+  margin: 2rem 5rem;
+}
+.vehicles__page-section-vehicle__category .categories {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+@media (min-width: 760px) {
+  .vehicles__page-section-vehicle__category .categories {
+    grid-template-columns: repeat(4, minmax(10rem, 1fr));
+  }
+}
+.vehicles__page-section-vehicle__category .feature-box {
+  height: 20rem;
+  width: 100%;
+  margin: 2rem 1rem;
+  padding: 2rem 1rem;
+}
+@media (min-width: 760px) {
+  .vehicles__page-section-vehicle__category .feature-box {
+    justify-content: center;
+    display: flex;
+  }
+}
+.vehicles__page-section-vehicle__category .link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

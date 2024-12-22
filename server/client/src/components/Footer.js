@@ -16,21 +16,39 @@ function Footer() {
           <div className="footer__vehicle-range">
             <ul className="footer__list">
               <li className="footer__item">
-                <Link className="footer__link">
+                <Link
+                  className="footer__link"
+                  to={"/armored-vehicles/all-armored-vehicles"}
+                >
+                  {" "}
+                  All Armored Vehicles
+                </Link>
+              </li>
+              <li className="footer__item">
+                <Link
+                  className="footer__link"
+                  to={"/armored-vehicles/police-government"}
+                >
                   Police & Government Vehicles
                 </Link>
               </li>
 
               <li className="footer__item">
-                <Link className="footer__link">Fire & Rescue Vehicles</Link>
+                <Link
+                  className="footer__link"
+                  to={"/armored-vehicles/fire-rescue"}
+                >
+                  Fire & Rescue Vehicles
+                </Link>
               </li>
 
               <li className="footer__item">
-                <Link className="footer__link">Military Armored Vehicles</Link>
-              </li>
-
-              <li className="footer__item">
-                <Link className="footer__link">International Vehicles</Link>
+                <Link
+                  className="footer__link"
+                  to={"/armored-vehicles/military-armored"}
+                >
+                  Military Armored Vehicles
+                </Link>
               </li>
             </ul>
           </div>
@@ -40,23 +58,33 @@ function Footer() {
           <div className="footer__vehicle-range">
             <ul className="footer__list">
               <li className="footer__item">
-                <Link className="footer__link">home</Link>
+                <Link className="footer__link" to={"/"}>
+                  home
+                </Link>
               </li>
 
               <li className="footer__item">
-                <Link className="footer__link">weapons</Link>
+                <Link className="footer__link" to={"/weapons"}>
+                  weapons
+                </Link>
               </li>
 
               <li className="footer__item">
-                <Link className="footer__link">armored Vehicles</Link>
+                <Link className="footer__link" to={"/armored-vehicles"}>
+                  armored Vehicles
+                </Link>
               </li>
 
               <li className="footer__item">
-                <Link className="footer__link">about us</Link>
+                <Link className="footer__link" to={"/about"}>
+                  about us
+                </Link>
               </li>
 
               <li className="footer__item">
-                <Link className="footer__link">contact</Link>
+                <Link className="footer__link" to={"/contact"}>
+                  contact
+                </Link>
               </li>
             </ul>
           </div>
