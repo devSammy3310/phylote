@@ -34,7 +34,7 @@ function Home() {
         </div> */}
 
         <div className="center-text">
-          <h2 className="heading-secondary u-margin-top-small">
+          <h2 className="heading-secondary-2 u-margin-top-small">
             Welcome to Phylote Nigeria Limited
           </h2>
         </div>

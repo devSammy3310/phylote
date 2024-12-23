@@ -100,6 +100,22 @@
 [1200 - 1800px] is where our normal style apply
 1800px +:       Big desktop
 */
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
 .moveInLeft {
   -webkit-animation: moveInLeft 3s ease-in-out;
   animation: moveInLeft 3s ease-in-out;
@@ -1240,6 +1256,9 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: #000;
+}
+.phylote__intro img {
+  width: 100%;
 }
 
 .mission-statement {

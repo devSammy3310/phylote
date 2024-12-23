@@ -6,4 +6,10 @@
     overflow: hidden;
     background-color: #000;
   }
+
+  &__intro{
+    img {
+      width: 100%;
+    }
+  }
 }
