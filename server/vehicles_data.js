@@ -771,7 +771,6 @@ const all_armored_vehicles = [
     image: [
       { src: "/img/tlc-79/TLC79-MSPV1.jpg", alt: "armored vehicle" },
       { src: "/img/tlc-79/TLC79-MSPV2.jpg", alt: "armored vehicle" },
-    
     ],
     name: "TLC79-MSPV",
     details:
@@ -789,6 +788,32 @@ const all_armored_vehicles = [
       { spec: "Torque", value: "480 lb-ft" },
       { spec: "Transmission", value: "6-speed manual" },
       { spec: "Top Speed", value: "160 km/h" },
+    ],
+  },
+
+  {
+    ID: "TLC-VXR",
+    category: "Police & Government",
+    image: [
+      { src: "/img/tlc-79/TLC-VXR1.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/TLC-VXR2.jpg", alt: "armored vehicle" },
+    ],
+    name: "TLC-VXR",
+    details:
+      "The TLC-VXR is a premium military armored vehicle designed to combine luxury, security, and rugged off-road capabilities. Engineered for VIP protection and tactical missions, it features cutting-edge ballistic protection, advanced suspension systems, and state-of-the-art onboard technology. The TLC-VXR is ideal for high-threat environments where safety and performance are paramount.",
+    features: [
+      "Luxury military armored vehicle",
+      "Advanced ballistic protection",
+      "Premium interior and comfort",
+      "High-performance off-road capabilities",
+      "Integrated modern safety systems",
+    ],
+    specifications: [
+      { spec: "Engine", value: "5.7 L V8 Petrol" },
+      { spec: "Horsepower", value: "381 hp" },
+      { spec: "Torque", value: "401 lb-ft" },
+      { spec: "Transmission", value: "8-speed automatic" },
+      { spec: "Top Speed", value: "200 km/h" },
     ],
   },
 ];
