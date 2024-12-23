@@ -1857,28 +1857,16 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   position: relative;
   background-color: #f7f7f7;
-  font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
-  z-index: 1;
+  font-size: clamp(1rem, 0.714rem + 1.429vw, 1.5rem);
   color: #777;
-  margin-top: 2rem;
-}
-@media (min-width: 760px) {
-  .section__mission-statement {
-    height: 40rem;
-  }
 }
 .section__mission-statement-col-1 {
   display: flex;
-  margin-top: 4rem;
+  margin-top: 2rem;
   flex-direction: column;
   padding: 0 2rem;
   text-align: justify;
   flex: 1;
-}
-@media (max-width: 52.125em) {
-  .section__mission-statement-col-1 {
-    margin-top: 1rem;
-  }
 }
 @media (max-width: 30em) {
   .section__mission-statement-col-1 {
@@ -1891,15 +1879,8 @@ nav {
 }
 .section__mission-statement-col-2 {
   flex: 1;
-  height: 30rem;
   margin-bottom: 2rem;
 }
-@media (max-width: 52.125em) {
-  .section__mission-statement-col-2 {
-    margin-top: 15rem;
-  }
-}
-
 .section__mission_statement-2 {
   background-image: url("../src/assets/img/clean.png");
   position: relative;
