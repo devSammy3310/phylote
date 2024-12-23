@@ -20,10 +20,10 @@ function Home() {
       <main>
         <div className="heading-primary">
           <h1 className="heading-primary--main moveInRight">
-            Defend <span>with</span> Confidence
+            Protecting <span>what</span> matters
           </h1>
           <h2 className="heading-primary--sub moveInLeft">
-            protect, loyal and strong.
+            building for tomorrow
           </h2>
         </div>
 
@@ -68,6 +68,12 @@ function Home() {
               prioritizes indigenous defense solutions, fosters local
               innovation, and ensures compliance with global standards.
             </p>
+
+            <a href="/about" class="btn-text">
+              Learn More About Us &rarr;
+            </a>
+          </div>
+          <div className="section__mission-statement-col-2">
             <p>
               With our facility in Idu Industrial Area, Abuja, Phylote Nigeria
               Limited is well-equipped to deliver Excellent solutions,
@@ -92,37 +98,14 @@ function Home() {
               traditional fuels while achieving long-term savings and
               environmental benefits.
             </p>
-
-            <a href="/about" class="btn-text">
-              Learn More About Us &rarr;
-            </a>
           </div>
-          {/* <div className="section__mission-statement-col-2">
-            <div className="composition">
-              <img
-                src="/img/range/Jeep-Gladiator-Rubicon-Nov5.jpg"
-                alt="armored vehicle"
-                className="composition_photo composition_photo--1"
-              ></img>
-              <img
-                src="/img/escalade1.jpg"
-                alt="armored vehicle"
-                className="composition_photo composition_photo--2"
-              ></img>
-              <img
-                src="/img/range/lx600_1.jpg"
-                alt="armored vehicle"
-                className="composition_photo composition_photo--3"
-              ></img>
-            </div>
-          </div> */}
         </section>
 
         <section className="section__mission_statement-2">
           <div className="section__mission_statement-2-item section__mission_statement-2-item--1">
             <img
               className="phylote-logo"
-              src="/img/phylote_logo.jpg"
+              src="/img/tlc-79/TLC79-RC1.jpg"
               alt="phylote logo"
             />
           </div>
@@ -138,7 +121,13 @@ function Home() {
               vehicle is fully prepared for any challenge.
             </p>
           </div>
-          <div className="section__mission_statement-2-item section__mission_statement-2-item--3"></div>
+          <div className="section__mission_statement-2-item section__mission_statement-2-item--3">
+            <img
+              className="phylote-logo"
+              src="/img/tlc-79/TLC79-RC2.jpg"
+              alt="phylote logo"
+            />
+          </div>
           <div className="section__mission_statement-2-global-reach">
             <h1>
               Nationwide Protection. <span>Ready for Any Challenge.</span>
@@ -181,7 +170,10 @@ function Home() {
             ))}
           </div>
 
-          <Link to="/all-armored-vehicles" className="btn-text">
+          <Link
+            to="/armored-vehicles/all-armored-vehicles"
+            className="btn-text"
+          >
             VIEW ALL PHYLOTE ARMORED VEHICLES &rarr;
           </Link>
 

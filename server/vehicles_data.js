@@ -764,6 +764,33 @@ const all_armored_vehicles = [
       { spec: "Top Speed", value: "170 km/h" },
     ],
   },
+
+  {
+    ID: "TLC79-MSPV",
+    category: "Military Armored",
+    image: [
+      { src: "/img/tlc-79/TLC79-MSPV1.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/TLC79-MSPV2.jpg", alt: "armored vehicle" },
+    
+    ],
+    name: "TLC79-MSPV",
+    details:
+      "The TLC79-MSPV (Multi-Role Special Purpose Vehicle) is a highly specialized military armored vehicle designed for various tactical missions, including troop transport, combat operations, and logistical support. It features top-tier ballistic protection, advanced communications systems, and a versatile chassis that can be customized for different roles. Its ability to operate in diverse and challenging environments, coupled with its rugged build, makes it ideal for military operations worldwide.",
+    features: [
+      "Multi-role special purpose vehicle",
+      "Ballistic protection for crew and cargo",
+      "Adaptable for various mission configurations",
+      "Advanced communication and navigation systems",
+      "High off-road capability for harsh environments",
+    ],
+    specifications: [
+      { spec: "Engine", value: "4.8 L V8 Turbo Diesel" },
+      { spec: "Horsepower", value: "220 hp" },
+      { spec: "Torque", value: "480 lb-ft" },
+      { spec: "Transmission", value: "6-speed manual" },
+      { spec: "Top Speed", value: "160 km/h" },
+    ],
+  },
 ];
 
 export { all_armored_vehicles };

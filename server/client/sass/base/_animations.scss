@@ -1,12 +1,20 @@
-// Apply animation mixins to classes
-.moveInLeft {
-  @include moveInAnimation(left);
-}
 
-.moveInRight {
-  @include moveInAnimation(right);
-}
 
-.moveInBottom {
-  @include moveInAnimation(bottom);
-}
+
+
+
+
+// // Apply animation mixins to classes
+// .moveInLeft {
+//   @include moveInAnimation(left);
+// }
+
+// .moveInRight {
+//   @include moveInAnimation(right);
+// }
+
+// .moveInBottom {
+//   @include moveInAnimation(bottom);
+// }
+
+

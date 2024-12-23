@@ -16,12 +16,11 @@
   // margin-top: 2rem;
 
   @media (min-width: 760px) {
-   
   }
 
   &-col-1 {
     display: flex;
-    margin-top: 2rem;
+    margin: 2rem;
     flex-direction: column;
     padding: 0 2rem;
     text-align: justify;
@@ -44,7 +43,8 @@
   &-col-2 {
     flex: 1;
     // height: 30rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
+ 
 
     @include respond(tab-port) {
       // margin-top: 15rem;
@@ -69,6 +69,7 @@
     }
 
     &--2 {
+
       color: #777;
       padding: 5rem 5rem;
       font-family: "Poppins", "sans-serif";
@@ -347,7 +348,7 @@
 
       @include respond(phone) {
         text-align: center;
-       
+
         font-size: clamp(1rem, 1rem + 1.5vw, 2rem);
         padding: 0;
       }
