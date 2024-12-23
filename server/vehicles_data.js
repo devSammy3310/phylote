@@ -800,9 +800,8 @@ const all_armored_vehicles = [
     ],
     name: "TLC-VXR",
     details:
-      "The TLC-VXR is a premium military armored vehicle designed to combine luxury, security, and rugged off-road capabilities. Engineered for VIP protection and tactical missions, it features cutting-edge ballistic protection, advanced suspension systems, and state-of-the-art onboard technology. The TLC-VXR is ideal for high-threat environments where safety and performance are paramount.",
+      "The Toyota land cruiser-VXR is a premium armored vehicle designed to combine luxury, security, and rugged off-road capabilities. Engineered for VIP protection, it features ballistic protection, advanced suspension systems, and onboard technology.",
     features: [
-      "Luxury military armored vehicle",
       "Advanced ballistic protection",
       "Premium interior and comfort",
       "High-performance off-road capabilities",

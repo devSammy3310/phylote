@@ -31,7 +31,7 @@ export const mostUsedVehicles = [
       { src: "/img/tlc-79/TLC79-MSPV1.jpg", alt: "armored vehicle" },
       { src: "/img/tlc-79/TLC79-MSPV2.jpg", alt: "armored vehicle" },
     ],
-    name: "TLC79-MSPV",
+    name: "TLC79-MSPV (Buffalo)",
     details:
       "The TLC79-MSPV (Multi-Role Special Purpose Vehicle) is a highly specialized military armored vehicle designed for various tactical missions, including troop transport, combat operations, and logistical support. It features top-tier ballistic protection, advanced communications systems, and a versatile chassis that can be customized for different roles. Its ability to operate in diverse and challenging environments, coupled with its rugged build, makes it ideal for military operations worldwide.",
     features: [
@@ -58,9 +58,8 @@ export const mostUsedVehicles = [
     ],
     name: "TLC-VXR",
     details:
-      "The TLC-VXR is a premium military armored vehicle designed to combine luxury, security, and rugged off-road capabilities. Engineered for VIP protection and tactical missions, it features cutting-edge ballistic protection, advanced suspension systems, and state-of-the-art onboard technology. The TLC-VXR is ideal for high-threat environments where safety and performance are paramount.",
+      "The Toyota land cruiser-VXR is a premium armored vehicle designed to combine luxury, security, and rugged off-road capabilities. Engineered for VIP protection, it features ballistic protection, advanced suspension systems, and onboard technology.",
     features: [
-      "Luxury military armored vehicle",
       "Advanced ballistic protection",
       "Premium interior and comfort",
       "High-performance off-road capabilities",
@@ -76,7 +75,6 @@ export const mostUsedVehicles = [
   },
 ];
 
-
 const homepageCarousel = [
   { src: "/img/TLC-78-N2.jpg", alt: "armored vehicle" },
   { src: "/img/TLC-79DC-Nov-2.jpg", alt: "armored vehicle" },
@@ -85,7 +83,3 @@ const homepageCarousel = [
 ];
 
 export { homepageCarousel };
-
-
-
-
