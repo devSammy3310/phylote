@@ -44,15 +44,26 @@
 /* AboutUs.css */
 .about {
   &__page {
+    & .background{
+      color: black;
+      background: url("../src/assets/img/white_paper.jpg") no-repeat center center;
+      background-size: cover;
+      -webkit-backdrop-filter: blur(1rem);
+      backdrop-filter: blur(1rem);
+    }
     &-heading {
-     margin-top: 2rem;
+     padding-top: 2rem;
       font-family: $font-style-secondary;
       color: $color-primary;
       text-align: center;
 
+
+
       & h1 {
         font-size: clamp(1rem, 0.714rem + 2.429vw, 5rem);
       }
+
+
     }
 
     &-overview {

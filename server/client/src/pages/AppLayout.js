@@ -68,100 +68,102 @@ function AppLayout() {
         <>
           <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
           <section className="about__page">
-            <div className="about__page-heading">
-              <h1>
-                Empowering Defense, Elevating Security
-              </h1>
-            </div>
-
-            {/* Overview Section */}
-            <div className="overview__grid">
-              <div className="about__page-overview container">
-                <h2 className="heading-secondary">Who We Are</h2>
-                <p>
-                  Phylote Nigeria Limited, established in 1995, is a proudly
-                  indigenous company specializing in armoring, restoring, and
-                  upgrading vehicles. With decades of experience, we are
-                  committed to delivering world-class defense and automotive
-                  solutions that enhance operational efficiency and national
-                  security.
-                </p>
-
-                <p className="about__text">
-                  In partnership with{" "}
-                  <strong>International Armoring Corporation (IAC) USA</strong>,
-                  we produce the finest, most technologically advanced armored
-                  vehicles in the world. IAC's global expertise enables us to
-                  armor, restore, and upgrade vehicles using advanced
-                  technologies at relatively reduced costs.
-                </p>
-
-                <p className="about__text">
-                  Guided by our core values of <strong>reliability</strong>,{" "}
-                  <strong>integrity</strong>, and <strong>innovation</strong>,
-                  Phylote Nigeria Limited is proud to play a vital role in
-                  building a secure and self-reliant Nigeria.
-                </p>
+            <div className="background">
+              <div className="about__page-heading">
+                <h1>Empowering Defense, Elevating Security</h1>
               </div>
 
-              <div className="about__page-certifications container"></div>
-            </div>
+              {/* Overview Section */}
+              <div className="overview__grid">
+                <div className="about__page-overview container">
+                  <h2 className="heading-secondary">Who We Are</h2>
+                  <p>
+                    Phylote Nigeria Limited, established in 1995, is a proudly
+                    indigenous company specializing in armoring, restoring, and
+                    upgrading vehicles. With decades of experience, we are
+                    committed to delivering world-class defense and automotive
+                    solutions that enhance operational efficiency and national
+                    security.
+                  </p>
 
-            <div className="overview__grid">
-              <div className="about__page-overview container">
-                <img
-                  className="certification__logo"
-                  src="/img/certification.jpeg"
-                />
+                  <p className="about__text">
+                    In partnership with{" "}
+                    <strong>
+                      International Armoring Corporation (IAC) USA
+                    </strong>
+                    , we produce the finest, most technologically advanced
+                    armored vehicles in the world. IAC's global expertise
+                    enables us to armor, restore, and upgrade vehicles using
+                    advanced technologies at relatively reduced costs.
+                  </p>
+
+                  <p className="about__text">
+                    Guided by our core values of <strong>reliability</strong>,{" "}
+                    <strong>integrity</strong>, and <strong>innovation</strong>,
+                    Phylote Nigeria Limited is proud to play a vital role in
+                    building a secure and self-reliant Nigeria.
+                  </p>
+                </div>
+
+                <div className="about__page-certifications container"></div>
               </div>
 
-              <div className="about__page-certifications container">
-                <h2 className="heading-secondary">
-                  Our Certifications & Partnerships
-                </h2>
-                <p className="about__text">
-                  Phylote Nigeria Limited is registered with the{" "}
-                  <strong>
-                    United States Department of State, Directorate of Defense
-                    Trade Control
-                  </strong>{" "}
-                  as a Broker Member of the International Traffic in Arms
-                  Regulations (ITAR) with Code No: <strong>K4628</strong>. Under
-                  this US regulatory mandate, we are authorized to source,
-                  access, and broker US Military hardware and sophisticated
-                  civil technologies.
-                </p>
-                <p className="about__text">
-                  We are in strategic partnership with the{" "}
-                  <strong>
-                    Defence Industries Corporation of Nigeria (DICON)
-                  </strong>
-                  , leveraging advanced technology and industry expertise to
-                  deliver superior products and services. Additionally, as proud
-                  members of the{" "}
-                  <strong>
-                    Defence Industry Association of Nigeria (DIAN)
-                  </strong>
-                  , we remain dedicated to advancing and supporting Nigeria's
-                  local defense sector.
-                </p>
-              </div>
-            </div>
+              <div className="overview__grid">
+                <div className="about__page-overview container">
+                  <img
+                    className="certification__logo"
+                    src="/img/certification.jpeg"
+                  />
+                </div>
 
-            {/* Partners Section */}
-            <div className="about__partners container">
-              <h2 className="heading-secondary">Our Partners</h2>
-              <div className="partners__grid">
-                <img
-                  src={"/img/dicon_logo.png"}
-                  alt="DICON Logo"
-                  className="about__partners partner-logo"
-                />
-                <img
-                  src={"/img/Armormax_Logo.svg"}
-                  alt="Partner Logo"
-                  className="about__partners Armormax_logo"
-                />
+                <div className="about__page-certifications container">
+                  <h2 className="heading-secondary">
+                    Our Certifications & Partnerships
+                  </h2>
+                  <p className="about__text">
+                    Phylote Nigeria Limited is registered with the{" "}
+                    <strong>
+                      United States Department of State, Directorate of Defense
+                      Trade Control
+                    </strong>{" "}
+                    as a Broker Member of the International Traffic in Arms
+                    Regulations (ITAR) with Code No: <strong>K4628</strong>.
+                    Under this US regulatory mandate, we are authorized to
+                    source, access, and broker US Military hardware and
+                    sophisticated civil technologies.
+                  </p>
+                  <p className="about__text">
+                    We are in strategic partnership with the{" "}
+                    <strong>
+                      Defence Industries Corporation of Nigeria (DICON)
+                    </strong>
+                    , leveraging advanced technology and industry expertise to
+                    deliver superior products and services. Additionally, as
+                    proud members of the{" "}
+                    <strong>
+                      Defence Industry Association of Nigeria (DIAN)
+                    </strong>
+                    , we remain dedicated to advancing and supporting Nigeria's
+                    local defense sector.
+                  </p>
+                </div>
+              </div>
+
+              {/* Partners Section */}
+              <div className="about__partners container">
+                <h2 className="heading-secondary">Our Partners</h2>
+                <div className="partners__grid">
+                  <img
+                    src={"/img/dicon_logo.png"}
+                    alt="DICON Logo"
+                    className="about__partners partner-logo"
+                  />
+                  <img
+                    src={"/img/Armormax_Logo.svg"}
+                    alt="Partner Logo"
+                    className="about__partners Armormax_logo"
+                  />
+                </div>
               </div>
             </div>
 

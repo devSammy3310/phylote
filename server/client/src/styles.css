@@ -2191,8 +2191,15 @@ nav {
 }
 
 /* AboutUs.css */
+.about__page .background {
+  color: black;
+  background: url("../src/assets/img/white_paper.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+}
 .about__page-heading {
-  margin-top: 2rem;
+  padding-top: 2rem;
   font-family: "Bebas Neue", "sans-serif";
   color: #55c57a;
   text-align: center;
