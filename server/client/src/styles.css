@@ -150,7 +150,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 17rem;
-  background-image: url("../src/assets/img/clean.png");
+  background-image: url("../src/assets/img/sleek_black.jpg");
   background-color: #191919;
   color: #fff;
   background-size: cover;
@@ -1061,7 +1061,7 @@ body {
   display: flex;
   padding: 3rem 5rem;
   height: 17rem;
-  background-image: url("../src/assets/img/clean.png");
+  background-image: url("../src/assets/img/sleek_black.jpg");
   background-size: cover; /* Ensure the image scales properly */
   background-position: center; /* Keeps the image centered */
   font-family: "Bebas Neue", "sans-serif";
@@ -1841,7 +1841,9 @@ nav {
   margin: 2rem;
 }
 .section__mission_statement-2 {
-  background-image: url("../src/assets/img/clean.png");
+  background-image: url("../src/assets/img/sleek_black.jpg");
+  background-size: cover; /* Ensure the image scales properly */
+  background-position: center; /* Keeps the image centered */
   position: relative;
   height: 85rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -2038,7 +2040,9 @@ nav {
   }
 }
 .section__service-support-box {
-  background-image: url("../src/assets/img/clean.png");
+  background-image: url("../src/assets/img/sleek_black.jpg");
+  background-size: cover; /* Ensure the image scales properly */
+  background-position: center; /* Keeps the image centered */
   width: 70%;
   height: 40rem;
   background-color: #fff;
@@ -2188,7 +2192,7 @@ nav {
 
 /* AboutUs.css */
 .about__page-heading {
-  background: white;
+  margin-top: 2rem;
   font-family: "Bebas Neue", "sans-serif";
   color: #55c57a;
   text-align: center;
@@ -2250,7 +2254,7 @@ nav {
   font-size: clamp(0.6rem, 0.714rem + 1.429vw, 1.5rem);
 }
 .about__page-contact_us {
-  background-color: black;
+  background-color: white;
   font-family: "Poppins", "sans-serif";
   font-size: clamp(0.6rem, 0.714rem + 1.429vw, 2rem);
   padding: 5rem 0;
@@ -2260,7 +2264,7 @@ nav {
 }
 .about__page-contact_us p {
   text-align: center;
-  color: white;
+  color: black;
 }
 .about__page-contact_us span {
   color: #55c57a;
@@ -2287,6 +2291,12 @@ nav {
   padding: 4rem 2rem;
 }
 
+.service__page {
+  background: url("../src/assets/img/white_paper.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+}
 .service__intro {
   padding: 10rem 30rem;
   text-align: center;
@@ -2303,7 +2313,6 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
   height: 45rem;
-  margin-bottom: 5rem;
 }
 .service__core-service .info {
   padding: 6rem;
@@ -2319,6 +2328,14 @@ nav {
   color: black;
   font-family: "Poppins", "sans-serif";
   font-size: clamp(1rem, 0.714rem + 3.429vw, 1.6rem);
+}
+.service__core-service .image {
+  padding: 6rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.service__core-service .image:hover {
+  transform: scale(1.2);
 }
 .service__expertise-grid {
   display: grid;

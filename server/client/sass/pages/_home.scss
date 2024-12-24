@@ -53,7 +53,9 @@
 }
 
 .section__mission_statement-2 {
-  background-image: url("../src/assets/img/clean.png");
+ background-image: url("../src/assets/img/sleek_black.jpg");
+  background-size: cover; /* Ensure the image scales properly */
+  background-position: center; /* Keeps the image centered */
   position: relative;
   height: 85rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -299,7 +301,9 @@
   }
 
   &-support-box {
-    background-image: url("../src/assets/img/clean.png");
+   background-image: url("../src/assets/img/sleek_black.jpg");
+  background-size: cover; /* Ensure the image scales properly */
+  background-position: center; /* Keeps the image centered */
     width: 70%;
     height: 40rem;
     background-color: $color-white;

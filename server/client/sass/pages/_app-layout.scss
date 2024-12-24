@@ -1,4 +1,5 @@
 .contact__page {
+  
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   margin-top: 5rem;
@@ -44,7 +45,7 @@
 .about {
   &__page {
     &-heading {
-      background: white;
+     margin-top: 2rem;
       font-family: $font-style-secondary;
       color: $color-primary;
       text-align: center;
@@ -121,7 +122,7 @@
     }
 
     &-contact_us {
-      background-color: black;
+      background-color: white;
       font-family: $font-style-primary;
       font-size: clamp(0.6rem, 0.714rem + 1.429vw, 2rem);
       padding: 5rem 0;
@@ -131,7 +132,7 @@
 
       & p {
         text-align: center;
-        color: white;
+        color: black;
       }
 
       & span {
@@ -169,6 +170,13 @@
 }
 
 .service {
+  &__page {
+    background: url("../src/assets/img/white_paper.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+  }
+
   &__intro {
     padding: 10rem 30rem;
     text-align: center;
@@ -188,7 +196,7 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
       height: 45rem;
-      margin-bottom: 5rem;
+     
     }
 
     & .info {
@@ -206,6 +214,16 @@
         font-family: $font-style-primary;
         font-size: clamp(1rem, 0.714rem + 3.429vw, 1.6rem);
       }
+    }
+
+    & .image {
+      padding: 6rem;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    & .image:hover {
+      transform: scale(1.2);
     }
   }
 
@@ -252,4 +270,3 @@
 .certification__logo {
   width: 100%;
 }
- 

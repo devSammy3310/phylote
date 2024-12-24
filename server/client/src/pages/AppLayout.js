@@ -5,12 +5,8 @@ import VehicleCategory from "./vehicleCategory";
 import Card from "../components/Card";
 import { Form } from "../components/Form";
 
-
 function AppLayout() {
-
   const { id } = useParams();
-
-
 
   // Render based on the route parameter (id)
   switch (id) {
@@ -60,7 +56,6 @@ function AppLayout() {
       );
 
     case "armored-vehicles":
-      
       return (
         <div>
           <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
@@ -68,15 +63,13 @@ function AppLayout() {
         </div>
       );
 
-    
-
     case "about":
       return (
         <>
           <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
           <section className="about__page">
             <div className="about__page-heading">
-              <h1 className="heading-primary">
+              <h1>
                 Empowering Defense, Elevating Security
               </h1>
             </div>
@@ -116,7 +109,10 @@ function AppLayout() {
 
             <div className="overview__grid">
               <div className="about__page-overview container">
-                <img className="certification__logo" src="/img/certification.jpeg" />
+                <img
+                  className="certification__logo"
+                  src="/img/certification.jpeg"
+                />
               </div>
 
               <div className="about__page-certifications container">
@@ -276,7 +272,7 @@ function AppLayout() {
 
     case "service":
       return (
-        <div>
+        <div className="service__page">
           <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
           <div class="service__intro">
             <h2 className="heading-secondary-2">Experience Superior Service</h2>
@@ -301,21 +297,27 @@ function AppLayout() {
                   </p>
                 </div>
               </div>
-              <div class="image">
-                <img src="" alt="" />
+              <div className="image_container">
+                <img
+                  className="image"
+                  src="/img/vehicle_production.png"
+                  alt=""
+                />
               </div>
             </div>
 
             <div class="service__core-service--container">
-              <div class="image"></div>
+              <div className="image_container">
+                <img className="image" src="" alt="" />
+              </div>
               <div class="info">
                 <div>
                   <h2>Security Enhancements</h2>
                   <p>
-                    We implement advanced security technologies, S such as
+                    We implement advanced security technologies, such as
                     upgraded locking systems, bullet-resistant glass, and new
                     360- degree surveillance systems. These enhancements provide
-                    superior protecon for our clients, that is we integrate
+                    superior protection for our clients, that is we integrate
                     sophiscated security technologies, including enhanced
                     locking systems, bullet-resistant glass, and innovave
                     360-degree surveillance systems. These upgrades ensure our
@@ -332,16 +334,20 @@ function AppLayout() {
                   <p>
                     Our restoration services bring armored vehicles back to
                     their original or enhanced condion. We address structural
-                    integrity, system funconality, and overall vehicle
+                    integrity, system functionality, and overall vehicle
                     aesthetics to ensure they are as good as new.
                   </p>
                 </div>
               </div>
-              <div class="image"></div>
+              <div className="image_container">
+                <img className="image" src="" alt="" />
+              </div>
             </div>
 
             <div class="service__core-service--container">
-              <div class="image"></div>
+              <div className="image_container">
+                <img className="image" src="" alt="" />
+              </div>
               <div class="info">
                 <div>
                   <h2>Comprehensive Maintenance and upgrade services</h2>
@@ -374,7 +380,9 @@ function AppLayout() {
                   </p>
                 </div>
               </div>
-              <div class="image"></div>
+              <div className="image_container">
+                <img className="image" src="/img/cng_tank.jpg" alt="" />
+              </div>
             </div>
           </div>
         </div>

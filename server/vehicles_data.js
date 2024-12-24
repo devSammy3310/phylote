@@ -815,6 +815,37 @@ const all_armored_vehicles = [
       { spec: "Top Speed", value: "200 km/h" },
     ],
   },
+  {
+    ID: "TLC79-DC2023",
+    category: "Military Armored",
+    image: [
+      { src: "/img/tlc-79/tlc-79(buffalo_dc)1.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/tlc-79(buffalo_dc)2.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/tlc-79(buffalo_dc)3.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/tlc-79(buffalo_dc)4.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/tlc-79(buffalo_dc)5.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/tlc-79(buffalo_dc)6.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/tlc-79(buffalo_dc)7.jpg", alt: "armored vehicle" },
+      { src: "/img/tlc-79/tlc-79(buffalo_dc)8.jpg", alt: "armored vehicle" },
+    ],
+    name: "Toyota Land Cruiser Double Cabin 79 Series – 2023",
+    details:
+      "The Toyota Land Cruiser Double Cabin 79 Series – 2023 model is a highly durable and adaptable military armored vehicle built for the toughest environments. Designed for troop transport, logistical support, and combat scenarios, it combines Toyota's renowned reliability with robust ballistic protection and high off-road performance. This vehicle is built to handle extreme conditions while ensuring safety and operational effectiveness.",
+    features: [
+      "Double cabin military armored vehicle",
+      "Advanced ballistic and explosive protection",
+      "Exceptional off-road capabilities",
+      "Durable and reliable chassis for heavy-duty operations",
+      "Customizable configurations for mission-specific needs",
+    ],
+    specifications: [
+      { spec: "Engine", value: "4.5 L V8 Turbo Diesel" },
+      { spec: "Horsepower", value: "202 hp" },
+      { spec: "Torque", value: "430 lb-ft" },
+      { spec: "Transmission", value: "5-speed manual" },
+      { spec: "Top Speed", value: "160 km/h" },
+    ],
+  },
 ];
 
 export { all_armored_vehicles };

@@ -1,10 +1,15 @@
 export const mostUsedVehicles = [
   {
-    ID: "mostUsedVehicles-1",
+    ID: "Cadillac-Escalade",
     image: [
       { src: "/img/escalade/escalade1.jpg", alt: "armored vehicle" },
-      { src: "/img/TLC-79DC-Nov-2.jpg", alt: "armored vehicle" },
-      { src: "/img/TLC-79SC-Nov3.jpg", alt: "armored vehicle" },
+      { src: "/img/escalade/escalade2.jpg", alt: "armored vehicle" },
+      { src: "/img/escalade/escalade3.jpg", alt: "armored vehicle" },
+      { src: "/img/escalade/escalade4.jpg", alt: "armored vehicle" },
+      { src: "/img/escalade/escalade5.jpg", alt: "armored vehicle" },
+      { src: "/img/escalade/escalade6.jpg", alt: "armored vehicle" },
+      { src: "/img/escalade/escalade7.jpg", alt: "armored vehicle" },
+      { src: "/img/escalade/escalade8.jpg", alt: "armored vehicle" },
     ],
     name: "Cadillac Escalade",
     details:
