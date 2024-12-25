@@ -61,7 +61,6 @@ function Nav() {
             to="/"
           >
             <img className="navLogo" src="/img/phylote_logo-main.jpg" />
-            <h1>PHYLOTE</h1>
           </Link>
         </div>
 

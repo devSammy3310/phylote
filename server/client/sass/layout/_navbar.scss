@@ -73,10 +73,11 @@ nav {
 }
 
 .name-logo-container {
-  display: flex;
-  align-items: center;
-  margin-left: 2.5rem;
-  justify-content: center;
+  margin-left: 5rem;
+  // display: flex;
+  // align-items: center;
+  // margin-left: 2.5rem;
+  // justify-content: center;
   // background-image: ;
 
   @include respond(phone) {

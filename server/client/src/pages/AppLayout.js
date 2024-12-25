@@ -76,7 +76,7 @@ function AppLayout() {
               {/* Overview Section */}
               <div className="overview__grid">
                 <div className="about__page-overview container">
-                  <h2 className="heading-secondary">Who We Are</h2>
+                  <h2 className="heading-secondary-2">Who We Are</h2>
                   <p>
                     Phylote Nigeria Limited, established in 1995, is a proudly
                     indigenous company specializing in armoring, restoring, and
@@ -105,7 +105,12 @@ function AppLayout() {
                   </p>
                 </div>
 
-                <div className="about__page-certifications container"></div>
+                <div className="about__page-overview container">
+                  <img
+                    className="certification__logo"
+                    src="/img/who_we_are.png"
+                  />
+                </div>
               </div>
 
               <div className="overview__grid">
@@ -310,7 +315,11 @@ function AppLayout() {
 
             <div class="service__core-service--container">
               <div className="image_container">
-                <img className="image" src="" alt="" />
+                <img
+                  className="image security_enhancement"
+                  src="/img/security_enhancement.png"
+                  alt=""
+                />
               </div>
               <div class="info">
                 <div>
