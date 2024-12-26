@@ -105,9 +105,9 @@ function AppLayout() {
                   </p>
                 </div>
 
-                <div className="about__page-overview container">
+                <div className="about__page-overview container ">
                   <img
-                    className="certification__logo"
+                    className="certification__logo who_we_are"
                     src="/img/who_we_are.png"
                   />
                 </div>
@@ -351,13 +351,23 @@ function AppLayout() {
                 </div>
               </div>
               <div className="image_container">
-                <img className="image" src="" alt="" />
+                <iframe
+                  className="image"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/mlqZOH0MHB8?si=xmtzV-X-jj1pGrlx"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
 
             <div class="service__core-service--container">
               <div className="image_container">
-                <img className="image" src="" alt="" />
+                <img className="image maintenance" src="/img/maintenance.jpg" alt="" />
               </div>
               <div class="info">
                 <div>
