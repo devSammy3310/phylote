@@ -56,7 +56,7 @@ function Nav() {
         <div className="name-logo-container">
           <Link
             className={
-              scroll > 50 ? "nav-NameLogo navLink-scrolled " : "nav-NameLogo"
+              scroll > 50 ? "nav-NameLogo " : "nav-NameLogo"
             }
             to="/"
           >
