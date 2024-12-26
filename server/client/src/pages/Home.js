@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import Carousel from "../components/carousel";
 import Card from "../components/Card";
 import Popup from "../components/Popup";
@@ -40,76 +41,60 @@ function Home() {
         </div>
 
         <section className="section__mission-statement">
-          <div className="section__mission-statement-col-1">
+          <div className="section__mission-statement-col-1 ">
             {/* <h3 className="margin-bottom-small heading-tertiary">
               Cutting-Edge Armored Vehicle Solutions
             </h3> */}
-            <p>
+            <p className="animate slideRight">
               Phylote Nigeria Limited is a proudly indigenous company dedicated
-              to the production, supply, and maintenance of advanced defense
-              equipment. As a pioneer member of the Defence Industries
-              Association of Nigeria (DIAN), we play a critical role in
-              strengthening Nigeria's defense capabilities and driving
-              innovation in sustainable energy solutions.
-            </p>
-
-            <p>
-              In recognition of our expertise and commitment to excellence,
-              DICON (Defence Industries Corporation of Nigeria) entered into a
-              Memorandum of Understanding (MoU) with Phylote on January 23,
-              2024. This strategic partnership authorizes us to:
-            </p>
-            <p>
-              Manufacture and supply arms, ammunition, and armored vehicles.
-              Develop and deliver safety garments, protective defense equipment,
-              and other advanced technologies. Collaborate with DICON to advance
-              Nigeria’s military industrial complex. Our operations are guided
-              by the DICON Act 2023, a transformative legislation that
-              prioritizes indigenous defense solutions, fosters local
-              innovation, and ensures compliance with global standards.
+              to revolutionizing the defense and security sector in Nigeria. As
+              a licensed partner of the Defence Industries Corporation of
+              Nigeria (DICON), under the newly enacted DICON Act 2023, we have
+              the authority to manufacture and supply a wide range of defense
+              equipment, including armored vehicles, safety garments, arms,
+              ammunition, and advanced security solutions. Our state-of-the-art
+              facility, located in the Idu Industrial Area, Abuja, is equipped
+              with cutting-edge technology and a skilled workforce committed to
+              delivering excellence. We partner with globally recognized
+              technical experts like Armormax and leverage our strong regulatory
+              backing to ensure the highest standards of quality and
+              reliability.
             </p>
 
             <a href="/about" class="btn-text">
               Learn More About Us &rarr;
             </a>
           </div>
-          <div className="section__mission-statement-col-2">
-            <p>
-              With our facility in Idu Industrial Area, Abuja, Phylote Nigeria
-              Limited is well-equipped to deliver Excellent solutions,
-              including:
-            </p>
-            <p>
-              Armoring Services: High-performance armored vehicles designed for
-              military, law enforcement, and private sector needs. CNG
-              Conversion Solutions: Phylote offers cutting-edge Compressed
-              Natural Gas (CNG) solutions for vehicles and power systems. Our
-              services include retrofitting vehicles with CNG dual-fuel systems,
-              deploying CNG-powered generators, and establishing NG dispensing
-              stations at strategic locations. These initiatives reduce
-              operational costs, enhance energy security, and support Nigeria's
-              shift toward sustainable energy. Maintenance and Repair: Ensuring
-              the reliability and longevity of defense assets through expert
-              servicing. Customization: Tailor-made solutions to meet specific
-              operational requirements. Our CNG solutions represent our
-              commitment to energy sustainability, cost-efficiency, and
-              operational flexibility. By leveraging Nigeria's abundant natural
-              gas resources, we help organizations reduce reliance on
-              traditional fuels while achieving long-term savings and
-              environmental benefits.
-            </p>
+          <div className="section__mission-statement-col-2 ">
+            <div className="composition ">
+              <img
+                src="/img/AGMS-57.jpg"
+                alt="armored vehicle"
+                className="composition_photo animate slideLeft composition_photo--1"
+              ></img>
+              <img
+                src="/img/escalade1.jpg"
+                alt="armored vehicle"
+                className="composition_photo animate fade-in  composition_photo--2"
+              ></img>
+              <img
+                src="/img/cobra4.jpg"
+                alt="armored vehicle"
+                className="composition_photo animate slideUp composition_photo--3"
+              ></img>
+            </div>
           </div>
         </section>
 
         <section className="section__mission_statement-2">
-          <div className="section__mission_statement-2-item section__mission_statement-2-item--1">
+          <div className="section__mission_statement-2-item section__mission_statement-2-item--1 animate slideRight">
             <img
               className="phylote-logo"
               src="/img/tlc-79/TLC79-RC1.jpg"
               alt="phylote logo"
             />
           </div>
-          <div className="section__mission_statement-2-item--2">
+          <div className="section__mission_statement-2-item--2 animate fade-in">
             <p>
               At Phylote Nigeria Limited, we are driven by the belief that those
               who protect our lives deserve vehicles that are meticulously
@@ -121,7 +106,7 @@ function Home() {
               vehicle is fully prepared for any challenge.
             </p>
           </div>
-          <div className="section__mission_statement-2-item section__mission_statement-2-item--3">
+          <div className="section__mission_statement-2-item section__mission_statement-2-item--3 animate slideLeft">
             <img
               className="phylote-logo"
               src="/img/tlc-79/TLC79-RC2.jpg"

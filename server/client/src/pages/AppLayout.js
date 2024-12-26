@@ -367,7 +367,11 @@ function AppLayout() {
 
             <div class="service__core-service--container">
               <div className="image_container">
-                <img className="image maintenance" src="/img/maintenance.jpg" alt="" />
+                <img
+                  className="image maintenance"
+                  src="/img/maintenance.jpg"
+                  alt=""
+                />
               </div>
               <div class="info">
                 <div>

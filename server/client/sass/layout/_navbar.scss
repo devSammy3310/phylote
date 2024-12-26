@@ -26,13 +26,13 @@ nav {
   align-items: center;
   padding: 2.5rem 0;
   height: 7rem;
-  background-image: linear-gradient(
-      to left bottom,
-      rgba($color-black, 0),
-      rgba($color-primary-dark, 0)
-    ),
-    url("../src/assets/img/flag-nigeria.jpg");
-  background-size: cover;
+  // background-image: linear-gradient(
+  //     to left bottom,
+  //     rgba($color-black, 0),
+  //     rgba($color-primary-dark, 0)
+  //   ),
+  //   url("../src/assets/img/flag-nigeria.jpg");
+  // background-size: cover;
 
   @include respond(phone) {
     padding: 0;
@@ -201,13 +201,13 @@ nav {
 }
 
 
-.contact,
-.service {
-  color: $color-primary !important;
-}
+// .contact,
+// .service {
+//   color: $color-primary !important;
+// }
 
-.about,
-.weapons,
-.armored {
-  color: aliceblue !important;
-}
+// .about,
+// .weapons,
+// .armored {
+//   color: aliceblue !important;
+// }
