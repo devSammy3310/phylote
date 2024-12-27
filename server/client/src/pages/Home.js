@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import useAnimateOnView from "../components/useAnimateOnView";
 import Carousel from "../components/carousel";
 import Card from "../components/Card";
 import Popup from "../components/Popup";
@@ -8,6 +8,7 @@ import { mostUsedVehicles } from "../data/vehicles_data.js";
 import { homepageCarousel } from "../data/vehicles_data";
 import PhyloteIntro from "../components/phylote_intro.js";
 import VehicleCategory from "./vehicleCategory.js";
+import { use } from "react";
 
 function Home() {
   const images = [
@@ -15,7 +16,7 @@ function Home() {
     { src: "/img/1MM3049.jpg", alt: "armored vehicle" },
     { src: "/img/Cougar5.jpg", alt: "armored vehicle" },
   ];
-
+  useAnimateOnView();
   return (
     <section className="home_section--main">
       <main>

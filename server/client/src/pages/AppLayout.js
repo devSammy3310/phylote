@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+// import useAnimateOnView from "./components/useAnimateOnView";
 import PageHeader from "../components/PageHeader";
 import VehicleCategory from "./vehicleCategory";
 import Card from "../components/Card";
@@ -7,6 +8,7 @@ import { Form } from "../components/Form";
 
 function AppLayout() {
   const { id } = useParams();
+  // useAnimateOnView();
 
   // Render based on the route parameter (id)
   switch (id) {

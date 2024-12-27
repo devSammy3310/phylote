@@ -1,7 +1,6 @@
 import "./styles.css";
 import "./carousel.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import useAnimateOnView from "./components/useAnimateOnView";
 import ScrollToTop from "./components/ScrollToTop";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -13,7 +12,6 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
 function App() {
-  useAnimateOnView();
   return (
     <Router>
       <ScrollToTop />
