@@ -1753,6 +1753,15 @@ nav {
   align-items: center;
 }
 
+.vehicle__category-header {
+  font-size: 2rem;
+  font-family: "Bebas Neue", "sans-serif";
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  display: inline-block;
+}
+
 .navigation__checkbox {
   display: none;
 }
@@ -2434,7 +2443,7 @@ nav {
   height: 45rem;
 }
 .service__core-service--container .image_container {
-  height: 50rem;
+  height: 45rem;
   padding: 6rem;
 }
 .service__core-service .info {

@@ -108,7 +108,6 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 3rem rgba($color-black, 0.2);
 
-    // Add compatibility for older browsers
     -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
   }
 }

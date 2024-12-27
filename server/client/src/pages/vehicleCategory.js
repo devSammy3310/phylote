@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 function VehicleCategory({ ID }) {
   return (
     <section className="vehicles__page-section-vehicle__category">
+      {/* <p className="vehicle__category-header">
+        Each vehicle category is crafted to exceed expectations, ensuring safety
+        without compromising on performance. Discover how Phylote Nigeria
+        Limited can tailor these solutions to your unique needs!
+      </p> */}
       <div className="categories">
         {/* All Armored Vehicles */}
         <Link className="link" to="/armored-vehicles/all-armored-vehicles">

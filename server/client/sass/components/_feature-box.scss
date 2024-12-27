@@ -31,7 +31,7 @@
   // Ensure accessibility on focus
   &:focus,
   &:active {
-    outline: none; // Remove default outline
+    outline: none; 
     box-shadow: 0 3rem 5rem rgba($color-black, 0.7); // Slightly stronger box-shadow on focus/active
     transform: translateY(-1.2rem) scale(1.05); // Slightly larger on active/focus
   }

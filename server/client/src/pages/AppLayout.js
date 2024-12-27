@@ -329,11 +329,16 @@ function AppLayout() {
 
             <div class="service__core-service--container">
               <div className="image_container">
-                <img
-                  className="image security_enhancement"
-                  src="/img/security_enhancement.png"
-                  alt=""
-                />
+                <iframe className="image"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/6Iggj_-m7-k?si=BL3b9_n28KAYcP60"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
               </div>
               <div class="info">
                 <div>
