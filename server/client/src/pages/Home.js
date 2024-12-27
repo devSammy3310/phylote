@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useAnimateOnView from "../components/useAnimateOnView";
+import useAnimateOnView from "../components/useAnimate.js";
 import Carousel from "../components/carousel";
 import Card from "../components/Card";
 import Popup from "../components/Popup";
@@ -16,7 +16,7 @@ function Home() {
     { src: "/img/1MM3049.jpg", alt: "armored vehicle" },
     { src: "/img/Cougar5.jpg", alt: "armored vehicle" },
   ];
-  useAnimateOnView();
+  useAnimateOnView({ threshold: 0, rootMargin: "" });
   return (
     <section className="home_section--main">
       <main>
@@ -96,15 +96,19 @@ function Home() {
             />
           </div>
           <div className="section__mission_statement-2-item--2 animate fade-in">
-            <p>
-              At Phylote Nigeria Limited, we are driven by the belief that those
-              who protect our lives deserve vehicles that are meticulously
-              designed to safeguard theirs. Every Phylote armored vehicle is
-              crafted by skilled artisans, engineered to withstand high-caliber
-              rounds and extreme environmental conditions. While our standard
-              models are equipped with an extensive range of essential features,
-              we offer a variety of upgrades and custom options to ensure your
-              vehicle is fully prepared for any challenge.
+            <p className="u-margin-bottom-small">
+              "
+              <strong>
+                At Phylote, we don’t just meet expectations—we exceed them. Our
+                commitment to innovation, security, and national development
+                makes us the trusted choice for defense solutions. Explore our
+                services and discover how we can help protect lives, empower
+                your operations, and build a safer future."
+              </strong>
+              <p className="u-margin-top-small">
+                {" "}
+                — CEO Phylote Nigeria Limited
+              </p>
             </p>
           </div>
           <div className="section__mission_statement-2-item section__mission_statement-2-item--3 animate slideLeft">

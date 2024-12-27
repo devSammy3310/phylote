@@ -357,7 +357,7 @@ function AppLayout() {
                   className="image"
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/mlqZOH0MHB8?si=xmtzV-X-jj1pGrlx"
+                  src="https://www.youtube.com/embed/wBzubAvLt1w?si=BwNun6CvLxudlklg"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -409,6 +409,31 @@ function AppLayout() {
               </div>
               <div className="image_container">
                 <img className="image" src="/img/cng_tank.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="service__core-service--container">
+              <div className="image_container">
+                <img
+                  className="image maintenance"
+                  src="/img/cng_station.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <div>
+                  <h2>CNG station</h2>
+                  <p>
+                    At Phylote Nigeria Limited, we don’t just build CNG stations;
+                    we build the future of sustainable energy in Nigeria.
+                    Partner with us to transform your fueling infrastructure and
+                    embrace the next generation of energy solutions.Switching to
+                    NG as a primary fuel source offers tremendous benefits,
+                    including reduced operational costs, lower carbon emissions,
+                    and energy security by utilizing Nigeria's abundant natural
+                    gas resources.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
