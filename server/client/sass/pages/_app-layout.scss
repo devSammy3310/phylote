@@ -3,6 +3,10 @@
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   margin-top: 5rem;
 
+  &-map {
+    padding: 5rem;
+  }
+
   &-details {
     margin: 2rem 5rem;
     font-size: clamp(1rem, 0.714rem + 1.429vw, 1.8rem);
@@ -292,7 +296,7 @@
   height: 50rem;
 }
 
-.maintenance{
+.maintenance {
   width: 40rem !important;
   margin-left: 6rem;
 }

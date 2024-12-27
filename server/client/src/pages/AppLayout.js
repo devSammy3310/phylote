@@ -276,6 +276,18 @@ function AppLayout() {
               <Form />
             </div>
           </div>
+
+          <div className="contact__page-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.8723121406924!2d7.4521197999999975!3d9.075395499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0bf6e563be61%3A0xe999452652617173!2sInternational%20Armoring!5e0!3m2!1sen!2stw!4v1735296926290!5m2!1sen!2stw"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </>
       );
 
@@ -424,14 +436,14 @@ function AppLayout() {
                 <div>
                   <h2>CNG station</h2>
                   <p>
-                    At Phylote Nigeria Limited, we don’t just build CNG stations;
-                    we build the future of sustainable energy in Nigeria.
-                    Partner with us to transform your fueling infrastructure and
-                    embrace the next generation of energy solutions.Switching to
-                    NG as a primary fuel source offers tremendous benefits,
-                    including reduced operational costs, lower carbon emissions,
-                    and energy security by utilizing Nigeria's abundant natural
-                    gas resources.
+                    At Phylote Nigeria Limited, we don’t just build CNG
+                    stations; we build the future of sustainable energy in
+                    Nigeria. Partner with us to transform your fueling
+                    infrastructure and embrace the next generation of energy
+                    solutions.Switching to NG as a primary fuel source offers
+                    tremendous benefits, including reduced operational costs,
+                    lower carbon emissions, and energy security by utilizing
+                    Nigeria's abundant natural gas resources.
                   </p>
                 </div>
               </div>
