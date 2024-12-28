@@ -16,16 +16,19 @@ const port = process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "/client/build")));
+
+// Serve static files from the React app (make sure build is correct)
+app.use(express.static(path.join(__dirname, "client", "build")));
+
+// Set up API routes
 app.use("/", routesHandler);
 
-// Render client for any path
+// Catch-all route for React Router
 app.get("*", (req, res) =>
-  res.sendFile(path.join(__dirname, "/client/build/index.html"))
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"))
 );
 
 app.listen(port, () => {
-  console.log("Server is running on port 4000");
+  console.log("Server is running on port " + port);
 });

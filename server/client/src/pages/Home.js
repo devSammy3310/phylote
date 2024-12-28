@@ -62,9 +62,9 @@ function Home() {
               reliability.
             </p>
 
-            <a href="/about" class="btn-text">
+            <Link to="/about" class="btn-text">
               Learn More About Us &rarr;
-            </a>
+            </Link>
           </div>
           <div className="section__mission-statement-col-2 ">
             <div className="composition ">

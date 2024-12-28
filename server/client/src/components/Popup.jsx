@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Carousel from "./carousel";
 import { homepageCarousel } from "../data/vehicles_data";
 
@@ -56,12 +57,12 @@ function Popup({ ID, image, name, details, features, specs, close_ref }) {
                 ))}
               </ul>
 
-              <a
-                href="/contact"
+              <Link
                 className="popup__button u-text-center btn btn-green btn--round"
+                to={"/contact"}
               >
                 Get a Quote
-              </a>
+              </Link>
             </div>
           )}
         </div>
