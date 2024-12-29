@@ -1128,7 +1128,6 @@ body {
 @media (max-width: 480px) {
   .carousel-slide-card {
     width: 100vw !important;
-    padding: 1rem;
   }
 }
 
