@@ -37,7 +37,7 @@
       object-fit: cover;
       width: 100%;
       -webkit-object-fit: cover; // Safari support
-      object-position:center; // Ensure image is centered
+      object-position: center; // Ensure image is centered
     }
   }
 
@@ -51,10 +51,12 @@
 
       @include respond(tab-port) {
         height: 50rem;
+        width: 50vw !important;
       }
 
       @include respond(phone) {
-        width: 80vw !important;
+        width: 100vw !important;
+        padding: 1rem;
       }
     }
   }

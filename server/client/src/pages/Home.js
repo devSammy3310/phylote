@@ -87,6 +87,8 @@ function Home() {
           </div>
         </section>
 
+        
+
         <section className="section__mission_statement-2">
           <div className="section__mission_statement-2-item section__mission_statement-2-item--1 animate slideRight">
             <img

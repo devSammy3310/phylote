@@ -1,13 +1,13 @@
 .home_section--main {
   background-color: $color-grey-light-1;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
   }
 }
 
 .section__mission-statement {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   position: relative;
   background-color: #f7f7f7;
   font-size: clamp(1rem, 0.714rem + 1.429vw, 1.5rem);
@@ -15,7 +15,11 @@
   color: #777;
   // margin-top: 2rem;
 
-  @media (min-width: 760px) {
+  @include respond(phone) {
+    display: flex;
+    font-size: clamp(1.6rem, 0.714rem + 1.429vw, 1.5rem);
+    height: 90rem;
+    flex-direction: column;
   }
 
   &-col-1 {
@@ -24,54 +28,56 @@
     flex-direction: column;
     padding: 0 2rem;
     text-align: justify;
-    flex: 1;
 
     @include respond(tab-port) {
       // margin-top: 1rem;
     }
 
-    @include respond(phone) {
-      height: 5rem;
-      margin-top: 4rem;
+    & p {
+      @include respond(tab-port) {
+        animation: none !important;
+      }
     }
 
-    a {
+    @include respond(tab-port) {
+      margin-top: 0;
+    }
+
+    & .btn-text {
       width: fit-content;
     }
   }
 
   &-col-2 {
-    flex: 1;
-    // height: 30rem;
     margin: 2rem;
- 
-
-    @include respond(tab-port) {
-      // margin-top: 15rem;
-    }
   }
 }
 
 .section__mission_statement-2 {
- background-image: url("../src/assets/img/sleek_black.jpg");
+  background-image: url("../src/assets/img/sleek_black.jpg");
   background-size: cover; /* Ensure the image scales properly */
   background-position: center; /* Keeps the image centered */
   position: relative;
   height: 85rem;
+  margin-top: 5rem;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
-  @media (min-width: 760px) {
-    margin-top: 5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  @include respond(tab-port) {
   }
 
   &-item {
     &--1 {
+      @include respond(phone) {
+        display: none;
+        visibility: hidden;
+      }
+
+      @include respond(tab-port) {
+      }
     }
 
     &--2 {
-
       color: #777;
       padding: 5rem 5rem;
       font-family: "Poppins", "sans-serif";
@@ -80,16 +86,27 @@
       font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
       color: #fff;
       height: 37%;
+      font-size: 1.1vw;
+      width: 100%;
+      padding: 3rem;
 
-      @media (min-width: 760px) {
-        font-size: 1.1vw;
-        width: 100%;
-        // height: 32rem;
-        padding: 3rem;
+       @include respond(tab-port) {
+        text-align: none;
+        font-size: clamp(1rem, 0.2rem + 1.429vw, 2rem);
       }
 
+      @include respond(phone) {
+        text-align: none;
+        height: 35rem;
+        font-size: clamp(1.7rem, 0.714rem + 1.429vw, 2rem);
+      }
+
+     
       p {
         font-family: "Poppins", "sans-serif";
+
+        @include respond(tab-port) {
+        }
       }
     }
 
@@ -99,8 +116,9 @@
         height: 35rem;
       }
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         display: none;
+        visibility: hidden;
       }
     }
 
@@ -134,7 +152,7 @@
       top: 65%;
     }
 
-    @include respond(phone) {
+    @include respond(tab-port) {
     }
 
     h1 {
@@ -145,7 +163,7 @@
         font-size: 5.4rem;
       }
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         font-size: 4.8rem;
       }
     }
@@ -161,7 +179,7 @@
       width: 50%;
       font-size: 1.6rem;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         width: 80%;
         font-size: 1.6rem;
       }
@@ -188,7 +206,8 @@
   margin-top: -8rem;
   z-index: 999;
 
-  @media (min-width: 760px) {
+  @include respond(tab-port) {
+    padding: 8rem 0rem;
     height: 70rem;
   }
 
@@ -209,7 +228,7 @@
   //   height: 60rem;
   // }
 
-  // @include respond(phone) {
+  // @include respond(tab-port) {
   //   padding: 3rem 2rem;
   //   height: 70rem;
   // }
@@ -238,7 +257,7 @@
     //   margin: 2rem 6rem;
     // }
 
-    // @include respond(phone) {
+    // @include respond(tab-port) {
     //   display: flex;
     //   justify-content: center;
     //   height: 25rem;
@@ -260,7 +279,7 @@
     @include respond(tab-port) {
     }
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       display: block;
     }
   }
@@ -269,7 +288,7 @@
     @include respond(tab-port) {
     }
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       display: none;
     }
   }
@@ -278,7 +297,7 @@
 .btn-text {
   margin-top: 6.6rem;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     margin-top: 0;
   }
 }
@@ -291,7 +310,7 @@
   position: relative;
   background-color: $color-grey-light-1;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     padding-bottom: 0;
     height: 35rem;
   }
@@ -301,9 +320,9 @@
   }
 
   &-support-box {
-   background-image: url("../src/assets/img/sleek_black.jpg");
-  background-size: cover; /* Ensure the image scales properly */
-  background-position: center; /* Keeps the image centered */
+    background-image: url("../src/assets/img/sleek_black.jpg");
+    background-size: cover; /* Ensure the image scales properly */
+    background-position: center; /* Keeps the image centered */
     width: 70%;
     height: 40rem;
     background-color: $color-white;
@@ -313,7 +332,7 @@
     top: 40%;
     transform: translate(-50%, -50%) skewX(-12deg);
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       width: 100%;
       padding-top: 3rem;
       transform: translate(-50%, -50%) skewX(0deg);
@@ -337,7 +356,7 @@
     margin: 5rem 5rem;
     transform: skewX(12deg);
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       margin: 5rem 0;
       width: 100%;
       transform: skewX(0deg);
@@ -350,7 +369,7 @@
       color: $color-white;
       display: block;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         text-align: center;
 
         font-size: clamp(1rem, 1rem + 1.5vw, 2rem);
@@ -364,7 +383,7 @@
       letter-spacing: 0.5rem;
       color: $color-white;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         font-size: 4.8rem;
         align-items: center;
         text-align: center;
@@ -381,7 +400,7 @@
       margin-top: 3rem;
       font-size: 3rem !important;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         margin-top: 1rem;
         font-size: 2rem !important;
       }
@@ -403,7 +422,7 @@
     margin-top: 1rem;
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     margin-top: 1rem;
   }
 }
@@ -415,7 +434,7 @@
     @include respond(tab-port) {
     }
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       font-size: 4rem;
     }
   }
