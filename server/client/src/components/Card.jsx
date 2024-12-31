@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Card({ ID, image, name, details }) {
   return (
@@ -24,9 +25,9 @@ function Card({ ID, image, name, details }) {
           </div>
         )}
 
-        <a href={`#popup-${ID}`}>
+        <Link to={`/vehicle/${ID}`}>
           <h1 className="btn">View model</h1>
-        </a>
+        </Link>
       </div>
 
       <div className={`card__side card__side--back card__side--back-${ID}`}>

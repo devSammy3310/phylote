@@ -29,6 +29,7 @@
     width: 100%;
 
     @include respond(tab-port) {
+      width: 50%;
       height: 30rem;
     }
 
@@ -50,13 +51,19 @@
       }
 
       @include respond(tab-port) {
-        height: 50rem;
-        width: 50vw !important;
+        width: 100vw !important;
+        
       }
 
       @include respond(phone) {
-        width: 100vw !important;
+       margin-bottom: 3rem!important;
+        width: 94% !important;
+        margin: 0rem 0;
+      }
 
+      @include respond(mini-phone){
+        width: 100% !important;
+        margin: 0rem auto;
       }
     }
   }

@@ -12,7 +12,7 @@
   @include respond(tab-port) {
     flex-direction: column; /* Stack elements on smaller screens */
     padding: 2rem 3rem;
-    height: 28rem;
+    height: 15rem;
     align-items: center;
 
     & * {
@@ -35,8 +35,10 @@
     object-fit: cover; /* Prevents image stretching */
 
     @include respond(tab-port) {
-      width: 11rem;
-      height: 11rem;
+      display: none;
+      visibility: hidden;
+      width: 8rem;
+      height: 8rem;
     }
   }
 
@@ -53,7 +55,7 @@
     color: $color-primary;
 
     @include respond(tab-port) {
-      font-size: 6rem; /* Smaller font on mobile */
+      font-size: 4rem; /* Smaller font on mobile */
     }
   }
 

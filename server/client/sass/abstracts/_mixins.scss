@@ -69,9 +69,6 @@
 //   animation: moveInBottom 3s ease-in-out forwards;
 // }
 
-
-
-
 // Mixin centering elements
 @mixin abscenter {
   position: absolute;
@@ -82,17 +79,8 @@
   margin: auto; // Fallback for older browsers
 }
 
-// MEDIA QUERY MANAGER
-/*
-0 - 600PX:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800px] is where our normal style apply
-1800px +:       Big desktop
-*/
-
 // Breakpoint Variables (in px)
-$mini-phone: 320px;
+$mini-phone: 380px;
 $mini-phone-land: 700px;
 $phone: 480px;
 $phone-land: 900px;

@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/*
-0 - 600PX:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800px] is where our normal style apply
-1800px +:       Big desktop
-*/
 @-webkit-keyframes slideDown {
   0% {
     transform: translateY(-50px);
@@ -833,7 +826,17 @@ body {
   width: 35rem;
   border: none;
   background-color: #f7f7f7;
-  margin: 3rem 0;
+  margin: 3rem 0rem;
+}
+@media (max-width: 480px) {
+  .card {
+    perspective: none;
+    -webkit-perspective: none;
+    -moz-perspective: none;
+    width: 100%;
+    height: 40rem;
+    margin: 3rem 0rem;
+  }
 }
 .card-shadow {
   box-shadow: 0 1.5rem 4rem #55c57a !important;
@@ -870,6 +873,16 @@ body {
   transform: rotateY(180deg);
   position: relative;
 }
+@media (max-width: 480px) {
+  .card__side--back {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .card__side--back {
+    display: none;
+  }
+}
 .card__side--back h1 {
   color: #fff;
   font-family: "Bebas Neue", "sans-serif";
@@ -896,12 +909,25 @@ body {
   width: 100%;
   pointer-events: none;
 }
-@media (max-width: 1800px) {
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+@media (max-width: 480px) {
   .card:hover .card__side--front {
-    transform: rotateY(-180deg);
-  }
-  .card:hover .card__side--back {
     transform: rotateY(0);
+  }
+}
+@media (max-width: 900px) {
+  .card:hover .card__side--front {
+    transform: rotateY(0);
+  }
+}
+.card:hover .card__side--back {
+  transform: none;
+}
+@media (max-width: 480px) {
+  .card:hover .card__side--back {
+    transform: none;
   }
 }
 .card__picture {
@@ -1101,6 +1127,7 @@ body {
 }
 @media (max-width: 834px) {
   .carousel-fade {
+    width: 50%;
     height: 30rem;
   }
 }
@@ -1121,13 +1148,20 @@ body {
 }
 @media (max-width: 834px) {
   .carousel-slide-card {
-    height: 50rem;
-    width: 50vw !important;
+    width: 100vw !important;
   }
 }
 @media (max-width: 480px) {
   .carousel-slide-card {
-    width: 100vw !important;
+    margin-bottom: 3rem !important;
+    width: 94% !important;
+    margin: 0rem 0;
+  }
+}
+@media (max-width: 380px) {
+  .carousel-slide-card {
+    width: 100% !important;
+    margin: 0rem auto;
   }
 }
 
@@ -1183,7 +1217,7 @@ body {
   .page-header {
     flex-direction: column; /* Stack elements on smaller screens */
     padding: 2rem 3rem;
-    height: 28rem;
+    height: 15rem;
     align-items: center;
   }
   .page-header * {
@@ -1206,8 +1240,10 @@ body {
 }
 @media (max-width: 834px) {
   .page-header__logo {
-    width: 11rem;
-    height: 11rem;
+    display: none;
+    visibility: hidden;
+    width: 8rem;
+    height: 8rem;
   }
 }
 .page-header__current-container {
@@ -1225,7 +1261,7 @@ body {
 }
 @media (max-width: 834px) {
   .page-header__main {
-    font-size: 6rem; /* Smaller font on mobile */
+    font-size: 4rem; /* Smaller font on mobile */
   }
 }
 .page-header__sub {
@@ -2197,6 +2233,11 @@ nav {
     margin-top: 0;
   }
 }
+@media (max-width: 480px) {
+  .btn-text {
+    font-size: 1.3rem !important;
+  }
+}
 
 .section__service {
   padding-bottom: 50rem;
@@ -2581,10 +2622,28 @@ nav {
   color: black;
   text-align: justify;
 }
+@media (max-width: 900px) {
+  .vehicles__page-intro {
+    margin: 3rem;
+    padding: 0;
+  }
+}
+@media (max-width: 834px) {
+  .vehicles__page-intro {
+    margin: 3rem;
+    padding: 0;
+  }
+}
 .vehicles__page-intro h1 {
   font-size: 3.5rem;
   font-family: "Bebas Neue", "sans-serif";
   font-weight: bold;
+}
+@media (max-width: 834px) {
+  .vehicles__page-intro h1 {
+    font-size: 2rem;
+    padding: 0;
+  }
 }
 .vehicles__page-intro p {
   color: black;
@@ -2598,11 +2657,32 @@ nav {
   margin: 5rem;
   color: black;
 }
+@media (max-width: 834px) {
+  .vehicles__page h2 {
+    margin: 1rem;
+  }
+}
 .vehicles__page--all-armored-vehicles {
   display: grid;
+  width: 100vw;
   background-color: #f7f7f7;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   margin: 5rem 5rem;
+}
+@media (max-width: 900px) {
+  .vehicles__page--all-armored-vehicles {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    margin: 2rem 5rem;
+  }
+}
+@media (max-width: 834px) {
+  .vehicles__page--all-armored-vehicles {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    padding: 0 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

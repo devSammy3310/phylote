@@ -5,13 +5,27 @@
     margin-left: 5rem;
     color: black;
     text-align: justify;
+
+    @include respond(phone-land){
+      margin: 3rem;
+      padding: 0;
+    }
+
+    @include respond(tab-port) {
+      margin: 3rem;
+      padding: 0;
+    }
     & h1 {
       font-size: 3.5rem;
       font-family: $font-style-secondary;
       font-weight: bold;
-    }
 
-   
+      @include respond(tab-port) {
+        font-size: 2rem;
+
+        padding: 0;
+      }
+    }
 
     & p {
       color: black;
@@ -20,21 +34,37 @@
     }
   }
 
-   & h2 {
-        font-family: $font-style-secondary;
-        text-align: center;
-        font-weight: bold;
-        margin: 5rem;
-        color: black;
+  & h2 {
+    font-family: $font-style-secondary;
+    text-align: center;
+    font-weight: bold;
+    margin: 5rem;
+    color: black;
+
+    @include respond(tab-port) {
+      margin: 1rem;
     }
+  }
 
   &--all-armored-vehicles {
     display: grid;
+    width: 100vw;
     background-color: $color-grey-light-1;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     // height: 100vh;
     margin: 5rem 5rem;
-  }
 
-  
+    @include respond(phone-land){
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      margin: 2rem 5rem;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+      width: 100%;
+      background-color: $color-white;
+      margin: 0;
+      padding: 0 2rem;
+    }
+  }
 }

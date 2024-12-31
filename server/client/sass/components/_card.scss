@@ -1,13 +1,22 @@
 .card {
   position: relative;
   perspective: 2500rem;
-  -webkit-perspective: 2500rem; // Safari compatibility
-  -moz-perspective: 2500rem; // Firefox compatibility
+  -webkit-perspective: 2500rem;
+  -moz-perspective: 2500rem;
   height: 40rem;
   width: 35rem;
   border: none;
   background-color: $color-grey-light-1;
-  margin: 3rem 0;
+  margin: 3rem 0rem;
+
+  @include respond(phone) {
+    perspective: none;
+    -webkit-perspective: none;
+  -moz-perspective: none;
+    width: 100%;
+    height: 40rem;
+    margin: 3rem 0rem;
+  }
 
   &-shadow {
     box-shadow: 0 1.5rem 4rem rgba($color-primary, 1) !important;
@@ -46,6 +55,14 @@
       transform: rotateY(180deg);
       position: relative;
 
+      @include respond(phone) {
+        display: none;
+      }
+
+       @include respond(phone-land) {
+        display: none;
+      }
+
       & h1 {
         color: $color-white;
         font-family: $font-style-secondary;
@@ -82,15 +99,27 @@
     }
   }
 
-  @include respond(desktop) {
-    &:hover &__side--front {
-      transform: rotateY(-180deg);
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+
+    @include respond(phone) {
+      transform: rotateY(0);
     }
 
-    &:hover &__side--back {
+    @include respond(phone-land) {
       transform: rotateY(0);
     }
   }
+
+  &:hover &__side--back {
+    transform: none;
+
+    @include respond(phone) {
+      transform: none;
+    }
+  }
+
+  
 
   &__picture {
     background-size: cover;

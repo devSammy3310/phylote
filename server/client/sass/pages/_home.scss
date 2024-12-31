@@ -298,7 +298,12 @@
   margin-top: 6.6rem;
 
   @include respond(tab-port) {
+
     margin-top: 0;
+  }
+
+  @include respond (phone){
+    font-size: 1.3rem!important;
   }
 }
 

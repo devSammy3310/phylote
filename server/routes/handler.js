@@ -24,6 +24,9 @@ router.get("/vehicles/:id", (req, res) => {
       (vehicle) => vehicle.category === "Military Armored"
     );
     res.json(militaryArmored);
+  } else if (vehicles.find((vehicle) => vehicle.ID === req.params.id)) {
+    const vehicle = vehicles.find((vehicle) => vehicle.ID === req.params.id);
+    res.json(vehicle);
   } else {
     res.status(404).json({ error: "Category not found" });
   }
@@ -37,7 +40,5 @@ router.get("/vehicles/:id", (req, res) => {
   //   res.status(404).json({ error: "Vehicle not found" });
   // }
 });
-
-
 
 export default router;

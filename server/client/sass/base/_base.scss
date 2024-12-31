@@ -23,6 +23,7 @@ html {
   @include respond(tab-port) {
     font-size: 62.5%; // Tablet portrait
   }
+
 }
 
 // Body styling for the document

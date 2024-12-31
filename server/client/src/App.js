@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import VehicleDetails from "./pages/VehicleDetails";
 import Home from "./pages/Home";
 import AppLayout from "./pages/AppLayout";
 import VehicleList from "./pages/VehicleList";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/:id" exact element={<AppLayout />} />
           <Route path="/armored-vehicles/:id" exact element={<VehicleList />} />
+          <Route path="/vehicle/:id" exact element={<VehicleDetails />} />
         </Routes>
         <Footer />
       </div>
