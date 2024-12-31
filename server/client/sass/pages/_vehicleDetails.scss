@@ -1,0 +1,48 @@
+.vehicle__details {
+  &-container {
+    @include respond(tab-port) {
+      margin: 3rem 2rem;
+    }
+  }
+
+  &-info {
+    @include respond(tab-port) {
+      margin-top: 3rem;
+    }
+  }
+
+  &-text {
+    @include respond(tab-port) {
+      color: black;
+      font-size: 1.5rem;
+    }
+  }
+
+  &-list .list-item {
+    font-size: 1.6rem;
+    color: black;
+    border-top: solid 1px $color-grey-dark;
+    padding: 1.8rem;
+    list-style: none;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  & .list-item-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: start;
+  }
+
+  &-features .heading-secondary,
+  &-specs .heading-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+  }
+
+  &-carousel {
+  }
+}

@@ -25,20 +25,27 @@
   }
 
   &-fade {
-    height: 30rem;
+    height: 60rem;
     width: 100%;
 
     @include respond(tab-port) {
-      width: 50%;
       height: 30rem;
     }
 
     & img {
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       width: 100%;
-      -webkit-object-fit: cover; // Safari support
-      object-position: center; // Ensure image is centered
+      -webkit-object-fit: cover;
+      object-position: center;
+
+      @include respond(tab-port) {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        -webkit-object-fit: contain;
+        object-position: center;
+      }
     }
   }
 
@@ -52,16 +59,15 @@
 
       @include respond(tab-port) {
         width: 100vw !important;
-        
       }
 
       @include respond(phone) {
-       margin-bottom: 3rem!important;
+        margin-bottom: 3rem !important;
         width: 94% !important;
         margin: 0rem 0;
       }
 
-      @include respond(mini-phone){
+      @include respond(mini-phone) {
         width: 100% !important;
         margin: 0rem auto;
       }

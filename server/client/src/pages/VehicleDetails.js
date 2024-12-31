@@ -12,7 +12,7 @@ function VehicleDetails() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`/vehicles/${id}`)
+    fetch(`https://phylote.onrender.com/vehicles/${id}`)
       .then((res) => res.json())
       .then((vehicle) => {
         setVehicle(vehicle);
@@ -27,6 +27,43 @@ function VehicleDetails() {
   return (
     <section className="vehicle__details">
       <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
+
+      <div class="vehicle__details-container">
+        <div className="vehicle__details-carousel">
+          {" "}
+          <Carousel images={vehicle.image} type="Fade" />
+        </div>
+
+        <div className="vehicle__details-info margin-bottom-med">
+          <p className="vehicle__details-text">{vehicle.details}</p>
+        </div>
+
+        <div class="vehicle__details-features margin-bottom-med">
+          <h2 className="heading-secondary margin-bottom-small">Features</h2>
+          <ul className="vehicle__details-list">
+            {vehicle.features.map((feature, index) => (
+              <li className="list-item" key={index}>
+                {feature}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="vehicle__details-specs">
+          <h2 className="heading-secondary margin-bottom-small">
+            specifications
+          </h2>
+
+          <ul className="vehicle__details-list">
+            {vehicle.specifications.map((specs, index) => (
+              <li className="list-item list-item-grid" key={index}>
+                <div class="specs">{specs.spec}</div>
+                <div class="value">{specs.value}</div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </section>
   );
 }

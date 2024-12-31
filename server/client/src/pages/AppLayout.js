@@ -65,6 +65,14 @@ function AppLayout() {
         </div>
       );
 
+    case "vehicles":
+      return (
+        <div>
+          <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
+          <VehicleCategory />
+        </div>
+      );
+
     case "about":
       return (
         <>
@@ -329,7 +337,8 @@ function AppLayout() {
 
             <div class="service__core-service--container">
               <div className="image_container">
-                <iframe className="image"
+                <iframe
+                  className="image"
                   width="560"
                   height="315"
                   src="https://www.youtube.com/embed/6Iggj_-m7-k?si=BL3b9_n28KAYcP60"

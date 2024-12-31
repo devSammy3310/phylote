@@ -25,7 +25,7 @@ function Card({ ID, image, name, details }) {
           </div>
         )}
 
-        <Link to={`/vehicle/${ID}`}>
+        <Link to={`/vehicles/${ID}`}>
           <h1 className="btn">View model</h1>
         </Link>
       </div>

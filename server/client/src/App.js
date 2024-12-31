@@ -22,7 +22,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/:id" exact element={<AppLayout />} />
           <Route path="/armored-vehicles/:id" exact element={<VehicleList />} />
-          <Route path="/vehicle/:id" exact element={<VehicleDetails />} />
+          <Route path="/vehicles/:id" exact element={<VehicleDetails />} />
         </Routes>
         <Footer />
       </div>

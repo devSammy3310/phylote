@@ -10,9 +10,9 @@
   -moz-background-size: cover; /* Firefox support */
 
   @include respond(tab-port) {
-    flex-direction: column; /* Stack elements on smaller screens */
+    flex-direction: column; 
     padding: 2rem 3rem;
-    height: 15rem;
+    height: 17rem;
     align-items: center;
 
     & * {

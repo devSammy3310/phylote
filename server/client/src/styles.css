@@ -1122,21 +1122,29 @@ body {
   object-position: center;
 }
 .carousel-fade {
-  height: 30rem;
+  height: 60rem;
   width: 100%;
 }
 @media (max-width: 834px) {
   .carousel-fade {
-    width: 50%;
     height: 30rem;
   }
 }
 .carousel-fade img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   -webkit-object-fit: cover;
   object-position: center;
+}
+@media (max-width: 834px) {
+  .carousel-fade img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    -webkit-object-fit: contain;
+    object-position: center;
+  }
 }
 .carousel-slide-card {
   position: relative;
@@ -1215,9 +1223,9 @@ body {
 }
 @media (max-width: 834px) {
   .page-header {
-    flex-direction: column; /* Stack elements on smaller screens */
+    flex-direction: column;
     padding: 2rem 3rem;
-    height: 15rem;
+    height: 17rem;
     align-items: center;
   }
   .page-header * {
@@ -2683,6 +2691,43 @@ nav {
     margin: 0;
     padding: 0 2rem;
   }
+}
+
+@media (max-width: 834px) {
+  .vehicle__details-container {
+    margin: 3rem 2rem;
+  }
+}
+@media (max-width: 834px) {
+  .vehicle__details-info {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 834px) {
+  .vehicle__details-text {
+    color: black;
+    font-size: 1.5rem;
+  }
+}
+.vehicle__details-list .list-item {
+  font-size: 1.6rem;
+  color: black;
+  border-top: solid 1px #777;
+  padding: 1.8rem;
+  list-style: none;
+}
+.vehicle__details-list .list-item:first-child {
+  border-top: none;
+}
+.vehicle__details .list-item-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: start;
+}
+.vehicle__details-features .heading-secondary, .vehicle__details-specs .heading-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
