@@ -64,6 +64,7 @@ function VehicleDetails() {
           </ul>
         </div>
       </div>
+      <div class="shortcuts"></div>
     </section>
   );
 }

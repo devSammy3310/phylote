@@ -2,6 +2,15 @@
   &__checkbox {
     display: none;
   }
+  &__item {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid $color-grey-dark;
+
+    &:first-of-type {
+      border-top: 1px solid $color-grey-dark;
+    }
+  }
 
   &__button {
     background-color: $color-white;
@@ -44,8 +53,6 @@
     backface-visibility: hidden;
     visibility: hidden;
 
-   
-
     @include respond(tab-port) {
       visibility: visible;
       height: 4rem;
@@ -69,24 +76,16 @@
   }
 
   &__list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-    width: 100%;
-  }
-
-  &__item {
-    margin: 1rem;
+    padding: 0;
+  
+    text-align: start;
   }
 
   &__link {
     &:link,
     &:visited {
-      display: inline-block;
-      font-size: 5rem;
+      display: block;
+      font-size: 1.6rem;
       font-weight: 300;
       padding: 1rem 2rem;
       text-decoration: none;
@@ -100,14 +99,6 @@
       );
       background-size: 230%;
       transition: all 0.4s;
-
-      @include respond(phone) {
-        font-size: 3.5rem;
-      }
-
-      @include respond(tab-port) {
-        font-size: 6rem;
-      }
 
       span {
         margin-right: 1rem;

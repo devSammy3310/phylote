@@ -26,13 +26,6 @@ nav {
   align-items: center;
   padding: 2.5rem 0;
   height: 7rem;
-  // background-image: linear-gradient(
-  //     to left bottom,
-  //     rgba($color-black, 0),
-  //     rgba($color-primary-dark, 0)
-  //   ),
-  //   url("../src/assets/img/flag-nigeria.jpg");
-  // background-size: cover;
 
   @include respond(phone) {
     padding: 0;
@@ -74,11 +67,6 @@ nav {
 
 .name-logo-container {
   margin-left: 5rem;
-  // display: flex;
-  // align-items: center;
-  // margin-left: 2.5rem;
-  // justify-content: center;
-  // background-image: ;
 
   @include respond(phone) {
     margin-left: 1rem;
@@ -199,7 +187,6 @@ nav {
 
   &-scrolled {
     background-color: rgba(255, 255, 255, 0.2);
-    // box-shadow: 0 0.4rem 0.2rem -0.2rem black;
     transition: background-color 1s ease-in-out;
   }
 }
@@ -224,14 +211,3 @@ nav {
     margin: 0 0.5rem;
   }
 }
-
-// .contact,
-// .service {
-//   color: $color-primary !important;
-// }
-
-// .about,
-// .weapons,
-// .armored {
-//   color: aliceblue !important;
-// }

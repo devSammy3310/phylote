@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import $ from "jquery";
 
 import { Link } from "react-router-dom";
+import SideBar from "./SideBar";
 
 function Nav() {
   const [scroll, setScroll] = useState(0);
@@ -18,46 +19,11 @@ function Nav() {
 
   return (
     <section>
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
-
-        <div class="navigation__background">&nbsp;</div>
-
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation_item">
-              <Link className="navigation__link" to="/weapons">
-                Weapons
-              </Link>
-            </li>
-            <li class="navigation_item">
-              <Link className="navigation__link" to="/weapons">
-                Armored Vehicles
-              </Link>
-            </li>
-            <li class="navigation_item">
-              <Link className="navigation__link" to="/weapons">
-                About Us
-              </Link>
-            </li>
-            <li class="navigation_item">
-              <Link className="navigation__link" to="/weapons">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
       <nav className={navScroll}>
+        <SideBar />
         <div className="name-logo-container">
           <Link
-            className={
-              scroll > 50 ? "nav-NameLogo " : "nav-NameLogo"
-            }
+            className={scroll > 50 ? "nav-NameLogo " : "nav-NameLogo"}
             to="/"
           >
             <img className="navLogo" src="/img/phylote_logo-main.jpg" />
