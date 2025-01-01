@@ -84,6 +84,11 @@ body {
   letter-spacing: 0.2rem;
   transition: all 0.3s ease-in-out;
   display: inline-block;
+
+  @include respond(mini-phone) {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .heading-secondary {

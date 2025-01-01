@@ -322,6 +322,12 @@ body {
   transition: all 0.3s ease-in-out;
   display: inline-block;
 }
+@media (max-width: 380px) {
+  .heading-secondary-2 {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
+}
 
 .heading-secondary {
   padding-bottom: 1.5rem;
@@ -1416,6 +1422,7 @@ body {
 }
 
 .toggle .middle_line {
+  background-color: #55c57a;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1463,6 +1470,8 @@ input:checked ~ .toggle .middle_line {
   box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3);
   transform: translateX(100%);
   transition: 0.5s ease-in-out;
+  overflow-y: auto; /* Allow vertical scrolling */
+  max-height: 100vh; /* Ensure it doesn't exceed the screen height */
 }
 
 .slide {
@@ -1474,6 +1483,51 @@ input:checked ~ .toggle .middle_line {
   padding: 10px 20px;
   border-top: 1px solid #777;
   border-bottom: 1px solid #777;
+}
+
+.sub-menu {
+  padding-left: 2rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.sub-menu__link {
+  display: block;
+  padding: 8px 0;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.sub-menu__link:hover {
+  background-color: #777;
+}
+
+.submenu-indicator {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.submenu-indicator.open {
+  transform: rotate(180deg);
+}
+
+.sub-menu {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding-left: 20px;
+}
+
+.sub-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-NameLogo.sidebar__logo {
+  margin-left: 2rem;
 }
 
 .mission-statement {
