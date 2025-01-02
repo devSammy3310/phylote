@@ -2166,12 +2166,22 @@ nav {
     flex-direction: column;
   }
 }
+@media (max-width: 380px) {
+  .section__mission-statement {
+    height: 60rem;
+  }
+}
 .section__mission-statement-col-1 {
   display: flex;
   margin: 2rem;
   flex-direction: column;
   padding: 0 2rem;
   text-align: justify;
+}
+@media (max-width: 380px) {
+  .section__mission-statement-col-1 {
+    font-size: clamp(1rem, 0.714rem + 1vw, 1.5rem);
+  }
 }
 @media (max-width: 834px) {
   .section__mission-statement-col-1 p {
@@ -2200,6 +2210,26 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
+@media (max-width: 700px) {
+  .section__mission_statement-2 {
+    height: 50rem;
+  }
+}
+@media (max-width: 480px) {
+  .section__mission_statement-2 {
+    height: 70rem;
+  }
+}
+@media (max-width: 380px) {
+  .section__mission_statement-2 {
+    height: 70rem;
+  }
+}
+@media (max-width: 700px) {
+  .section__mission_statement-2-item--1 {
+    height: 28rem;
+  }
+}
 @media (max-width: 480px) {
   .section__mission_statement-2-item--1 {
     display: none;
@@ -2214,22 +2244,33 @@ nav {
   background-color: #777;
   font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
   color: #fff;
-  height: 37%;
+  height: 31.49rem;
   font-size: 1.1vw;
   width: 100%;
   padding: 3rem;
 }
-@media (max-width: 834px) {
+@media (max-width: 900px) {
   .section__mission_statement-2-item--2 {
     text-align: none;
     font-size: clamp(1rem, 0.2rem + 1.429vw, 2rem);
+  }
+}
+@media (max-width: 700px) {
+  .section__mission_statement-2-item--2 {
+    height: 28rem;
   }
 }
 @media (max-width: 480px) {
   .section__mission_statement-2-item--2 {
     text-align: none;
     height: 35rem;
-    font-size: clamp(1.7rem, 0.714rem + 1.429vw, 2rem);
+    font-size: clamp(1.6rem, 0.714rem + 1.429vw, 2rem);
+  }
+}
+@media (max-width: 380px) {
+  .section__mission_statement-2-item--2 {
+    height: 35rem;
+    font-size: clamp(1.3rem, 0.714rem + 1.429vw, 2rem);
   }
 }
 .section__mission_statement-2-item--2 p {
@@ -2250,12 +2291,16 @@ nav {
 .section__mission_statement-2-item .phylote-logo {
   visibility: hidden;
   display: none;
+  height: 37%;
+  width: 100%;
+  visibility: visible;
+  display: block;
 }
-@media (min-width: 760px) {
+@media (max-width: 700px) {
   .section__mission_statement-2-item .phylote-logo {
-    height: 37%;
-    width: 100%;
     visibility: visible;
+    height: 100%;
+    width: 100%;
     display: block;
   }
 }
@@ -2265,30 +2310,55 @@ nav {
   flex-direction: column;
   align-items: center;
   width: 98vw;
-  top: 65%;
+  top: 55%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
   color: white;
   font-family: "Bebas Neue", sans-serif;
 }
-@media (max-width: 834px) {
+@media (max-width: 900px) {
   .section__mission_statement-2-global-reach {
-    top: 65%;
+    top: 55rem;
+  }
+}
+@media (max-width: 700px) {
+  .section__mission_statement-2-global-reach {
+    top: 40rem;
+  }
+}
+@media (max-width: 480px) {
+  .section__mission_statement-2-global-reach {
+    top: 52rem;
+  }
+}
+@media (max-width: 380px) {
+  .section__mission_statement-2-global-reach {
+    top: 55rem;
   }
 }
 .section__mission_statement-2-global-reach h1 {
-  font-size: 6.4rem;
+  font-size: clamp(3rem, 0.714rem + 3.429vw, 6.4rem);
   color: #55c57a;
 }
-@media (max-width: 834px) {
+@media (max-width: 900px) {
   .section__mission_statement-2-global-reach h1 {
-    font-size: 5.4rem;
+    font-size: 6rem;
   }
 }
-@media (max-width: 834px) {
+@media (max-width: 700px) {
   .section__mission_statement-2-global-reach h1 {
-    font-size: 4.8rem;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .section__mission_statement-2-global-reach h1 {
+    font-size: 5.8rem;
+  }
+}
+@media (max-width: 380px) {
+  .section__mission_statement-2-global-reach h1 {
+    font-size: 3rem;
   }
 }
 .section__mission_statement-2-global-reach span {
@@ -2315,18 +2385,31 @@ nav {
 
 .section-vehicle__category {
   position: relative;
-  height: 85rem;
+  height: 70rem;
   background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.6), rgba(40, 167, 69, 0.6)), url("../src/assets/img/flag-nigeria.jpg");
   background-size: cover;
   padding: 17rem 2rem;
   transform: skewY(-7deg);
   margin-top: -8rem;
   z-index: 999;
+  margin-bottom: 6rem;
 }
-@media (max-width: 834px) {
+@media (max-width: 900px) {
   .section-vehicle__category {
     padding: 8rem 0rem;
     height: 70rem;
+  }
+}
+@media (max-width: 380px) {
+  .section-vehicle__category {
+    visibility: hidden;
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .section-vehicle__category {
+    visibility: hidden;
+    display: none;
   }
 }
 .section-vehicle__category-flex {
@@ -2367,9 +2450,31 @@ nav {
 .section-vehicle__most-used-card-carousel {
   display: none;
 }
-@media (max-width: 834px) {
+@media (max-width: 900px) {
   .section-vehicle__most-used-card-carousel {
     display: block;
+    padding: 0 20.5rem;
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 700px) {
+  .section-vehicle__most-used-card-carousel {
+    padding: 0 13.5rem;
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 480px) {
+  .section-vehicle__most-used-card-carousel {
+    display: block;
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 380px) {
+  .section-vehicle__most-used-card-carousel {
+    display: block;
+    padding: 0;
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 834px) {

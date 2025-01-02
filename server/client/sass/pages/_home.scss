@@ -22,6 +22,10 @@
     flex-direction: column;
   }
 
+  @include respond(mini-phone) {
+    height: 60rem;
+  }
+
   &-col-1 {
     display: flex;
     margin: 2rem;
@@ -31,6 +35,9 @@
 
     @include respond(tab-port) {
       // margin-top: 1rem;
+    }
+    @include respond(mini-phone) {
+      font-size: clamp(1rem, 0.714rem + 1vw, 1.5rem);
     }
 
     & p {
@@ -63,17 +70,28 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
-  @include respond(tab-port) {
+  @include respond(mini-phone-land) {
+    height: 50rem;
+  }
+
+  @include respond(phone) {
+    height: 70rem;
+  }
+  @include respond(mini-phone) {
+    height: 70rem;
   }
 
   &-item {
     &--1 {
+      @include respond(phone-land) {
+      }
+
+      @include respond(mini-phone-land) {
+        height: 28rem;
+      }
       @include respond(phone) {
         display: none;
         visibility: hidden;
-      }
-
-      @include respond(tab-port) {
       }
     }
 
@@ -85,23 +103,31 @@
       background-color: #777;
       font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
       color: #fff;
-      height: 37%;
+      height: 31.49rem;
       font-size: 1.1vw;
       width: 100%;
       padding: 3rem;
 
-       @include respond(tab-port) {
+      @include respond(phone-land) {
         text-align: none;
         font-size: clamp(1rem, 0.2rem + 1.429vw, 2rem);
+      }
+
+      @include respond(mini-phone-land) {
+        height: 28rem;
       }
 
       @include respond(phone) {
         text-align: none;
         height: 35rem;
-        font-size: clamp(1.7rem, 0.714rem + 1.429vw, 2rem);
+        font-size: clamp(1.6rem, 0.714rem + 1.429vw, 2rem);
       }
 
-     
+      @include respond(mini-phone) {
+        height: 35rem;
+        font-size: clamp(1.3rem, 0.714rem + 1.429vw, 2rem);
+      }
+
       p {
         font-family: "Poppins", "sans-serif";
 
@@ -125,11 +151,15 @@
     .phylote-logo {
       visibility: hidden;
       display: none;
+      height: 37%;
+      width: 100%;
+      visibility: visible;
+      display: block;
 
-      @media (min-width: 760px) {
-        height: 37%;
-        width: 100%;
+      @include respond(mini-phone-land) {
         visibility: visible;
+        height: 100%;
+        width: 100%;
         display: block;
       }
     }
@@ -141,30 +171,47 @@
     flex-direction: column;
     align-items: center;
     width: 98vw;
-    top: 65%;
+    top: 55%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
     color: white;
     font-family: "Bebas Neue", sans-serif;
 
-    @include respond(tab-port) {
-      top: 65%;
+    @include respond(phone-land) {
+      top: 55rem;
     }
 
-    @include respond(tab-port) {
+    @include respond(mini-phone-land) {
+      top: 40rem;
+    }
+
+    @include respond(phone) {
+      top: 52rem;
+    }
+
+    @include respond(mini-phone) {
+      top: 55rem;
     }
 
     h1 {
-      font-size: 6.4rem;
+      font-size: clamp(3rem, 0.714rem + 3.429vw, 6.4rem);
       color: $color-primary;
 
-      @include respond(tab-port) {
-        font-size: 5.4rem;
+      @include respond(phone-land) {
+        font-size: 6rem;
       }
 
-      @include respond(tab-port) {
-        font-size: 4.8rem;
+      @include respond(mini-phone-land) {
+        font-size: 4rem;
+      }
+
+      @include respond(phone) {
+        font-size: 5.8rem;
+      }
+
+      @include respond(mini-phone) {
+        font-size: 3rem;
       }
     }
 
@@ -193,7 +240,7 @@
 
 .section-vehicle__category {
   position: relative;
-  height: 85rem;
+  height: 70rem;
   background-image: linear-gradient(
       to left bottom,
       rgba($color-black, 0.6),
@@ -205,10 +252,21 @@
   transform: skewY(-7deg);
   margin-top: -8rem;
   z-index: 999;
+  margin-bottom: 6rem;
 
-  @include respond(tab-port) {
+  @include respond(phone-land) {
     padding: 8rem 0rem;
     height: 70rem;
+  }
+
+  @include respond(mini-phone) {
+    visibility: hidden;
+    display: none;
+  }
+
+  @include respond(mini-phone-land) {
+    visibility: hidden;
+    display: none;
   }
 
   &-flex {
@@ -222,16 +280,6 @@
       grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
   }
-
-  // @include respond(tab-port) {
-  //   padding: 8rem 1rem;
-  //   height: 60rem;
-  // }
-
-  // @include respond(tab-port) {
-  //   padding: 3rem 2rem;
-  //   height: 70rem;
-  // }
 
   & > * {
     transform: skewY(7deg);
@@ -248,22 +296,6 @@
       width: 17vw;
       height: 25rem;
     }
-
-    // @include respond(tab-port) {
-    //   display: flex;
-    //   justify-content: center;
-    //   height: 20rem;
-    //   width: 70%;
-    //   margin: 2rem 6rem;
-    // }
-
-    // @include respond(tab-port) {
-    //   display: flex;
-    //   justify-content: center;
-    //   height: 25rem;
-    //   width: 90%;
-    //   margin: 2rem 1rem;
-    // }
   }
 }
 
@@ -276,11 +308,27 @@
   &-card-carousel {
     display: none;
 
-    @include respond(tab-port) {
+    @include respond(phone-land) {
+      display: block;
+      padding: 0 20.5rem;
+      margin-bottom: 6rem;
     }
 
-    @include respond(tab-port) {
+    @include respond(mini-phone-land) {
+      padding: 0 13.5rem;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(phone) {
       display: block;
+      padding: 0;
+      margin-bottom: 4rem;
+    }
+
+    @include respond(mini-phone) {
+      display: block;
+      padding: 0;
+      margin-bottom: 4rem;
     }
   }
 
@@ -298,12 +346,11 @@
   margin-top: 6.6rem;
 
   @include respond(tab-port) {
-
     margin-top: 0;
   }
 
-  @include respond (phone){
-    font-size: 1.3rem!important;
+  @include respond(phone) {
+    font-size: 1.3rem !important;
   }
 }
 

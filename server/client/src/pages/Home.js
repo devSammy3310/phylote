@@ -87,14 +87,12 @@ function Home() {
           </div>
         </section>
 
-        
-
         <section className="section__mission_statement-2">
           <div className="section__mission_statement-2-item section__mission_statement-2-item--1 animate slideRight">
             <img
               className="phylote-logo"
               src="/img/tlc-79/TLC79-RC1.jpg"
-              alt="phylote logo"
+              alt="TLC79-RC1 img"
             />
           </div>
           <div className="section__mission_statement-2-item--2 animate fade-in">
@@ -142,7 +140,7 @@ function Home() {
           id="section-vehicle__most-used"
         >
           <div>
-            <h2 className="heading-secondary u-margin-top-large margin-bottom-med">
+            <h2 className="heading-secondary  margin-bottom-med">
               Most Popular Armored Vehicles
             </h2>
           </div>
