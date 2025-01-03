@@ -30,7 +30,7 @@ export const mostUsedVehicles = [
     ],
   },
   {
-    ID: "mostUsedVehicles-2",
+    ID: "TLC79-MSPV",
     category: "Military Armored",
     image: [
       { src: "/img/tlc-79/TLC79-MSPV1.jpg", alt: "armored vehicle" },

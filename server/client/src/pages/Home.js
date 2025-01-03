@@ -160,12 +160,12 @@ function Home() {
             ))}
           </div>
 
-          <Link
-            to="/armored-vehicles/all-armored-vehicles"
+          <a
+            href="/armored-vehicles/all-armored-vehicles"
             className="btn-text"
           >
             VIEW ALL PHYLOTE ARMORED VEHICLES &rarr;
-          </Link>
+          </a>
 
           {mostUsedVehicles.map((vehicle) => (
             <Popup

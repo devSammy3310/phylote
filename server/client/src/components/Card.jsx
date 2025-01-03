@@ -25,9 +25,7 @@ function Card({ ID, image, name, details }) {
           </div>
         )}
 
-        <Link to={`/vehicles/${ID}`}>
-          <h1 className="btn">View model</h1>
-        </Link>
+       
       </div>
 
       <div className={`card__side card__side--back card__side--back-${ID}`}>
@@ -36,6 +34,9 @@ function Card({ ID, image, name, details }) {
           <h1 className="btn">View model</h1>
         </a>
       </div>
+      <Link className="link" to={`/vehicles/${ID}`}>
+        <h1 className="btn">View model</h1>
+      </Link>
     </div>
   );
 }
