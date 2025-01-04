@@ -21,6 +21,13 @@
       width: 100%;
       -webkit-object-fit: cover;
       object-position: center;
+      @include respond(tab-port) {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        -webkit-object-fit: contain;
+        object-position: center;
+      }
     }
   }
 
@@ -29,7 +36,7 @@
     width: 100%;
 
     @include respond(tab-port) {
-      height: 30rem;
+      height: 40rem;
     }
 
     & img {
@@ -62,10 +69,17 @@
         width: 100vw !important;
       }
 
+      @include respond(mini-phone-land) {
+         height: 50rem;
+        margin: auto;
+        
+      }
+
       @include respond(phone) {
         margin-bottom: 3rem !important;
         width: 94% !important;
         margin: 0rem 0;
+        height: 45rem;
       }
 
       @include respond(mini-phone) {
@@ -118,10 +132,8 @@
 }
 .slick-slide {
   width: auto;
-  padding-left: 7rem;
 
   @include respond(tab-land) {
-    height: 50rem;
     padding: 0;
   }
 }

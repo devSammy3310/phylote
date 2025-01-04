@@ -9,7 +9,7 @@ export default function Carousel({ images, type, cardData }) {
   // Effect to update slidesToShow based on window width
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 600) {
+      if (window.innerWidth > 700) {
         setSlidesToShow(2);
       } else {
         setSlidesToShow(1);

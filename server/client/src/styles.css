@@ -1144,13 +1144,22 @@ body {
   -webkit-object-fit: cover;
   object-position: center;
 }
+@media (max-width: 834px) {
+  .carousel-autoplay img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    -webkit-object-fit: contain;
+    object-position: center;
+  }
+}
 .carousel-fade {
   height: 60rem;
   width: 100%;
 }
 @media (max-width: 834px) {
   .carousel-fade {
-    height: 30rem;
+    height: 40rem;
   }
 }
 .carousel-fade img {
@@ -1183,11 +1192,18 @@ body {
     width: 100vw !important;
   }
 }
+@media (max-width: 700px) {
+  .carousel-slide-card {
+    height: 50rem;
+    margin: auto;
+  }
+}
 @media (max-width: 480px) {
   .carousel-slide-card {
     margin-bottom: 3rem !important;
     width: 94% !important;
     margin: 0rem 0;
+    height: 45rem;
   }
 }
 @media (max-width: 380px) {
@@ -1236,11 +1252,9 @@ body {
 
 .slick-slide {
   width: auto;
-  padding-left: 7rem;
 }
 @media (max-width: 1024px) {
   .slick-slide {
-    height: 50rem;
     padding: 0;
   }
 }
@@ -1280,6 +1294,12 @@ body {
   height: 9rem;
   border-radius: 50%;
   object-fit: cover; /* Prevents image stretching */
+}
+@media (max-width: 900px) {
+  .page-header__logo {
+    display: none;
+    visibility: hidden;
+  }
 }
 @media (max-width: 834px) {
   .page-header__logo {
@@ -1997,20 +2017,61 @@ nav {
 }
 @media (max-width: 480px) {
   .vehicles__page-section-vehicle__category {
-    margin: 2rem 1rem;
+    margin: 0;
+    padding: auto;
+  }
+}
+@media (max-width: 380px) {
+  .vehicles__page-section-vehicle__category {
+    margin: 0;
+    padding: 0;
   }
 }
 .vehicles__page-section-vehicle__category .categories {
   display: grid;
   gap: 5rem;
-  grid-template-columns: 1fr 1fr;
   height: 100%;
   grid-template-columns: repeat(4, minmax(10rem, 1fr));
 }
+@media (max-width: 1024px) {
+  .vehicles__page-section-vehicle__category .categories {
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    gap: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  .vehicles__page-section-vehicle__category .categories {
+    grid-template-columns: repeat(4, minmax(10rem, 1fr));
+    gap: 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .vehicles__page-section-vehicle__category .categories {
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+  }
+}
+@media (max-width: 834px) {
+  .vehicles__page-section-vehicle__category .categories {
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    gap: 2rem;
+  }
+}
 @media (max-width: 480px) {
   .vehicles__page-section-vehicle__category .categories {
-    margin: 2rem 1rem;
-    gap: 3rem;
+    margin: 0 1rem 0rem 0rem;
+    padding: 3rem 1rem 3rem 1rem;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 380px) {
+  .vehicles__page-section-vehicle__category .categories {
+    margin: 0 1rem 0rem 0rem;
+    padding: 2rem 1rem 2rem 0;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -2019,11 +2080,70 @@ nav {
   width: 100%;
   margin: 2rem 1rem;
   padding: 2rem 1rem;
+  justify-content: center;
+  display: flex;
 }
-@media (min-width: 760px) {
+@media (max-width: 1024px) {
   .vehicles__page-section-vehicle__category .feature-box {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media (max-width: 900px) {
+  .vehicles__page-section-vehicle__category .feature-box {
+    height: 15rem;
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+  }
+}
+@media (max-width: 700px) {
+  .vehicles__page-section-vehicle__category .feature-box {
+    height: 15rem;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+  }
+}
+@media (max-width: 834px) {
+  .vehicles__page-section-vehicle__category .feature-box {
+    width: 80%;
+    padding: 0;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  .vehicles__page-section-vehicle__category .feature-box {
+    width: 100%;
+    height: 15rem;
+    padding: 0;
+    margin: auto;
+  }
+}
+@media (max-width: 380px) {
+  .vehicles__page-section-vehicle__category .feature-box {
+    height: 13rem;
+    width: 100%;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
     justify-content: center;
     display: flex;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .vehicles__page-section-vehicle__category .feature-box h4 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 480px) {
+  .vehicles__page-section-vehicle__category .feature-box h4 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 380px) {
+  .vehicles__page-section-vehicle__category .feature-box h4 {
+    font-size: 1rem;
   }
 }
 .vehicles__page-section-vehicle__category .link {
@@ -2438,13 +2558,13 @@ nav {
     height: 70rem;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 700px) {
   .section-vehicle__category {
     visibility: hidden;
     display: none;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 380px) {
   .section-vehicle__category {
     visibility: hidden;
     display: none;
@@ -2467,23 +2587,32 @@ nav {
 }
 .section-vehicle__category .feature-box {
   height: 20rem;
-  width: 90%;
   margin: 2rem 1rem;
+  justify-content: center;
+  display: flex;
+  height: 25rem;
 }
-@media (min-width: 760px) {
+@media (max-width: 900px) {
   .section-vehicle__category .feature-box {
-    justify-content: center;
-    display: flex;
-    width: 17vw;
-    height: 25rem;
+    height: 15rem;
+    width: 100%;
   }
 }
-
 .section-vehicle__most-used {
   height: 80rem;
   background-color: #f7f7f7;
   margin-top: 2rem;
   padding: 0 2rem;
+}
+@media (max-width: 700px) {
+  .section-vehicle__most-used {
+    padding: 0 15rem;
+  }
+}
+@media (max-width: 480px) {
+  .section-vehicle__most-used {
+    padding: 0 2rem;
+  }
 }
 .section-vehicle__most-used-card-carousel {
   display: none;
@@ -2503,8 +2632,8 @@ nav {
 }
 @media (max-width: 700px) {
   .section-vehicle__most-used-card-carousel {
-    padding: 0 13.5rem;
-    margin-bottom: 5rem;
+    display: block;
+    margin: auto;
   }
 }
 @media (max-width: 480px) {
@@ -2949,12 +3078,21 @@ nav {
 .vehicles__page-intro h1 {
   font-size: 3.5rem;
   font-family: "Bebas Neue", "sans-serif";
-  font-weight: bold;
+  font-weight: 400;
 }
-@media (max-width: 834px) {
+@media (max-width: 900px) {
+  .vehicles__page-intro h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .vehicles__page-intro h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 380px) {
   .vehicles__page-intro h1 {
     font-size: 2rem;
-    padding: 0;
   }
 }
 .vehicles__page-intro p {
@@ -2962,16 +3100,37 @@ nav {
   font-size: 1.5rem;
   font-family: "Poppins", "sans-serif";
 }
+@media (max-width: 480px) {
+  .vehicles__page-intro p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 380px) {
+  .vehicles__page-intro p {
+    font-size: 1rem;
+  }
+}
 .vehicles__page h2 {
   font-family: "Bebas Neue", "sans-serif";
   text-align: center;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 400;
   margin: 5rem;
   color: black;
 }
-@media (max-width: 834px) {
+@media (max-width: 900px) {
   .vehicles__page h2 {
-    margin: 1rem;
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .vehicles__page h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 380px) {
+  .vehicles__page h2 {
+    font-size: 2rem;
   }
 }
 .vehicles__page--all-armored-vehicles {
@@ -2989,6 +3148,15 @@ nav {
     padding: 0 10rem;
   }
 }
+@media (max-width: 900px) {
+  .vehicles__page--all-armored-vehicles {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 6rem;
+    margin: auto;
+    padding: auto;
+    background-color: #ffffff !important;
+  }
+}
 @media (max-width: 700px) {
   .vehicles__page--all-armored-vehicles {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
@@ -2996,47 +3164,101 @@ nav {
     padding: auto;
   }
 }
+@media (max-width: 834px) {
+  .vehicles__page--all-armored-vehicles {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 0 20rem;
+    margin: 0;
+  }
+}
 @media (max-width: 480px) {
   .vehicles__page--all-armored-vehicles {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
     gap: 2rem;
     padding: 0 1rem;
+    margin: auto;
   }
 }
 @media (max-width: 380px) {
   .vehicles__page--all-armored-vehicles {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
     gap: 2rem;
-    padding: auto;
-    margin: 0.4rem;
+    padding: 0 0.8rem;
+    margin: auto;
   }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 1024px) {
   .vehicle__details-container {
     margin: 3rem 2rem;
   }
 }
-@media (max-width: 834px) {
+@media (max-width: 1024px) {
   .vehicle__details-info {
     margin-top: 3rem;
   }
 }
-@media (max-width: 834px) {
+@media (max-width: 1024px) {
   .vehicle__details-text {
     color: black;
     font-size: 1.5rem;
   }
 }
-.vehicle__details-list .list-item {
-  font-size: 1.6rem;
-  color: black;
-  border-top: solid 1px #777;
-  padding: 1.8rem;
-  list-style: none;
+@media (max-width: 1024px) {
+  .vehicle__details-feature-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    margin: 0;
+    gap: 3rem;
+    padding: 0;
+    text-align: start;
+  }
 }
-.vehicle__details-list .list-item:first-child {
+@media (max-width: 834px) {
+  .vehicle__details-feature-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.vehicle__details-feature-list .list-item {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Poppins", "sans-serif";
+  color: black;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.3);
+  margin: 1rem 0rem;
+}
+.vehicle__details-feature-list:first-child {
   border-top: none;
+}
+@media (max-width: 1024px) {
+  .vehicle__details-specs-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    list-style: none;
+    margin: 0;
+    gap: 3rem;
+    padding: 0;
+    text-align: start;
+  }
+}
+.vehicle__details-specs-list .values {
+  text-align: end;
+}
+.vehicle__details-specs-list .list-item {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Poppins", "sans-serif";
+  color: black;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.3);
+  margin: 1rem 0rem;
+}
+.vehicle__details-features {
+  padding: 0;
+  margin-bottom: 4rem;
 }
 .vehicle__details .list-item-grid {
   display: grid;

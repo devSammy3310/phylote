@@ -40,7 +40,7 @@ function VehicleDetails() {
 
         <div class="vehicle__details-features margin-bottom-med">
           <h2 className="heading-secondary margin-bottom-small">Features</h2>
-          <ul className="vehicle__details-list">
+          <ul className="vehicle__details-feature-list">
             {vehicle.features.map((feature, index) => (
               <li className="list-item" key={index}>
                 {feature}
@@ -54,7 +54,7 @@ function VehicleDetails() {
             specifications
           </h2>
 
-          <ul className="vehicle__details-list">
+          <ul className="vehicle__details-specs-list">
             {vehicle.specifications.map((specs, index) => (
               <li className="list-item list-item-grid" key={index}>
                 <div class="specs">{specs.spec}</div>

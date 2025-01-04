@@ -1,33 +1,82 @@
 .vehicle__details {
   &-container {
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       margin: 3rem 2rem;
     }
   }
 
   &-info {
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       margin-top: 3rem;
     }
   }
 
   &-text {
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       color: black;
       font-size: 1.5rem;
     }
   }
 
-  &-list .list-item {
-    font-size: 1.6rem;
-    color: black;
-    border-top: solid 1px $color-grey-dark;
-    padding: 1.8rem;
-    list-style: none;
+  &-feature-list {
+    @include respond(tab-land) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      list-style: none;
+      margin: 0;
+      gap: 3rem;
+      padding: 0;
+      text-align: start;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    & .list-item {
+      display: inline-block;
+      font-size: 1.6rem;
+      font-weight: 600;
+      font-family: $font-style-primary;
+      color: black;
+      border-bottom: 1px solid rgba($color-grey-dark, 0.3);
+      margin: 1rem 0rem;
+    }
 
     &:first-child {
       border-top: none;
     }
+  }
+
+  &-specs-list {
+    @include respond(tab-land) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      list-style: none;
+      margin: 0;
+      gap: 3rem;
+      padding: 0;
+      text-align: start;
+    }
+
+    & .values{
+text-align: end;
+    }
+
+    & .list-item {
+      display: inline-block;
+      font-size: 1.6rem;
+      font-weight: 600;
+      font-family: $font-style-primary;
+      color: black;
+      border-bottom: 1px solid rgba($color-grey-dark, 0.3);
+      margin: 1rem 0rem;
+    }
+  }
+
+  &-features {
+    padding: 0;
+    margin-bottom: 4rem;
   }
 
   & .list-item-grid {
@@ -48,6 +97,5 @@
 
   & .shortcuts {
     position: fixed;
-
   }
 }
