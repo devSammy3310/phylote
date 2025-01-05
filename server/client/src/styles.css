@@ -3244,8 +3244,19 @@ nav {
     text-align: start;
   }
 }
-.vehicle__details-specs-list .values {
-  text-align: end;
+.vehicle__details-specs-list .list-item {
+  display: flex;
+  justify-content: space-between; /* Push child elements to opposite sides */
+  align-items: center; /* Align items vertically in the center */
+  padding: 0.5rem 0;
+}
+.vehicle__details-specs-list .specs {
+  text-align: left; /* Ensure the text is aligned to the left */
+  flex-grow: 1; /* Optional: Allows specs to take up more space if needed */
+}
+.vehicle__details-specs-list .value {
+  text-align: right; /* Align text to the right */
+  white-space: nowrap; /* Prevent wrapping if the value is too long */
 }
 .vehicle__details-specs-list .list-item {
   display: inline-block;

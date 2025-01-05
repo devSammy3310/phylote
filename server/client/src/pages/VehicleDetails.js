@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 import Carousel from "../components/carousel";
+import { Form } from "../components/Form";
 import VehicleCategory from "./vehicleCategory";
 import Popup from "../components/Popup";
 import { all_armored_vehicles } from "../data/vehicles_data";
@@ -64,6 +65,16 @@ function VehicleDetails() {
           </ul>
         </div>
       </div>
+
+      <div className="contact__page-form">
+        <div className="form-instruction">
+          <p>
+            If you're interested in this vehicle or have any questions,
+          </p>
+        </div>
+        <Form />
+      </div>
+
       <div class="shortcuts"></div>
     </section>
   );
