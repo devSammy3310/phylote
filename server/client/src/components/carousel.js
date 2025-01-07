@@ -34,7 +34,7 @@ export default function Carousel({ images, type, cardData }) {
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 500,
-    slidesToShow: slidesToShow, // Use the dynamic value for slidesToShow
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
   };
 
