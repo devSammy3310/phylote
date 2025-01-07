@@ -3,22 +3,44 @@
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   margin-top: 5rem;
 
+  @include respond(phone) {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
   &-map {
     padding: 5rem;
+
+    @include respond(phone) {
+      padding: 0;
+    }
   }
 
   &-details {
     margin: 2rem 5rem;
-    font-size: clamp(1rem, 0.714rem + 1.429vw, 1.8rem);
+    font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
     color: black;
     font-family: $font-style-primary;
+
+    @include respond(phone) {
+      font-size: clamp(1rem, 1rem + 3.5vw, 1.5rem);
+      margin: 1rem 2rem;
+    }
+
+    @include respond(mini-phone) {
+      font-size: clamp(1rem, 1rem + 3.5vw, 1.3rem);
+      margin: 1rem 1rem;
+    }
 
     .sub-heading {
       font-weight: bold;
     }
 
     &--header {
-      font-size: clamp(1rem, 0.714rem + 1.429vw, 4rem);
+      font-size: clamp(1rem, 0.714rem + 3vw, 4rem);
+
+      @include respond(phone) {
+        font-size: clamp(1rem, 0.714rem + 3vw, 2rem);
+      }
     }
   }
 
@@ -41,6 +63,15 @@
     font-size: clamp(1rem, 0.714rem + 1.429vw, 1.8rem);
     color: black;
     font-family: $font-style-primary;
+
+    @include respond(phone) {
+      font-size: clamp(1rem, 1rem + 3.5vw, 1.5rem);
+      margin: 1rem 2rem;
+    }
+
+    @include respond(mini-phone) {
+      margin: 1rem 1rem;
+    }
   }
 }
 
@@ -62,36 +93,14 @@
       text-align: center;
 
       & h1 {
-        font-size: clamp(1rem, 0.714rem + 2.429vw, 5rem);
+        font-size: clamp(1rem, 1rem + 4vw, 5rem);
       }
     }
 
     &-overview {
-      & p {
-        font-size: clamp(1rem, 0.714rem + 1.429vw, 1.4rem);
-        font-weight: 400;
-        font-family: $font-style-primary;
-        text-align: justify;
-      }
-
-      & h2 {
-        font-weight: 900;
-        font-size: clamp(1rem, 0.714rem + 1.429vw, 2.5rem);
-      }
     }
 
     &-certifications {
-      & p {
-        font-size: clamp(1rem, 0.714rem + 1.429vw, 1.4rem);
-        font-weight: 400;
-        font-family: $font-style-primary;
-        text-align: justify;
-      }
-
-      & h2 {
-        font-weight: 900;
-        font-size: clamp(1rem, 0.714rem + 1.429vw, 2.5rem);
-      }
     }
     &-why_we_exist {
       color: white;
@@ -99,16 +108,32 @@
       padding: 5rem 10rem;
       font-family: $font-style-primary;
 
+      @include respond(phone-land) {
+        padding: 3rem 4rem;
+      }
+
+      @include respond(phone) {
+        padding: 3rem 2rem;
+      }
+
       & h2 {
         text-align: center;
         font-size: clamp(0.6rem, 0.714rem + 1.429vw, 3rem);
         margin-bottom: 1rem;
         font-weight: bold;
+
+        @include respond(phone) {
+          font-size: clamp(0.6rem, 1rem + 3.2vw, 2rem);
+        }
       }
 
       & p {
         text-align: justify;
-        font-size: clamp(0.6rem, 0.714rem + 1.429vw, 1.5rem);
+        font-size: clamp(1rem, 1rem + 1.5vw, 1.5rem);
+
+        @include respond(mini-phone) {
+          font-size: clamp(1rem, 1rem + 1vw, 1.3rem);
+        }
       }
     }
 
@@ -118,17 +143,33 @@
       margin-top: 5rem;
       font-family: $font-style-primary;
 
+      @include respond(phone) {
+        grid-template-columns: repeat(1, minmax(25rem, 1fr));
+      }
+
       & h3 {
         font-weight: bold;
-        font-size: clamp(0.6rem, 0.714rem + 1.429vw, 2.4rem);
+        font-size: clamp(0.6rem, 0.714rem + 1.5vw, 2.5rem);
         text-align: center;
-        margin-bottom: 1.3rem;
+        margin-bottom: 1rem;
+
+        @include respond(phone-land) {
+          font-size: clamp(1rem, 1rem + 3.2vw, 2rem);
+        }
       }
 
       & p {
         text-align: center;
         padding: 0 1rem;
-        font-size: clamp(0.6rem, 0.714rem + 1.429vw, 1.5rem);
+        font-size: clamp(1rem, 1rem + 1.5vw, 1.5rem);
+
+        @include respond(phone) {
+          margin-bottom: 2rem;
+        }
+
+        @include respond(mini-phone) {
+          font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
+        }
       }
     }
 
@@ -140,6 +181,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include respond(phone) {
+        font-size: clamp(1rem, 1rem + 1.5vw, 1.5rem);
+      }
+
+      @include respond(mini-phone) {
+        font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
+      }
 
       & p {
         text-align: center;
@@ -159,7 +208,7 @@
   &__partners {
     & h2 {
       font-weight: 900;
-      font-size: clamp(0.6rem, 0.714rem + 1.429vw, 2.5rem);
+      font-size: clamp(0.6rem, 0.714rem + 4vw, 2.5rem);
     }
 
     & .partner-logo {
@@ -178,6 +227,22 @@
   width: 90%;
   margin: 0 auto;
   padding: 4rem 2rem;
+
+  & p {
+    font-size: clamp(1rem, 0.714rem + 2vw, 1.6rem);
+    font-weight: 400;
+    font-family: $font-style-primary;
+    text-align: justify;
+  }
+
+  & h2 {
+    font-weight: 900;
+    font-size: clamp(1rem, 0.714rem + 4vw, 2.5rem);
+  }
+
+  @include respond(phone) {
+    padding: 2rem 0.7rem;
+  }
 }
 
 .service {
@@ -277,6 +342,22 @@
 .overview__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
+
+  @include respond(tab-land) {
+  }
+
+  @include respond(phone-land) {
+  }
+
+  @include respond(mini-phone-land) {
+  }
+
+  @include respond(phone) {
+    grid-template-columns: repeat(1, minmax(2.5rem, 1fr));
+  }
+
+  @include respond(mini-phone) {
+  }
 }
 
 .partners__grid {
@@ -289,14 +370,44 @@
 .certification__logo {
   width: 100%;
   border-radius: 1rem;
+
+  @include respond(phone) {
+    border-radius: 0;
+  }
 }
 
 .who_we_are {
   width: 50rem;
   height: 50rem;
+
+  @include respond(phone) {
+    margin-top: 4rem;
+    width: 100%;
+    height: 40rem;
+  }
 }
 
 .maintenance {
   width: 40rem !important;
   margin-left: 6rem;
+}
+
+.full-width {
+  @include respond(phone) {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw;
+  }
+}
+
+.swap .container:first-child {
+  @include respond(phone) {
+    grid-row: 2;
+  }
+}
+
+.swap .container:nth-child(2) {
+  @include respond(phone) {
+    grid-row: 1;
+  }
 }

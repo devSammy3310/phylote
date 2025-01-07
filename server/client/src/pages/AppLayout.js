@@ -83,7 +83,7 @@ function AppLayout() {
               </div>
 
               {/* Overview Section */}
-              <div className="overview__grid">
+              <div className="overview__grid swap">
                 <div className="about__page-overview container">
                   <h2 className="heading-secondary-2">Who We Are</h2>
                   <p>
@@ -114,7 +114,7 @@ function AppLayout() {
                   </p>
                 </div>
 
-                <div className="about__page-overview container ">
+                <div className="about__page-overview container full-width">
                   <img
                     className="certification__logo who_we_are"
                     src="/img/who_we_are.png"
@@ -122,8 +122,8 @@ function AppLayout() {
                 </div>
               </div>
 
-              <div className="overview__grid">
-                <div className="about__page-overview container">
+              <div className="overview__grid ">
+                <div className="about__page-overview container full-width">
                   <img
                     className="certification__logo"
                     src="/img/certification.jpeg"
@@ -131,7 +131,7 @@ function AppLayout() {
                 </div>
 
                 <div className="about__page-certifications container">
-                  <h2 className="heading-secondary">
+                  <h2 className="heading-secondary-2">
                     Our Certifications & Partnerships
                   </h2>
                   <p className="about__text">
@@ -201,21 +201,21 @@ function AppLayout() {
               </div>
 
               <div class="about__page-our_values">
-                <div class="values">
+                <div className="values">
                   <h3>Quality</h3>
                   <p>
                     We focus on delivering exceptional products and services
                     with excellence and attention to detail.
                   </p>
                 </div>
-                <div class="values">
+                <div className="values">
                   <h3>Customer Commitment</h3>
                   <p>
                     We prioritize building impactful relationships and ensuring
                     customer satisfaction.
                   </p>
                 </div>
-                <div class="values">
+                <div className="values">
                   <h3>Teamwork</h3>
                   <p>
                     We foster collaboration and mutual respect to meet customer
@@ -245,7 +245,7 @@ function AppLayout() {
           <PageHeader logo="/img/phylote_logo-main.jpg" ID={id} />
           <div className="contact__page">
             <div className="contact__page-details">
-              <h1 className="contact__page-details--header heading-secondary">
+              <h1 className="contact__page-details--header heading-secondary-2">
                 Contact Us
               </h1>
               <p className="sub-heading">
