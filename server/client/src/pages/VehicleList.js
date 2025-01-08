@@ -18,18 +18,18 @@ function VehicleList() {
   // Fetch data on component mount
   useEffect(() => {
     Promise.all([
-      fetch("https://phylote.onrender.com/vehicles/all-armored-vehicles").then(
+      fetch(
+        "https://phyloteserver.onrender.com/vehicles/all-armored-vehicles"
+      ).then((res) => res.json()),
+      fetch(
+        "https://phyloteserver.onrender.com/vehicles/police-government"
+      ).then((res) => res.json()),
+      fetch("https://phyloteserver.onrender.com/vehicles/fire-rescue").then(
         (res) => res.json()
       ),
-      fetch("https://phylote.onrender.com/vehicles/police-government").then(
-        (res) => res.json()
-      ),
-      fetch("https://phylote.onrender.com/vehicles/fire-rescue").then((res) =>
-        res.json()
-      ),
-      fetch("https://phylote.onrender.com/vehicles/military-armored").then(
-        (res) => res.json()
-      ),
+      fetch(
+        "https://phyloteserver.onrender.com/vehicles/military-armored"
+      ).then((res) => res.json()),
     ]).then(([vehicles, policeGov, fireRes, military]) => {
       setAllVehicles(vehicles);
       setPoliceGovernment(policeGov);

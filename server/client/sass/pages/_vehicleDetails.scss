@@ -50,30 +50,36 @@
 
   &-specs-list {
     @include respond(tab-land) {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
       list-style: none;
-      margin: 0;
-      gap: 3rem;
       padding: 0;
-      text-align: start;
+      margin: 0;
     }
 
     & .list-item {
       display: flex;
-      justify-content: space-between; /* Push child elements to opposite sides */
-      align-items: center; /* Align items vertically in the center */
-      padding: 0.5rem 0;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #ccc;
+      padding: 8px 0;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
     & .specs {
-      text-align: left; /* Ensure the text is aligned to the left */
-      flex-grow: 1; /* Optional: Allows specs to take up more space if needed */
+      font-weight: bold;
+      flex: 1;
+      text-align: left;
+      word-wrap: break-word;
     }
 
     & .value {
-      text-align: right; /* Align text to the right */
-      white-space: nowrap; /* Prevent wrapping if the value is too long */
+      flex: 1;
+      text-align: right;
+      word-wrap: break-word;
+      word-break: break-word;
     }
 
     & .list-item {
@@ -84,6 +90,12 @@
       color: black;
       border-bottom: 1px solid rgba($color-grey-dark, 0.3);
       margin: 1rem 0rem;
+    }
+
+    & .specs,
+    .value {
+      text-align: left; /* Align to the left for smaller screens */
+      width: 100%; /* Make them stack */
     }
   }
 
@@ -96,6 +108,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: start;
+    width: 100vw;
   }
 
   &-features .heading-secondary,
@@ -112,4 +125,3 @@
     position: fixed;
   }
 }
-

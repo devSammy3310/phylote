@@ -38,7 +38,7 @@ function Popup({ ID, image, name, details, features, specs, close_ref }) {
           {details && (
             <div class="popup__details-container">
               {name && (
-                <h2 className="heading-secondary u-margin-bottom-small">
+                <h2 className="heading-secondary ">
                   {name}
                 </h2>
               )}
@@ -48,7 +48,7 @@ function Popup({ ID, image, name, details, features, specs, close_ref }) {
 
           {features && features.length > 0 && (
             <div class="popup__features-container">
-              <h2 className="heading-secondary">Features</h2>
+              <h2 className="heading-secondary-2">Features</h2>
               <ul className="popup__list">
                 {features.map((feature, index) => (
                   <li className="popup__item" key={index}>
