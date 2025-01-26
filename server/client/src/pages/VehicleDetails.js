@@ -5,20 +5,18 @@ import Carousel from "../components/carousel";
 import { Form } from "../components/Form";
 import VehicleCategory from "./vehicleCategory";
 import Popup from "../components/Popup";
-import { all_armored_vehicles } from "../data/vehicles_data";
+import { all_armored_vehicles } from "../vehicles_data";
+
 import Card from "../components/Card";
 
 function VehicleDetails() {
-  const [vehicle, setVehicle] = useState(null);
+  // const [vehicle, setVehicle] = useState(null);
   const { id } = useParams();
 
-  useEffect(() => {
-    fetch(`https://phylote.onrender.com/vehicles/${id}`)
-      .then((res) => res.json())
-      .then((vehicle) => {
-        setVehicle(vehicle);
-      });
-  }, [id]);
+  const filterVehicle = (id) => {
+    return all_armored_vehicles.find((vehicle) => vehicle.ID === id);
+  };
+  const vehicle = filterVehicle(id);
 
   // Show a loading spinner or fallback if the vehicle data isn't ready yet
   if (!vehicle) {
@@ -68,9 +66,7 @@ function VehicleDetails() {
 
       <div className="contact__page-form">
         <div className="form-instruction">
-          <p>
-            If you're interested in this vehicle or have any questions,
-          </p>
+          <p>If you're interested in this vehicle or have any questions,</p>
         </div>
         <Form />
       </div>

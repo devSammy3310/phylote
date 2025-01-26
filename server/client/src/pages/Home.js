@@ -69,17 +69,17 @@ function Home() {
           <div className="section__mission-statement-col-2 ">
             <div className="composition ">
               <img
-                src="/img/AGMS-57.jpg"
+                src="/img/composition1.jpeg"
                 alt="armored vehicle"
                 className="composition_photo animate slideLeft composition_photo--1"
               ></img>
               <img
-                src="/img/escalade1.jpg"
+                src="/img/composition2.jpeg"
                 alt="armored vehicle"
                 className="composition_photo animate fade-in  composition_photo--2"
               ></img>
               <img
-                src="/img/cobra4.jpg"
+                src="/img/composition3.jpeg"
                 alt="armored vehicle"
                 className="composition_photo animate slideUp composition_photo--3"
               ></img>
@@ -160,10 +160,7 @@ function Home() {
             ))}
           </div>
 
-          <a
-            href="/armored-vehicles/all-armored-vehicles"
-            className="btn-text"
-          >
+          <a href="/armored-vehicles/all-armored-vehicles" className="btn-text">
             VIEW ALL PHYLOTE ARMORED VEHICLES &rarr;
           </a>
 

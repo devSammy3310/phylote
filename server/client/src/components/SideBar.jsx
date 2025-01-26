@@ -52,6 +52,15 @@ function SideBar() {
           <div className="navigation_item">
             <a
               className="navigation__link"
+              href="/armored-vehicles/all-armored-vehicles"
+            >
+              Armored Vehicles
+            </a>
+          </div>
+
+          {/* <div className="navigation_item">
+            <a
+              className="navigation__link"
               href="#"
               onClick={(e) => {
                 e.preventDefault();
@@ -93,13 +102,20 @@ function SideBar() {
                 </a>
               </div>
             )}
-          </div>
+          </div> */}
 
           <div className="navigation_item">
             <a className="navigation__link" href="/about">
               About Us
             </a>
           </div>
+
+          <div className="navigation_item">
+            <a className="navigation__link" href="/service">
+              Service
+            </a>
+          </div>
+
           <div className="navigation_item">
             <a className="navigation__link" href="/contact">
               Contact

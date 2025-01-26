@@ -2009,6 +2009,8 @@ nav {
 }
 
 .vehicles__page-section-vehicle__category {
+  display: none;
+  visibility: hidden;
   margin: 2rem 5rem;
 }
 @media (max-width: 480px) {
@@ -2880,12 +2882,8 @@ nav {
 }
 
 /* AboutUs.css */
-.about__page .background {
+.about__page {
   color: black;
-  background: url("../src/assets/img/white_paper.jpg") no-repeat center center;
-  background-size: cover;
-  -webkit-backdrop-filter: blur(1rem);
-  backdrop-filter: blur(1rem);
 }
 .about__page-heading {
   padding-top: 2rem;
@@ -3032,35 +3030,62 @@ nav {
   }
 }
 
-.service__page {
-  background: url("../src/assets/img/white_paper.jpg") no-repeat center center;
-  background-size: cover;
-  -webkit-backdrop-filter: blur(1rem);
-  backdrop-filter: blur(1rem);
-}
 .service__intro {
   padding: 10rem 30rem;
   text-align: center;
 }
+@media (max-width: 834px) {
+  .service__intro {
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+  }
+}
 .service__intro h2 {
   font-size: clamp(1rem, 0.714rem + 2.429vw, 3.5rem);
+}
+@media (max-width: 834px) {
+  .service__intro h2 {
+    font-size: clamp(1rem, 2rem + 1vw, 2.6rem);
+  }
 }
 .service__intro p {
   color: black;
   font-family: "Poppins", "sans-serif";
   font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
 }
+@media (max-width: 834px) {
+  .service__intro p {
+    font-size: clamp(1rem, 2rem + 1vw, 1.6rem);
+  }
+}
 .service__core-service--container {
   display: grid;
   grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
   height: 45rem;
 }
+@media (max-width: 834px) {
+  .service__core-service--container {
+    grid-template-columns: repeat(1, minmax(2.5rem, 1fr));
+    height: fit-content;
+    margin-bottom: 4rem;
+  }
+}
 .service__core-service--container .image_container {
   height: 45rem;
   padding: 6rem;
 }
+@media (max-width: 834px) {
+  .service__core-service--container .image_container {
+    padding: 2rem;
+  }
+}
 .service__core-service .info {
   padding: 6rem;
+}
+@media (max-width: 834px) {
+  .service__core-service .info {
+    padding: 0;
+  }
 }
 .service__core-service .info h2 {
   font-family: "Bebas Neue", "sans-serif";
@@ -3073,6 +3098,11 @@ nav {
   color: black;
   font-family: "Poppins", "sans-serif";
   font-size: clamp(1rem, 0.714rem + 3.429vw, 1.6rem);
+}
+@media (max-width: 834px) {
+  .service__core-service .info {
+    text-align: justify;
+  }
 }
 .service__core-service .image {
   width: 100%;
@@ -3114,6 +3144,7 @@ nav {
     grid-template-columns: repeat(1, minmax(2.5rem, 1fr));
   }
 }
+
 .partners__grid {
   display: flex;
   justify-content: center;
@@ -3146,6 +3177,12 @@ nav {
 .maintenance {
   width: 40rem !important;
   margin-left: 6rem;
+}
+@media (max-width: 834px) {
+  .maintenance {
+    margin: 0;
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 480px) {

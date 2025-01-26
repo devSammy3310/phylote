@@ -1,5 +1,7 @@
 .vehicles__page {
   &-section-vehicle__category {
+    display: none;
+    visibility: hidden;
     margin: 2rem 5rem;
 
     @include respond(tab-land) {

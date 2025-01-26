@@ -87,12 +87,17 @@ function AppLayout() {
                 <div className="about__page-overview container">
                   <h2 className="heading-secondary-2">Who We Are</h2>
                   <p>
-                    Phylote Nigeria Limited, established in 1995, is a proudly
-                    indigenous company specializing in armoring, restoring, and
-                    upgrading vehicles. With decades of experience, we are
-                    committed to delivering world-class defense and automotive
-                    solutions that enhance operational efficiency and national
-                    security.
+                    Phylote Nigeria Limited is an innovative defense and
+                    security company based in the Idu Industrial Area, Abuja.
+                    Specializing in armored vehicles, CNG conversion systems,
+                    night vision technologies, and advanced defense solutions,
+                    Phylote is dedicated to enhancing operational efficiency and
+                    safety for its clients. The company is committed to
+                    providing customized, sustainable solutions tailored for
+                    government officials, military personnel, and private
+                    clients. Phylote combines technological expertise with a
+                    deep understanding of local and global security challenges,
+                    making it a trusted name in the defense industry.
                   </p>
 
                   <p className="about__text">
@@ -135,30 +140,20 @@ function AppLayout() {
                     Our Certifications & Partnerships
                   </h2>
                   <p className="about__text">
-                    Phylote Nigeria Limited is registered with the{" "}
-                    <strong>
-                      United States Department of State, Directorate of Defense
-                      Trade Control
-                    </strong>{" "}
-                    as a Broker Member of the International Traffic in Arms
-                    Regulations (ITAR) with Code No: <strong>K4628</strong>.
-                    Under this US regulatory mandate, we are authorized to
-                    source, access, and broker US Military hardware and
-                    sophisticated civil technologies.
+                    Phylote Nigeria Limited collaborates with key partners to
+                    deliver superior quality and innovation. These include its
+                    technical partnership with Armormax, renowned for global
+                    excellence in vehicle armoring, and its membership in the
+                    Defence Industries Association of Nigeria (DIAN), which
+                    reinforces its role in advancing the nation's defense
+                    capabilities.
                   </p>
                   <p className="about__text">
-                    We are in strategic partnership with the{" "}
-                    <strong>
-                      Defence Industries Corporation of Nigeria (DICON)
-                    </strong>
-                    , leveraging advanced technology and industry expertise to
-                    deliver superior products and services. Additionally, as
-                    proud members of the{" "}
-                    <strong>
-                      Defence Industry Association of Nigeria (DIAN)
-                    </strong>
-                    , we remain dedicated to advancing and supporting Nigeria's
-                    local defense sector.
+                    The company operates under full licensure for its range of
+                    defense and security services, ensuring compliance with
+                    international standards and providing assurance to its
+                    clients. Phylote is proud to support sustainable and
+                    cutting-edge solutions for the nation's security needs.
                   </p>
                 </div>
               </div>
@@ -311,9 +306,9 @@ function AppLayout() {
             </p>
           </div>
           {/* Core services Section */}
-          <div class="service__core-service">
+          <div class="service__core-service ">
             <div class="service__core-service--container">
-              <div class="info">
+              <div className="info container">
                 <div>
                   <h2>Armored Vehicle Production</h2>
                   <p>
@@ -334,8 +329,8 @@ function AppLayout() {
               </div>
             </div>
 
-            <div class="service__core-service--container">
-              <div className="image_container">
+            <div class="service__core-service--container swap">
+              <div className="image_container container">
                 <iframe
                   className="image"
                   width="560"
@@ -348,7 +343,7 @@ function AppLayout() {
                   allowfullscreen
                 ></iframe>
               </div>
-              <div class="info">
+              <div class="info container">
                 <div>
                   <h2>Security Enhancements</h2>
                   <p>
@@ -366,7 +361,7 @@ function AppLayout() {
             </div>
 
             <div class="service__core-service--container">
-              <div class="info">
+              <div class="info container">
                 <div>
                   <h2>Restoration Services</h2>
                   <p>
@@ -392,15 +387,15 @@ function AppLayout() {
               </div>
             </div>
 
-            <div class="service__core-service--container">
-              <div className="image_container">
+            <div class="service__core-service--container swap">
+              <div className="image_container container">
                 <img
                   className="image maintenance"
                   src="/img/maintenance.jpg"
                   alt=""
                 />
               </div>
-              <div class="info">
+              <div class="info container">
                 <div>
                   <h2>Comprehensive Maintenance and upgrade services</h2>
                   <p>
@@ -417,7 +412,7 @@ function AppLayout() {
             </div>
 
             <div class="service__core-service--container">
-              <div class="info">
+              <div class="info container">
                 <div>
                   <h2>CNG Conversion and Solutions</h2>
                   <p>
@@ -437,15 +432,15 @@ function AppLayout() {
               </div>
             </div>
 
-            <div class="service__core-service--container">
-              <div className="image_container">
+            <div class="service__core-service--container swap">
+              <div className="image_container container">
                 <img
                   className="image maintenance"
                   src="/img/cng_station.jpg"
                   alt=""
                 />
               </div>
-              <div class="info">
+              <div class="info container">
                 <div>
                   <h2>CNG station</h2>
                   <p>

@@ -78,14 +78,8 @@
 /* AboutUs.css */
 .about {
   &__page {
-    & .background {
-      color: black;
-      background: url("../src/assets/img/white_paper.jpg") no-repeat center
-        center;
-      background-size: cover;
-      -webkit-backdrop-filter: blur(1rem);
-      backdrop-filter: blur(1rem);
-    }
+    color: black;
+
     &-heading {
       padding-top: 2rem;
       font-family: $font-style-secondary;
@@ -246,24 +240,40 @@
 }
 
 .service {
-  &__page {
-    background: url("../src/assets/img/white_paper.jpg") no-repeat center center;
-    background-size: cover;
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(1rem);
-  }
-
   &__intro {
     padding: 10rem 30rem;
     text-align: center;
+
+    @include respond(tab-land) {
+    }
+
+    @include respond(phone-land) {
+    }
+
+    @include respond(mini-phone-land) {
+    }
+
+    @include respond(tab-port) {
+      padding: 3rem 0 3rem 0;
+      text-align: center;
+    }
+
     & h2 {
       font-size: clamp(1rem, 0.714rem + 2.429vw, 3.5rem);
+
+      @include respond(tab-port) {
+        font-size: clamp(1rem, 2rem + 1vw, 2.6rem);
+      }
     }
 
     & p {
       color: black;
       font-family: $font-style-primary;
       font-size: clamp(1rem, 0.714rem + 1.429vw, 2rem);
+
+      @include respond(tab-port) {
+        font-size: clamp(1rem, 2rem + 1vw, 1.6rem);
+      }
     }
   }
 
@@ -273,14 +283,59 @@
       grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
       height: 45rem;
 
+      @include respond(tab-land) {
+      }
+
+      @include respond(phone-land) {
+      }
+
+      @include respond(mini-phone-land) {
+      }
+
+      @include respond(tab-port) {
+        grid-template-columns: repeat(1, minmax(2.5rem, 1fr));
+        height: fit-content;
+        margin-bottom: 4rem;
+      }
+
+      @include respond(mini-phone) {
+      }
+
       & .image_container {
         height: 45rem;
         padding: 6rem;
+
+        @include respond(tab-land) {
+        }
+
+        @include respond(phone-land) {
+        }
+
+        @include respond(mini-phone-land) {
+        }
+
+        @include respond(tab-port) {
+          padding: 2rem;
+        }
+
+        @include respond(mini-phone) {
+        }
       }
     }
 
     & .info {
       padding: 6rem;
+
+      @include respond(phone-land) {
+      }
+
+      @include respond(mini-phone-land) {
+      }
+
+      @include respond(tab-port) {
+        padding: 0;
+      }
+
       & h2 {
         font-family: $font-style-secondary;
         margin-bottom: 2rem;
@@ -293,6 +348,10 @@
         color: black;
         font-family: $font-style-primary;
         font-size: clamp(1rem, 0.714rem + 3.429vw, 1.6rem);
+      }
+
+      @include respond(tab-port) {
+        text-align: justify;
       }
     }
 
@@ -355,9 +414,6 @@
   @include respond(phone) {
     grid-template-columns: repeat(1, minmax(2.5rem, 1fr));
   }
-
-  @include respond(mini-phone) {
-  }
 }
 
 .partners__grid {
@@ -390,6 +446,11 @@
 .maintenance {
   width: 40rem !important;
   margin-left: 6rem;
+
+  @include respond(tab-port) {
+    margin: 0;
+    width: 100% !important;
+  }
 }
 
 .full-width {

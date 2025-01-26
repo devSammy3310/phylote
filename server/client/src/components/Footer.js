@@ -11,48 +11,6 @@ function Footer() {
       </div>
 
       <div className="footer__main-box-container">
-        <div className="footer__main-box footer__main-box--1">
-          <h1 className="footer__header">our vehicle range</h1>
-          <div className="footer__vehicle-range">
-            <ul className="footer__list">
-              <li className="footer__item">
-                <Link
-                  className="footer__link"
-                  to={"/armored-vehicles/all-armored-vehicles"}
-                >
-                  {" "}
-                  All Armored Vehicles
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link
-                  className="footer__link"
-                  to={"/armored-vehicles/police-government"}
-                >
-                  Police & Government Vehicles
-                </Link>
-              </li>
-
-              <li className="footer__item">
-                <Link
-                  className="footer__link"
-                  to={"/armored-vehicles/fire-rescue"}
-                >
-                  Fire & Rescue Vehicles
-                </Link>
-              </li>
-
-              <li className="footer__item">
-                <Link
-                  className="footer__link"
-                  to={"/armored-vehicles/military-armored"}
-                >
-                  Military Armored Vehicles
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
         <div className="footer__main-box footer__main-box--2">
           <h1 className="footer__header">quick links</h1>
           <div className="footer__vehicle-range">
@@ -70,7 +28,10 @@ function Footer() {
               </li>
 
               <li className="footer__item">
-                <Link className="footer__link" to={"/armored-vehicles"}>
+                <Link
+                  className="footer__link"
+                  to={"/armored-vehicles/all-armored-vehicles"}
+                >
                   armored Vehicles
                 </Link>
               </li>
@@ -127,7 +88,10 @@ function Footer() {
           </p>
         </div>
         <div class="footer__socials">
-          <a href="" className="footer__socials-link">
+          <a
+            href="https://www.facebook.com/profile.php?id=61571773372769"
+            className="footer__socials-link"
+          >
             <div class="svg__container">
               <svg className="footer__socials-icon">
                 <use href="/codeCrafterX.svg#icon-facebook"></use>
@@ -135,23 +99,26 @@ function Footer() {
             </div>
           </a>
 
-          <a href="" className="footer__socials-link">
+          {/* <a href="" className="footer__socials-link">
             <div class="svg__container">
               <svg className="footer__socials-icon">
                 <use href="/codeCrafterX.svg#icon-youtube"></use>
               </svg>
             </div>
-          </a>
+          </a> */}
 
-          <a href="" className="footer__socials-link">
+          {/* <a href="" className="footer__socials-link">
             <div class="svg__container">
               <svg className="footer__socials-icon">
                 <use href="/codeCrafterX.svg#icon-twitter-x"></use>
               </svg>
             </div>
-          </a>
+          </a> */}
 
-          <a href="" className="footer__socials-link">
+          <a
+            href="https://www.instagram.com/phyloteng?igsh=ZnMwNjZvdTJlMjY4"
+            className="footer__socials-link"
+          >
             <div class="svg__container">
               <svg className="footer__socials-icon">
                 <use href="/codeCrafterX.svg#icon-instagram"></use>
