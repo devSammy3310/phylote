@@ -29,11 +29,11 @@ function Home() {
           </h2>
         </div>
 
-        <PhyloteIntro />
+        {/* <PhyloteIntro /> */}
 
-        {/* <div className="carousel-container">
+        <div className="carousel-container">
           <Carousel images={homepageCarousel} type="SimpleSlider" />
-        </div> */}
+        </div>
 
         <div className="center-text">
           <h2 className="heading-secondary-2 u-margin-top-small">
@@ -131,9 +131,9 @@ function Home() {
           </div>
         </section>
 
-        <section className="section-vehicle__category ">
+        {/* <section className="section-vehicle__category ">
           <VehicleCategory />
-        </section>
+        </section> */}
 
         <section
           className="section-vehicle__most-used u-text-center"
@@ -149,7 +149,7 @@ function Home() {
             <Carousel type="cardCarousel" cardData={mostUsedVehicles} />
           </div>
 
-          <div className="section-vehicle__most-used-flex u-flex u-space-btw">
+          <div className="section-vehicle__most-used-flex">
             {mostUsedVehicles.map((vehicle) => (
               <Card
                 name={vehicle.name}

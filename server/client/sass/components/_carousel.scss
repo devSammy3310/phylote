@@ -59,31 +59,29 @@
   &-slide {
     &-card {
       position: relative;
+      padding: 0 8rem;
 
       @include respond(tab-land) {
-        height: 45rem;
-        margin: auto;
+        height: 50rem;
       }
 
       @include respond(phone-land) {
-        width: 100vw !important;
+        padding: 0 1rem;
       }
 
       @include respond(mini-phone-land) {
         height: 50rem;
-        margin: auto;
       }
 
       @include respond(phone) {
         margin-bottom: 3rem !important;
-        width: 94% !important;
-        margin: 0rem 0;
+        width: 100% !important;
+
         height: 45rem;
       }
 
       @include respond(mini-phone) {
         width: 100% !important;
-        margin: 0rem auto;
       }
     }
   }
@@ -112,7 +110,7 @@
 
 .slick-next:hover,
 .slick-prev:hover {
-  background-color: rgba(0, 0, 0, 0.8); 
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .slick-next:before {

@@ -9,7 +9,7 @@ export default function Carousel({ images, type, cardData }) {
   // Effect to update slidesToShow based on window width
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 700) {
+      if (window.innerWidth > 700 && window.innerWidth < 1200) {
         setSlidesToShow(2);
       } else {
         setSlidesToShow(1);
@@ -39,9 +39,19 @@ export default function Carousel({ images, type, cardData }) {
   };
 
   if (type === "SimpleSlider") {
+    const simpleSlidersettings = {
+      arrows: true,
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
     return (
       <div className="slider-container">
-        <Slider {...settings}>
+        <Slider {...simpleSlidersettings}>
           {images.map((image, index) => (
             <div className="carousel-autoplay" key={index}>
               <img className="" src={image.src} alt={image.alt} />

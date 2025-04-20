@@ -63,11 +63,20 @@ function Footer() {
 
               <li className="footer__item">
                 <a
-                  href="mailto:phylotenigeria@gmail.com"
+                  href="mailto:adedotun.bademosi@phyloteng.com"
                   className="footer__link"
                 >
                   <FontAwesomeIcon className="footer__icon" icon={faEnvelope} />
-                  phylotenigeria@gmail.com
+                  adedotun.bademosi@phyloteng.com
+                </a>
+              </li>
+              <li className="footer__item">
+                <a
+                  href="mailto:kehinde.bademosi@phyloteng.com"
+                  className="footer__link"
+                >
+                  <FontAwesomeIcon className="footer__icon" icon={faEnvelope} />
+                  kehinde.bademosi@phyloteng.com
                 </a>
               </li>
             </ul>

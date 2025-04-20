@@ -206,7 +206,7 @@ html {
   padding: 0;
   margin: 0;
 }
-@media (min-width: 1800px) {
+@media (min-width: 1920px) {
   html {
     font-size: 70%;
   }
@@ -829,7 +829,6 @@ body {
   -webkit-perspective: 2500rem;
   -moz-perspective: 2500rem;
   height: 40rem;
-  width: 35rem;
   border: none;
   background-color: #f7f7f7;
   margin: 3rem 0rem;
@@ -1176,36 +1175,33 @@ body {
 }
 .carousel-slide-card {
   position: relative;
+  padding: 0 8rem;
 }
 @media (max-width: 1024px) {
   .carousel-slide-card {
-    height: 45rem;
-    margin: auto;
+    height: 50rem;
   }
 }
 @media (max-width: 900px) {
   .carousel-slide-card {
-    width: 100vw !important;
+    padding: 0 1rem;
   }
 }
 @media (max-width: 700px) {
   .carousel-slide-card {
     height: 50rem;
-    margin: auto;
   }
 }
 @media (max-width: 480px) {
   .carousel-slide-card {
     margin-bottom: 3rem !important;
-    width: 94% !important;
-    margin: 0rem 0;
+    width: 100% !important;
     height: 45rem;
   }
 }
 @media (max-width: 380px) {
   .carousel-slide-card {
     width: 100% !important;
-    margin: 0rem auto;
   }
 }
 
@@ -2204,7 +2200,7 @@ nav {
     width: 4rem;
   }
 }
-@media (max-width: 1800px) {
+@media (max-width: 1920px) {
   .navigation__background {
     visibility: hidden;
   }
@@ -2648,6 +2644,12 @@ nav {
     margin-bottom: 4rem;
   }
 }
+.section-vehicle__most-used-flex {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
 @media (max-width: 1024px) {
   .section-vehicle__most-used-flex {
     display: none;
@@ -2894,6 +2896,9 @@ nav {
 .about__page-heading h1 {
   font-size: clamp(1rem, 1rem + 4vw, 5rem);
 }
+.about__page-overview {
+  font-size: small;
+}
 .about__page-why_we_exist {
   color: white;
   background-color: #333;
@@ -2932,7 +2937,7 @@ nav {
 }
 .about__page-our_values {
   display: grid;
-  grid-template-columns: repeat(3, minmax(25rem, 1fr));
+  grid-template-columns: repeat(3, minmax(15rem, 1fr));
   margin-top: 5rem;
   font-family: "Poppins", "sans-serif";
 }
@@ -3139,6 +3144,11 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
 }
+@media (max-width: 834px) {
+  .overview__grid {
+    grid-template-columns: repeat(1, minmax(2.5rem, 1fr));
+  }
+}
 @media (max-width: 480px) {
   .overview__grid {
     grid-template-columns: repeat(1, minmax(2.5rem, 1fr));
@@ -3193,13 +3203,13 @@ nav {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 834px) {
   .swap .container:first-child {
     grid-row: 2;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 834px) {
   .swap .container:nth-child(2) {
     grid-row: 1;
   }
@@ -3217,13 +3227,7 @@ nav {
 }
 @media (max-width: 1024px) {
   .vehicles__page-intro {
-    margin: 3rem;
-    padding: 0;
-  }
-}
-@media (max-width: 834px) {
-  .vehicles__page-intro {
-    margin: 3rem;
+    margin: 2rem;
     padding: 0;
   }
 }
@@ -3287,17 +3291,19 @@ nav {
 }
 .vehicles__page--all-armored-vehicles {
   display: grid;
-  width: 100vw;
   background-color: #f7f7f7;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   margin: 5rem 5rem;
+  gap: 2rem;
+  padding: 0 10rem;
 }
 @media (max-width: 1024px) {
   .vehicles__page--all-armored-vehicles {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 2rem;
+    margin: 5rem 0;
     background-color: #fff;
-    padding: 0 10rem;
+    padding: 0 2rem;
   }
 }
 @media (max-width: 900px) {
@@ -3318,9 +3324,9 @@ nav {
 }
 @media (max-width: 834px) {
   .vehicles__page--all-armored-vehicles {
-    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 2rem;
-    padding: 0 20rem;
+    padding: 0 2rem;
     margin: 0;
   }
 }

@@ -265,12 +265,21 @@ function AppLayout() {
               </p>
 
               <p className="sub-heading">
-                Email{" "}
+                Email –{" "}
                 <a
-                  href="mailto:phylotenigeria@gmail.com"
+                  href="mailto:adedotun.bademosi@phyloteng.com"
                   className="contact__page-link"
                 >
-                  phylotenigeria@gmail.com
+                  adedotun.bademosi@phyloteng.com
+                </a>
+              </p>
+              <p className="sub-heading">
+                {" "}
+                <a
+                  href="mailto:kehinde.bademosi@phyloteng.com"
+                  className="contact__page-link"
+                >
+                  kehinde.bademosi@phyloteng.com
                 </a>
               </p>
             </div>

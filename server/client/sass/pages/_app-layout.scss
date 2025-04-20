@@ -92,6 +92,7 @@
     }
 
     &-overview {
+      font-size: small;
     }
 
     &-certifications {
@@ -125,6 +126,8 @@
         text-align: justify;
         font-size: clamp(1rem, 1rem + 1.5vw, 1.5rem);
 
+        
+
         @include respond(mini-phone) {
           font-size: clamp(1rem, 1rem + 1vw, 1.3rem);
         }
@@ -133,7 +136,7 @@
 
     &-our_values {
       display: grid;
-      grid-template-columns: repeat(3, minmax(25rem, 1fr));
+      grid-template-columns: repeat(3, minmax(15rem, 1fr));
       margin-top: 5rem;
       font-family: $font-style-primary;
 
@@ -402,7 +405,9 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(2.5rem, 1fr));
 
-  @include respond(tab-land) {
+  @include respond(tab-port) {
+      grid-template-columns: repeat(1, minmax(2.5rem, 1fr));
+    
   }
 
   @include respond(phone-land) {
@@ -462,13 +467,13 @@
 }
 
 .swap .container:first-child {
-  @include respond(phone) {
+  @include respond(tab-port) {
     grid-row: 2;
   }
 }
 
 .swap .container:nth-child(2) {
-  @include respond(phone) {
+  @include respond(tab-port) {
     grid-row: 1;
   }
 }
